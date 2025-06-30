@@ -1,4 +1,4 @@
-uv run python src/eval_zero_shot.py \
+uv run python src/eval_mod.py \
 	--model eval_nemo \
 	--template src/templates/zero_shot/qags.jinja \
 	--data data/meta_eval/qags.json \

@@ -200,22 +200,29 @@ def run_evaluation(
         output_dir: str,
         skip: int,
         limit: int,
-        eval_mod: str
+        eval_mod: str,
     ):
 
     data = data[skip:limit + skip if limit else None]
     
     for i, example in enumerate(data):
-        prompt = template.render(
-            inputs=example['inputs'],
-            outputs=example['outputs'],
-            aspect_config=aspect_config
-        )
         
         result = example.get('result', None)
         if result is None:
-            logger.info(f"Example {example['id']} has no result, skipping.")
-            continue
+            logger.info(f"Example {example['id']} has no result, generating.")
+            prompt = template.render(
+                inputs=example['inputs'],
+                outputs=example['outputs'],
+                **aspect_config
+            )
+            response = chat(model=model, messages=[{'role': 'user', 'content': prompt}])
+            result = response['message']['content']
+        else:
+            prompt = template.render(
+                inputs=example['inputs'],
+                outputs=example['outputs'],
+                aspect_config=aspect_config
+            )
 
         output_path = Path(output_dir) / f'{example["id"]}.json'
         eval_output = {
@@ -248,7 +255,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--template', type=str, help='Path to the prompt template file')
     parser.add_argument('--aspect-config', type=str, help='Path to the aspect configuration file')
-    parser.add_argument('--pregen', type=str, help='Path to the dataset with pregenerated model results')
+    parser.add_argument('--data', type=str, help='Path to the dataset JSON inputs and outputs to evaluate, or a pregen JSON with pregenerated model results')
     parser.add_argument('--model', type=str, default='eval_nemo', help='Ollama model name')
     parser.add_argument('--output-dir', type=str, help='Output directory')
     parser.add_argument('--skip', type=int, default=0, help='Slice of examples to evaluate if there should be less than all')
@@ -258,7 +265,7 @@ if __name__ == "__main__":
 
     template_path = Path(args.template)
     aspect_config_path = Path(args.aspect_config)
-    data_path = Path(args.pregen)
+    data_path = Path(args.data)
 
     with open(template_path, 'r') as f:
         template = Template(f.read())

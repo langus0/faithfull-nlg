@@ -1,4 +1,4 @@
-uv run python src/eval_on_pregen.py \
+uv run python src/eval_mod.py \
 	--model eval_nemo \
 	--template src/templates/zero_shot/qags.jinja \
 	--pregen data/results/pregen_results/qags-textsev/pregen_eval_nemo_textsev-1.json \
