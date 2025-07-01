@@ -30,9 +30,9 @@ sh run_eval.sh
 To speed up the evaluation of different modification scenarios, you can use the once created OpenNLG results and apply different modifications. You can create a file based on a previous evaluation runs using the following script:
 
 ```bash
-uv run python copy_to_pregen_results.py \
---pregen-dest-path data/results/pregen_results/qags \
+uv run python src/copy_results_to_pregen.py \
 --results-path data/results/eval_nemo_severity1 \
+--pregen-dest-path data/results/pregen_results/qags \
 --model eval_nemo
 ```
 

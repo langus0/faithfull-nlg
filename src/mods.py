@@ -19,7 +19,7 @@ def modify_text_severity(
         result=result,
         model=model,
         severity_increment=mod_force,
-        severity_increment_bounds=get_severity_bounds(mod_force)
+        severity_increment_bounds=(1, 5)
     )
     
 def modify_severity(
@@ -32,7 +32,7 @@ def modify_severity(
         result=result,
         model=model,
         severity_increment=mod_force,
-        severity_increment_bounds=get_severity_bounds(mod_force)
+        severity_increment_bounds=(1, 5)
     )
 
 def modify_text_severity_parser(
@@ -48,7 +48,7 @@ def modify_text_severity_parser(
     If "No Error" is found, it returns None to signal that no modification is needed.
     """
     
-    severity_change = "more" if severity_increment > 0 else "less"
+    severity_change_str = "more" if severity_increment > 0 else "less"
 
     error_text_modification_prompt = \
 f"""
@@ -57,8 +57,8 @@ You are a Textual Style Transfer (TST) system, which changes the sentiment polar
 You will be given an error explanation of a certain severity level, in the format:
 Original Explanation: <explanation>
 
-Your task is to adjust it to make it sound {severity_change} severe. You will provide the error explanation with the style changed, in the format:
-Modified Explanation: <explanation styled as {severity_change} severe>
+Your task is to adjust it to make it sound {severity_change_str} severe. You will provide the error explanation with the style changed, in the format:
+Modified Explanation: <explanation styled as {severity_change_str} severe>
 
 Do not add any additional text, comments, or severity mark. Provide only the modified explanation line.
 
@@ -99,10 +99,13 @@ Critical (5): severe error that causes confusion or miscommunication. Example cr
                 explanation, severity = None, None
                 continue
             
-            # check if severity is in bounds
-            if severity_increment_bounds[0] <= severity <= severity_increment_bounds[1]:
+            new_severity = severity + severity_increment
+            # squash new severity to bounds
+            new_severity = max(severity_increment_bounds[0], min(new_severity, severity_increment_bounds[1]))
+            
+            if new_severity != severity:
                 specific_modification = \
-                    f"""\nBelow you will find an error explanation of an error with severity level {severity}. Make it sound like a {severity_change} severe, {severity + severity_increment} severity error."""
+                    f"""\nBelow you will find an error explanation of an error with severity level {severity}. Make it sound like a {severity_change_str} severe, {new_severity} severity error."""
                 
                 response = chat(
                     model=model,
@@ -122,7 +125,7 @@ Critical (5): severe error that causes confusion or miscommunication. Example cr
                 logger.info(f"Modified error explanation for severity {severity}:")
                 explanation, severity = None, None
             else:
-                logger.warning(f"Severity {severity} is not within bounds {severity_increment_bounds}, skipping modification.")
+                logger.warning(f"Severity {severity} changed to {new_severity}, so skipping modification.")
                 final_error_lines = [
                     explanation,
                     f"Severity: {severity}"
@@ -162,15 +165,16 @@ def modify_severity_parser(
             try:
                 severity_parts = line.split(':')[1].split()
                 severity = int(severity_parts[0].strip())
-                if severity_increment_bounds[0] <= severity <= severity_increment_bounds[1]:
-                    new_severity = severity + severity_increment
+                new_severity = severity + severity_increment
+                new_severity = max(severity_increment_bounds[0], min(new_severity, severity_increment_bounds[1]))
+                if new_severity != severity:
                     new_line = f"Severity: {new_severity}"
                     if len(severity_parts) > 2:
                         new_line += ' ' + ' '.join(severity_parts[1:])
                     logger.info(f"Modified severity from {severity} to {new_severity}.")
                     modified_result.append(new_line)
                 else:
-                    logger.warning(f"Severity {severity} is not within bounds {severity_increment_bounds}, skipping modification.")
+                    logger.warning(f"Severity {severity} was changed to {new_severity}, so skipping modification.")
                     modified_result.append(line)
             except:
                 logger.warning(f"Failed to parse severity from line: {line}")
