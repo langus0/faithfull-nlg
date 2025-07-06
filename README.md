@@ -10,9 +10,9 @@ To reproduce the results with Ollama, install the package following the instruct
 ```sh
 ollama pull nemotron:70b-instruct-q8_0
 ```
-Then create the model from the modelfile:
+Then create the model from the modelfile. Example for nemotron:
 ```sh
-ollama create eval_nemo -f str/configs/modelfile_nemotron
+ollama create eval_nemo -f src/configs/modelfile_nemotron
 ```
 
 # Run evaluation with modificaiton

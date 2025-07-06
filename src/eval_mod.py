@@ -45,12 +45,14 @@ def modify_result(
 def run_evaluation(
         template: Template,
         aspect_config: dict,
-        data: dict, model: str,
+        data: dict,
+        model: str,
         output_dir: str,
         skip: int,
         limit: int,
         eval_mod: str,
-        mod_force: int
+        mod_force: int,
+        use_premodified_result: bool,
     ):
 
     data = data[skip:limit + skip if limit else None]
@@ -82,8 +84,7 @@ def run_evaluation(
         }
         
         # the pregen might also contain a previous modification result which should be in the name of the pregen file
-        # however if it is not present, it means that there was no previous modification and we just modify the original result
-        result_to_modify = example.get('result_premodified', result)
+        result_to_modify = example.get('result_premodified', result) if use_premodified_result else result
 
         if eval_mod:
             modified_result = modify_result(prompt, result_to_modify, model, eval_mod, mod_force)
@@ -112,6 +113,7 @@ if __name__ == "__main__":
     parser.add_argument('--limit', type=int, default=None, help='Slice of examples to evaluate if there should be less than all')
     parser.add_argument('--eval-mod', type=str, default=None, help='Modification to apply to the evaluation process')
     parser.add_argument('--mod-force', type=int, help='Force of the severity modification, negative for less severity, positive for more severity')
+    parser.add_argument('--use-premodified-result', action='store_true', help='Use the pre-modified result from the pregen if available')
     args = parser.parse_args()
 
     template_path = Path(args.template)
@@ -140,7 +142,8 @@ if __name__ == "__main__":
             args.skip,
             args.limit,
             args.eval_mod,
-            args.mod_force
+            args.mod_force,
+            args.use_premodified_result
         )
     except Exception as e:
         logger.error(f"An error occurred during evaluation: {e}")
