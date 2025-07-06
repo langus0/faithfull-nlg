@@ -189,3 +189,84 @@ def modify_severity_parser(
     
     logger.warning("No Overall score found, continuing with generation.")
     return '\n'.join(modified_result)
+
+
+def modify_results_per_error(
+            prompt: str,
+            result: str,
+            model: str,
+            mod_direction: int
+        ) -> list:
+    """
+    Parse the result from the model based on the evaluation modification.
+    This function can use different functions for error modification.
+    """
+
+    error_mods = []
+    severity_increment = mod_direction
+    severity_increment_bounds = (1, 5)
+    
+    lines = result.strip().split('\n')
+    
+    # find the Overall score line
+    overall_score = None
+    i_of_overall_score = None
+    for i, line in enumerate(lines):
+        if line.startswith("Overall score:"):
+            i_of_overall_score = i
+            overall_score = line.split(':')[1].strip()
+            break
+    if not i_of_overall_score:
+        logger.warning("No Overall score found in the result.")
+        return None
+    elif not overall_score:
+        logger.warning("Overall score is empty, cannot modify.")
+        return None
+    
+    for i, line in enumerate(lines):
+        if line.startswith("Severity:"):
+            try:
+                severity_parts = line.split(':')[1].split()
+                severity = int(severity_parts[0].strip())
+                new_severity = severity
+                
+                # increment severity until reaching 
+                while severity_increment_bounds[0] < new_severity < severity_increment_bounds[1]: 
+
+                    new_severity += severity_increment
+                    
+                    modified_result = lines[:i]
+                    modified_result.append("Severity: {new_severity}")
+                    modified_result.extend(lines[i:i_of_overall_score])
+                    modified_result.append("Overall score:")
+                    modified_result = '\n'.join(modified_result)
+                    
+                    logger.info(f"Modified severity from {severity} to {new_severity}.")
+                    response = chat(
+                        model=model,
+                        messages=[
+                            {'role': 'user', 'content': prompt},
+                            {'role': 'assistant', 'content': modified_result}
+                        ]
+                    )
+                    
+                    new_overall_score = response['message']['content'].split('\n')[0]
+                    error_mods.append({
+                        'severity': severity,
+                        'new_severity': new_severity,
+                        'overall_score': overall_score,
+                        'new_overall_score': new_overall_score
+                    })
+                                        
+            except Exception as e:
+                logger.warning(f"Failed to parse severity from line: {line}")
+                raise e
+        elif line.startswith("Overall score:"):
+            return error_mods
+        elif line.startswith("No Error"):
+            return None # No modification or further generation needed
+        else:
+            continue
+    
+    logger.warning("Out of loop, something went wrong.")
+    return None

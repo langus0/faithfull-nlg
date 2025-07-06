@@ -9,6 +9,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--results-path", "-r", required=True)
 parser.add_argument("--pregen-dest-path", "-p", required=True)
 parser.add_argument("--model", "-m", required=True, type=str, help='Ollama model name')
+parser.add_argument("--exclude-premodified-result", "-e", action='store_true', help='Exclude pre-modified result from the output')
 args = parser.parse_args()
 
 logger.info(f"Loading eval: {args.results_path}")
@@ -27,15 +28,15 @@ for fname in fnames:
         with open(f"{args.results_path}/{fname}", 'r') as f:
             data = json.load(f)
 
-        pregen.append(
-            {
+        example = {
                 'id': fname.replace('.json', ''),
                 'inputs': data['inputs'],
                 'outputs': data['outputs'],
                 'result': data['result'],
-                'result_premodified': data['result_modified'],
             }
-        )
+        if not args.exclude_premodified_result:
+            example['result_premodified'] = data['result_modified'],
+        pregen.append(example)
     except Exception as e:
         logger.error(f"Could not load results from {fname}: {e}")
         continue

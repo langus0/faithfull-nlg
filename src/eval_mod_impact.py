@@ -9,38 +9,7 @@ from typing import Callable
 from ollama import chat
 from loguru import logger
 
-from mods import modify_text_severity, modify_severity
-
-EVAL_MODS = {
-    "severity": modify_severity,
-    "text_severity": modify_text_severity
-}
-
-def modify_result(
-        prompt: str,
-        result: str,
-        model: str,
-        eval_mod: str,
-        mod_force: int
-    ) -> str:
-    """
-    Parse the result from the model based on the evaluation modification.
-    This function can use different functions for error modification.
-    """
-    
-    modified_result = EVAL_MODS[eval_mod](result, model, mod_force)
-
-    if modified_result:
-        response = chat(
-            model=model,
-            messages=[
-                {'role': 'user', 'content': prompt},
-                {'role': 'assistant', 'content': modified_result}
-            ]
-        )
-        return modified_result + response['message']['content']
-    else:
-        return None
+from mods import modify_results_per_error
 
 def run_evaluation(
         template: Template,
@@ -50,9 +19,7 @@ def run_evaluation(
         output_dir: str,
         skip: int,
         limit: int,
-        eval_mod: str,
-        mod_force: int,
-        use_premodified_result: bool,
+        mod_direction: int,
     ):
 
     data = data[skip:limit + skip if limit else None]
@@ -75,22 +42,16 @@ def run_evaluation(
 
         output_path = Path(output_dir) / f'{example["id"]}.json'
         eval_output = {
-            'inputs': example['inputs'],
-            'outputs': example['outputs'],
-            'result': result
+            'result': result,
+            'error_mod_impacts': []
         }
-        
-        # a pregen file might also contain results from previous modifications
-        # (this should be described in the name of the pregen file)
-        result_to_modify = example.get('result_premodified', result) if use_premodified_result else result
 
-        if eval_mod:
-            modified_result = modify_result(prompt, result_to_modify, model, eval_mod, mod_force)
-            if modified_result:
-                eval_output['result_modified'] = modified_result
-            else:
-                eval_output['result_modified'] = result # No modification was needed
-                logger.info(f"Example {example['id']} had no modification needed, continuing with original result.")
+        error_mod_impacts = modify_results_per_error(prompt, result, model, mod_direction)
+        if error_mod_impacts:
+            eval_output['error_mod_impacts'] = error_mod_impacts
+        else:
+            eval_output['error_mod_impacts'] = None # No error modification was applied
+            logger.info(f"Example {example['id']} had no errors to modify.")
 
         logger.info(f"\n[{i}] Saving {example['id']} to {output_path}\n")
         with open(output_path, 'w') as f:
@@ -108,9 +69,7 @@ if __name__ == "__main__":
     parser.add_argument('--output-dir', type=str, help='Output directory')
     parser.add_argument('--skip', type=int, default=0, help='Slice of examples to evaluate if there should be less than all')
     parser.add_argument('--limit', type=int, default=None, help='Slice of examples to evaluate if there should be less than all')
-    parser.add_argument('--eval-mod', type=str, default=None, help='Modification to apply to the evaluation process')
-    parser.add_argument('--mod-force', type=int, help='Force of the severity modification, negative for less severity, positive for more severity')
-    parser.add_argument('--use-premodified-result', action='store_true', help='Use the pre-modified result from the pregen if available')
+    parser.add_argument('--mod-direction', type=int, help='Force of the severity modification, either +1 or -1 for increasing or decreasing severity')
     args = parser.parse_args()
 
     template_path = Path(args.template)
@@ -138,11 +97,10 @@ if __name__ == "__main__":
             args.output_dir,
             args.skip,
             args.limit,
-            args.eval_mod,
-            args.mod_force,
-            args.use_premodified_result
+            args.mod_direction,
         )
     except Exception as e:
         logger.error(f"An error occurred during evaluation: {e}")
+        # raise e
 
     logger.info(f"Evaluation completed in {time.time() - start:.2f} seconds.")
