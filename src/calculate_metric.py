@@ -18,7 +18,7 @@ summary_fname = "scores_summary.json"
 if summary_fname in fnames:
 	fnames.remove(summary_fname)
 
-scores = {"scores": {}, "summary": {}}
+scores = {}
 for fname in fnames:
 	try:
 		with open(f"{args.results_dir}/{fname}", 'r') as f:
@@ -41,22 +41,23 @@ for fname in fnames:
 	# 	logger.debug(f"A score is None, probably from a N/A evaluation: {sc} {sc_mod}")
 
 	if sc or sc_mod:
-		scores["scores"][fname] = {
+		scores[fname] = {
 			"score": sc,
 			"score_mod": sc_mod
 		}
 
 is_modified_map = [
 	sc_pair["score"].lower() != sc_pair["score_mod"].lower()
-	for sc_pair in scores["scores"].values()
+	for sc_pair in scores.values()
 	]
 
 mod_sum = sum(is_modified_map)
-scores_sum = len(scores["scores"])
+scores_sum = len(scores)
+changed_percent = round(mod_sum / scores_sum * 100, 2)
 
-logger.info(f"Modified {mod_sum} in {scores_sum} examples")
+logger.info(f"Modified {mod_sum} in {scores_sum} examples ({changed_percent}%)")
 
-df = pd.DataFrame(scores["scores"]).T
+df = pd.DataFrame(scores).T
 
 mapping = {
     "Unacceptable": 1,
@@ -75,13 +76,19 @@ df["score_mod_num"] = df["score_mod"].map(mapping)
 
 
 correlation, p_value = spearmanr(df["score_num"], df["score_mod_num"])
-logger.info(f"Spearman correlation: {correlation:.4f}")
+correlation = round(correlation, 4)
+logger.info(f"Spearman correlation: {correlation}")
 
-scores["summary"] = {
-	"analyzed_examples": scores_sum,
-	"scores_changed": mod_sum,
-	"correlation": correlation,
-	}
+
+scores_summary = {
+    "summary": {
+        "analyzed_examples": scores_sum,
+		"scores_changed": mod_sum,
+		"changed_percent": changed_percent,
+		"correlation": correlation,
+   },
+    "scores": scores,
+}
 
 with open(f"{args.results_dir}/{summary_fname}", "w") as f:
-	json.dump(scores, f)
+	json.dump(scores_summary, f, indent=2)
