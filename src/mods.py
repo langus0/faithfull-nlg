@@ -122,7 +122,7 @@ Critical (5): severe error that causes confusion or miscommunication. Example cr
                     f"Severity: {severity}"
                 ]
                 modified_result.extend(final_error_lines)
-                logger.info(f"Modified error explanation for severity {severity}:")
+                logger.info(f"Modified error explanation for severity {severity}")
                 explanation, severity = None, None
             else:
                 logger.warning(f"Severity {severity} changed to {new_severity}, so skipping modification.")
