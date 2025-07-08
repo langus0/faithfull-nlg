@@ -35,12 +35,13 @@ To speed up the evaluation of different modification scenarios, once the OpenNLG
 
 ```bash
 uv run python src/copy_results_to_pregen.py \
---results-path data/results/eval_nemo_severity1 \
---pregen-dest-path data/results/pregen_results/qags \
---model eval_nemo
+--results-dir data/results/eval_nemo_severity1 \
+--pregen-dest-dir data/results/pregen_results/qags \
+--pregen-tag eval_nemo \
+--exclude-premodified-result
 ```
 
-The pregen file wil also include the result of the modification (under the key `result_modified`) so that another modification can be added on top of it. It can be excluded out of the file generation using the flag `--exclude-premodified-result`.
+The pregen file will by default include the result of the modification (under the key `result_modified`) so that another modification can be added on top of it. It can be excluded out of the file generation using the flag `--exclude-premodified-result`.
 
 Once the pregen json file is created, you can link it in the `--data` parameter of the eval .py scripts instead of the original dataset json file, and the evaluation will use the pre-generated content instead of running the OpenNLG model again. In eval scripts, the flag `--use-premodified-result` can be used to indicate that also the result of the previous modification (described in the paragraph above) should be used (so that you can stack this mod on top of the previous mod).
 
