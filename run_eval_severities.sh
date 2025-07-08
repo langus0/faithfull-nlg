@@ -3,12 +3,12 @@ MODEL=eval_gemma
 # MODEL=eval_qwen
 # MODEL=eval_mistral
 
-DATASET=qags
-# DATASET=hanna
+# DATASET=qags
+DATASET=hanna
 # DATASET=summeval
 
-ASPECT=factual_consistency
-# ASPECT=coherence
+# ASPECT=factual_consistency
+ASPECT=coherence
 # ASPECT=relevance
 # ASPECT=complexity
 
