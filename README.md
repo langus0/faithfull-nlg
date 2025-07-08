@@ -19,15 +19,19 @@ ollama create eval_nemo -f src/configs/modelfile_nemotron
 
 ## Run evaluation and modify the results
 
-Open the script `run_eval.sh` and adjust the parameters to your needs. The script will run the evaluation using the OpenNLG model and apply the modifications specified in the `src/modifications.py` script.
+Open the script `run_eval_all_severities.sh` and adjust the parameters to your needs. The script will run the evaluation using the OpenNLG model and then apply the error severity modifications.
 
-```sh
-sh run_eval.sh
+```bash
+sh run_eval_all_severities.sh
 ```
+
+The specific modifications are defined in `src/mods.py` and are applied in `src/eval_mod.py`. 
+
+To test a specific modification (int or text) outside the whole loop, you can use the `run_eval_severity.sh` script.
 
 ## Use previously generated evaluation content
 
-To speed up the evaluation of different modification scenarios, you can use the once created OpenNLG results and apply different modifications. You can create a file based on a previous evaluation runs using the following script:
+To speed up the evaluation of different modification scenarios, once the OpenNLG results are created you can copy the evaluation a file based on a previous evaluation and reuse it for different modifications runs using the following script:
 
 ```bash
 uv run python src/copy_results_to_pregen.py \
@@ -36,13 +40,19 @@ uv run python src/copy_results_to_pregen.py \
 --model eval_nemo
 ```
 
-The script can be edited to include the content needed in the pregenerated file, like including already modified results to add another modificaiton on top of the previous one.
+The pregen file wil also include the result of the modification (under the key `result_modified`) so that another modification can be added on top of it. It can be excluded out of the file generation using the flag `--exclude-premodified-result`.
 
-Once the pregen file is created, you can run modifications using the script below (which should also be adjusted to the file content)
+Once the pregen json file is created, you can link it in the `--data` parameter of the eval .py scripts instead of the original dataset json file, and the evaluation will use the pre-generated content instead of running the OpenNLG model again. In eval scripts, the flag `--use-premodified-result` can be used to indicate that also the result of the previous modification (described in the paragraph above) should be used (so that you can stack this mod on top of the previous mod).
 
-```bash
-sh run_eval_pregen.sh
-```
+## Measure impact of error severity modifications on the OpenNLG results
+
+Use the script `run_eval_impact.sh` to perform incremental severity modification on each one error of the evaluation, by which you can measure the error's impact on the evaluation's overall score.
+
+``bash
+sh run_eval_impact.sh
+``
+
+Note that this script only measures the int severity increment, defined in a different method than the original modification (all of them can be found in `mods.py`)
 
 # Evaluate results
 
