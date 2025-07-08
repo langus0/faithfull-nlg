@@ -35,7 +35,7 @@ for fname in fnames:
                 'result': data['result'],
             }
         if not args.exclude_premodified_result:
-            example['result_premodified'] = data['result_modified'],
+            example['result_premodified'] = data['result_modified']
         pregen.append(example)
     except Exception as e:
         logger.error(f"Could not load results from {fname}: {e}")
