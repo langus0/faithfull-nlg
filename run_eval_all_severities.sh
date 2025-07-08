@@ -1,6 +1,7 @@
 MODEL=eval_gemma
 ASPECT=src/configs/eval_aspects/qags-factual_consistency.json
 TEMPLATE=src/templates/zero_shot/qags.jinja
+severity_modification_forces=(1 2 -1 -2)
 
 # if it is the first run for this set of OpeNLG parameters (model, aspect, template)
 # then run the first evaluation to generate the initial pregen (for example with severity modification 1)
@@ -21,7 +22,7 @@ uv run python src/copy_results_to_pregen.py \
 	--model ${MODEL} \
 	--exclude-premodified-result
 
-for sev_force in "${severities[@]}"
+for sev_force in "${severity_modification_forces[@]}"
 do
 	echo "Running modifications with severity: $sev_force"
   
