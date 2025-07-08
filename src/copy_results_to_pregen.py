@@ -46,9 +46,9 @@ logger.info(f"Saving to pregen: {args.pregen_dest_dir}/{pregen_fname}")
 try:
     with open(f"{args.pregen_dest_dir}/{pregen_fname}", 'w') as f:
         json.dump(pregen, f, indent=2)
-    print(f"Saved pre-generated results to {args.pregen_dest_dir}/{pregen_fname}")
+    logger.warning(f"Saved pre-generated results to {args.pregen_dest_dir}/{pregen_fname}")
 except Exception as e:
-    print(f"Error saving pre-generated results: {e}")
+    logger.warning(f"Error saving pre-generated results: {e}")
     raise e
         
     

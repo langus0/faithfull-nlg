@@ -122,10 +122,10 @@ Critical (5): severe error that causes confusion or miscommunication. Example cr
                     f"Severity: {severity}"
                 ]
                 modified_result.extend(final_error_lines)
-                logger.info(f"Modified error explanation for severity {severity}")
+                logger.debug(f"Modified error explanation severity {severity} to {new_severity}.")
                 explanation, severity = None, None
             else:
-                logger.warning(f"Severity {severity} changed to {new_severity}, so skipping modification.")
+                logger.debug(f"Skipping modification of explaination, severity {severity} could not be further changed.")
                 final_error_lines = [
                     explanation,
                     f"Severity: {severity}"
@@ -171,10 +171,10 @@ def modify_severity_parser(
                     new_line = f"Severity: {new_severity}"
                     if len(severity_parts) > 2:
                         new_line += ' ' + ' '.join(severity_parts[1:])
-                    logger.info(f"Modified severity from {severity} to {new_severity}.")
+                    logger.debug(f"Modified severity {severity} to {new_severity}.")
                     modified_result.append(new_line)
                 else:
-                    logger.warning(f"Severity {severity} was changed to {new_severity}, so skipping modification.")
+                    logger.debug(f"Skipping modification, severity {severity} could not be further changed.")
                     modified_result.append(line)
             except:
                 logger.warning(f"Failed to parse severity from line: {line}")
@@ -241,7 +241,7 @@ def modify_results_per_error(
                     modified_result.append("Overall score:")
                     modified_result = '\n'.join(modified_result)
                     
-                    logger.info(f"Modified severity from {severity} to {new_severity}.")
+                    logger.debug(f"Modified severity {severity} to {new_severity}.")
                     response = chat(
                         model=model,
                         messages=[
