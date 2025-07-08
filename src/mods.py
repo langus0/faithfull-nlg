@@ -260,7 +260,6 @@ def modify_results_per_error(
                                         
             except Exception as e:
                 logger.warning(f"Failed to parse severity from line: {line}")
-                raise e
         elif line.startswith("Overall score:"):
             return error_mods
         elif line.startswith("No Error"):

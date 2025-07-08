@@ -40,7 +40,9 @@ for fname in fnames:
     except Exception as e:
         logger.error(f"Could not load results from {fname}: {e}")
         continue
-        
+
+logger.info(f"Saving to pregen: {args.pregen_dest_dir}/{pregen_fname}")
+
 try:
     with open(f"{args.pregen_dest_dir}/{pregen_fname}", 'w') as f:
         json.dump(pregen, f, indent=2)

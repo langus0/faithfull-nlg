@@ -12,7 +12,7 @@ ollama pull nemotron:70b-instruct-q8_0
 ```
 Then create the model from the modelfile. Example for nemotron:
 ```sh
-ollama create eval_nemo -f src/configs/modelfile_nemotron
+ollama create eval_nemo -f src/configs/modelfile_nemo
 ```
 
 # Run evaluation with modificaiton
@@ -35,8 +35,8 @@ To speed up the evaluation of different modification scenarios, once the OpenNLG
 
 ```bash
 uv run python src/copy_results_to_pregen.py \
---results-dir data/results/eval_nemo_severity1 \
---pregen-dest-dir data/results/pregen_results/qags \
+--results-dir results/eval_mod_results/eval_nemo_severity1 \
+--pregen-dest-dir results/pregen_results/qags \
 --pregen-tag eval_nemo \
 --exclude-premodified-result
 ```
@@ -61,7 +61,7 @@ Note that this script only measures the int severity increment, defined in a dif
 
 To count and print use `calculate_error.py`. Use example:
 ```sh
-uv run python calculate_error.py --results-path data/results/eval_nemo_textsev1
+uv run python calculate_error.py --results-path results/eval_mod_results/eval_nemo_textsev1
 ```
 
 Optionally add `--use-scores-summary` to use previously parsed summary (scores_summary.json) of score changes, if you just want to see the results previously calculated results.
@@ -70,5 +70,5 @@ Optionally add `--use-scores-summary` to use previously parsed summary (scores_s
 
 To pretty print a specific data point from evaluation results, use `show_result.py`. Use example:
 ```sh
-uv run python src/show_result.py --json_file data/results/eval_nemo_textsev1/cnndm-79.json
+uv run python src/show_result.py --json_file results/eval_mod_results/eval_nemo_textsev1/cnndm-79.json
 ```
