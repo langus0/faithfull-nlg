@@ -1,53 +1,57 @@
 {
   "summary": {
-    "analyzed_examples": 472,
-    "scores_changed": 57,
-    "changed_percent": 12.08,
-    "correlation": 0.9738
+    "analyzed_examples": 474,
+    "scores_changed": 280,
+    "changed_percent": 59.0717,
+    "correlation": 0.7527684947823428
   },
   "scores": {
     "xsum-71.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
     },
     "cnndm-79.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "cnndm-43.json": {
-      "score": "Good",
-      "score_mod": "Good"
+      "score": "Fair",
+      "score_mod": "Fair"
     },
     "cnndm-65.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-144.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-133.json": {
-      "score": "Poor",
-      "score_mod": "Poor"
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
     },
     "xsum-45.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-114.json": {
       "score": "Unacceptable",
       "score_mod": "Unacceptable"
     },
     "cnndm-18.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
-    },
-    "cnndm-212.json": {
-      "score": "Unacceptable",
+      "score": "Poor",
       "score_mod": "Poor"
     },
-    "cnndm-230.json": {
+    "cnndm-212.json": {
       "score": "Poor",
+      "score_mod": "Unacceptable"
+    },
+    "xsum-209.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-230.json": {
+      "score": "Fair",
       "score_mod": "Poor"
     },
     "xsum-202.json": {
@@ -59,60 +63,60 @@
       "score_mod": "Excellent"
     },
     "xsum-1.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "cnndm-26.json": {
-      "score": "Good",
-      "score_mod": "Good"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-47.json": {
       "score": "Fair",
-      "score_mod": "Fair"
-    },
-    "xsum-101.json": {
-      "score": "Unacceptable",
       "score_mod": "Poor"
     },
+    "xsum-101.json": {
+      "score": "Poor",
+      "score_mod": "Unacceptable"
+    },
     "cnndm-163.json": {
-      "score": "Unacceptable",
+      "score": "Poor",
       "score_mod": "Unacceptable"
     },
     "cnndm-56.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-68.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-198.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "cnndm-174.json": {
-      "score": "Good",
-      "score_mod": "Good"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-121.json": {
       "score": "Poor",
       "score_mod": "Poor"
     },
     "xsum-157.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-135.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-66.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Good",
+      "score_mod": "Fair"
     },
     "cnndm-9.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Fair"
     },
     "cnndm-15.json": {
       "score": "Unacceptable",
@@ -120,111 +124,111 @@
     },
     "xsum-168.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-205.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "xsum-51.json": {
-      "score": "Poor",
-      "score_mod": "Poor"
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
     },
     "cnndm-60.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-170.json": {
-      "score": "Good",
-      "score_mod": "Good"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-235.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-27.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "xsum-131.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-189.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "cnndm-90.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-28.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-165.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "xsum-11.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-88.json": {
       "score": "Poor",
       "score_mod": "Poor"
     },
     "xsum-14.json": {
-      "score": "Good",
-      "score_mod": "Good"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "xsum-84.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "xsum-19.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-164.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "xsum-156.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "xsum-208.json": {
       "score": "Fair",
-      "score_mod": "Good"
+      "score_mod": "Poor"
     },
     "xsum-80.json": {
       "score": "Excellent",
       "score_mod": "Excellent"
     },
     "cnndm-124.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
-    },
-    "cnndm-231.json": {
-      "score": "Unacceptable",
+      "score": "Fair",
       "score_mod": "Poor"
     },
+    "cnndm-231.json": {
+      "score": "Poor",
+      "score_mod": "Unacceptable"
+    },
     "cnndm-45.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
-    },
-    "xsum-92.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
-    },
-    "cnndm-223.json": {
       "score": "Poor",
       "score_mod": "Poor"
     },
+    "xsum-92.json": {
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
+    },
+    "cnndm-223.json": {
+      "score": "Poor",
+      "score_mod": "Unacceptable"
+    },
     "cnndm-0.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-23.json": {
       "score": "Excellent",
@@ -232,51 +236,51 @@
     },
     "xsum-46.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "cnndm-96.json": {
       "score": "Poor",
-      "score_mod": "Fair"
-    },
-    "xsum-155.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
-    },
-    "cnndm-87.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
-    },
-    "xsum-78.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
-    },
-    "cnndm-168.json": {
-      "score": "Unacceptable",
       "score_mod": "Poor"
     },
-    "cnndm-177.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
-    },
-    "cnndm-221.json": {
-      "score": "Unacceptable",
+    "xsum-155.json": {
+      "score": "Poor",
       "score_mod": "Unacceptable"
     },
+    "cnndm-87.json": {
+      "score": "Poor",
+      "score_mod": "Unacceptable"
+    },
+    "xsum-78.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-168.json": {
+      "score": "Poor",
+      "score_mod": "Unacceptable"
+    },
+    "cnndm-177.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-221.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
     "xsum-108.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "xsum-93.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-224.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "cnndm-110.json": {
       "score": "Poor",
-      "score_mod": "Fair"
+      "score_mod": "Unacceptable"
     },
     "xsum-43.json": {
       "score": "Excellent",
@@ -284,31 +288,31 @@
     },
     "cnndm-206.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-157.json": {
       "score": "Poor",
       "score_mod": "Poor"
     },
     "xsum-97.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "xsum-130.json": {
-      "score": "Poor",
+      "score": "Fair",
       "score_mod": "Poor"
     },
     "cnndm-86.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-132.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-141.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "xsum-190.json": {
       "score": "Poor",
@@ -319,20 +323,20 @@
       "score_mod": "Poor"
     },
     "cnndm-4.json": {
-      "score": "Unacceptable",
-      "score_mod": "Poor"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "xsum-72.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "xsum-159.json": {
-      "score": "Unacceptable",
+      "score": "Poor",
       "score_mod": "Poor"
     },
     "xsum-69.json": {
       "score": "Unacceptable",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "xsum-193.json": {
       "score": "Excellent",
@@ -340,27 +344,27 @@
     },
     "xsum-94.json": {
       "score": "Poor",
-      "score_mod": "Fair"
+      "score_mod": "Unacceptable"
     },
     "cnndm-184.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-176.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-197.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "xsum-21.json": {
       "score": "Excellent",
       "score_mod": "Excellent"
     },
     "cnndm-27.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-216.json": {
       "score": "Unacceptable",
@@ -368,103 +372,103 @@
     },
     "xsum-38.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "xsum-236.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "xsum-126.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Unacceptable"
     },
     "cnndm-226.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "xsum-214.json": {
       "score": "Poor",
-      "score_mod": "Fair"
+      "score_mod": "Unacceptable"
     },
     "xsum-82.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "xsum-210.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
     },
     "xsum-60.json": {
       "score": "Fair",
-      "score_mod": "Fair"
-    },
-    "xsum-36.json": {
-      "score": "Poor",
       "score_mod": "Poor"
     },
+    "xsum-36.json": {
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
+    },
     "cnndm-75.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-99.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "xsum-191.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "cnndm-102.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-46.json": {
-      "score": "Good",
-      "score_mod": "Good"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-6.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-61.json": {
       "score": "Fair",
-      "score_mod": "Good"
+      "score_mod": "Poor"
     },
     "xsum-137.json": {
       "score": "Excellent",
       "score_mod": "Excellent"
     },
     "cnndm-169.json": {
-      "score": "Unacceptable",
-      "score_mod": "Poor"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "cnndm-224.json": {
-      "score": "Poor",
-      "score_mod": "Poor"
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
     },
     "cnndm-1.json": {
-      "score": "Good",
-      "score_mod": "Good"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-24.json": {
-      "score": "Good",
-      "score_mod": "Good"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-105.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "xsum-95.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "cnndm-227.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "xsum-201.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-6.json": {
       "score": "Excellent",
@@ -472,47 +476,47 @@
     },
     "cnndm-21.json": {
       "score": "Fair",
-      "score_mod": "Fair"
-    },
-    "xsum-222.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
-    },
-    "cnndm-222.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
-    },
-    "cnndm-142.json": {
-      "score": "Unacceptable",
       "score_mod": "Poor"
     },
+    "xsum-222.json": {
+      "score": "Fair",
+      "score_mod": "Unacceptable"
+    },
+    "cnndm-222.json": {
+      "score": "Fair",
+      "score_mod": "Poor"
+    },
+    "cnndm-142.json": {
+      "score": "Poor",
+      "score_mod": "Unacceptable"
+    },
     "cnndm-78.json": {
-      "score": "Unacceptable",
+      "score": "Poor",
       "score_mod": "Unacceptable"
     },
     "cnndm-92.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "xsum-171.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-178.json": {
-      "score": "Fair",
-      "score_mod": "Good"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "xsum-115.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-146.json": {
-      "score": "Poor",
-      "score_mod": "Fair"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-188.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "cnndm-148.json": {
       "score": "Unacceptable",
@@ -520,71 +524,71 @@
     },
     "cnndm-76.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "cnndm-118.json": {
-      "score": "Poor",
+      "score": "Fair",
       "score_mod": "Poor"
     },
     "xsum-139.json": {
       "score": "Fair",
-      "score_mod": "Fair"
-    },
-    "cnndm-171.json": {
-      "score": "Unacceptable",
       "score_mod": "Poor"
     },
+    "cnndm-171.json": {
+      "score": "Poor",
+      "score_mod": "Unacceptable"
+    },
     "cnndm-125.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-8.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-148.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-213.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "xsum-237.json": {
       "score": "Unacceptable",
       "score_mod": "Unacceptable"
     },
     "xsum-63.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-182.json": {
-      "score": "Good",
-      "score_mod": "Good"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-151.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-53.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "xsum-103.json": {
-      "score": "Poor",
-      "score_mod": "Poor"
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
     },
     "xsum-215.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "xsum-226.json": {
       "score": "Excellent",
       "score_mod": "Excellent"
     },
     "xsum-183.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "cnndm-153.json": {
       "score": "Unacceptable",
@@ -592,59 +596,59 @@
     },
     "cnndm-2.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "xsum-52.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
-    },
-    "cnndm-147.json": {
       "score": "Poor",
       "score_mod": "Poor"
     },
+    "cnndm-147.json": {
+      "score": "Poor",
+      "score_mod": "Unacceptable"
+    },
     "cnndm-42.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-139.json": {
-      "score": "Unacceptable",
+      "score": "Poor",
       "score_mod": "Unacceptable"
     },
     "cnndm-141.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-77.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-36.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-193.json": {
       "score": "Poor",
-      "score_mod": "Fair"
+      "score_mod": "Unacceptable"
     },
     "cnndm-204.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-119.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-208.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-113.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Unacceptable"
     },
     "xsum-228.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-5.json": {
       "score": "Excellent",
@@ -656,131 +660,131 @@
     },
     "xsum-177.json": {
       "score": "Fair",
-      "score_mod": "Good"
+      "score_mod": "Poor"
     },
     "xsum-90.json": {
       "score": "Excellent",
       "score_mod": "Excellent"
     },
     "cnndm-186.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-167.json": {
       "score": "Fair",
-      "score_mod": "Good"
+      "score_mod": "Poor"
     },
     "cnndm-127.json": {
-      "score": "Unacceptable",
+      "score": "Poor",
       "score_mod": "Unacceptable"
     },
     "xsum-197.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-189.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
-    },
-    "xsum-175.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
-    },
-    "xsum-40.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
-    },
-    "xsum-12.json": {
-      "score": "Good",
-      "score_mod": "Good"
-    },
-    "cnndm-40.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
-    },
-    "cnndm-85.json": {
-      "score": "Good",
-      "score_mod": "Good"
-    },
-    "xsum-4.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
-    },
-    "xsum-113.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
-    },
-    "xsum-81.json": {
       "score": "Poor",
       "score_mod": "Poor"
     },
-    "xsum-106.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+    "xsum-175.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
     },
-    "cnndm-53.json": {
+    "xsum-40.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-12.json": {
+      "score": "Fair",
+      "score_mod": "Poor"
+    },
+    "cnndm-40.json": {
+      "score": "Fair",
+      "score_mod": "Poor"
+    },
+    "cnndm-85.json": {
+      "score": "Fair",
+      "score_mod": "Poor"
+    },
+    "xsum-4.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-113.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-81.json": {
       "score": "Unacceptable",
       "score_mod": "Unacceptable"
     },
+    "xsum-106.json": {
+      "score": "Fair",
+      "score_mod": "Poor"
+    },
+    "cnndm-53.json": {
+      "score": "Poor",
+      "score_mod": "Unacceptable"
+    },
     "cnndm-30.json": {
-      "score": "Good",
-      "score_mod": "Good"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-66.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "xsum-216.json": {
       "score": "Unacceptable",
       "score_mod": "Unacceptable"
     },
     "xsum-136.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-86.json": {
       "score": "Unacceptable",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "xsum-22.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "cnndm-150.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-117.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "cnndm-34.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-18.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
-    },
-    "xsum-0.json": {
       "score": "Poor",
       "score_mod": "Poor"
     },
+    "xsum-0.json": {
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
+    },
     "xsum-100.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-126.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-149.json": {
       "score": "Unacceptable",
       "score_mod": "Unacceptable"
     },
     "cnndm-203.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-230.json": {
       "score": "Unacceptable",
@@ -788,38 +792,38 @@
     },
     "xsum-85.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "xsum-154.json": {
       "score": "Excellent",
       "score_mod": "Excellent"
     },
     "xsum-73.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-32.json": {
-      "score": "Poor",
-      "score_mod": "Poor"
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
     },
     "cnndm-13.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-138.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "xsum-194.json": {
       "score": "Unacceptable",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "cnndm-109.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "cnndm-49.json": {
-      "score": "Unacceptable",
+      "score": "Poor",
       "score_mod": "Poor"
     },
     "cnndm-12.json": {
@@ -828,15 +832,15 @@
     },
     "xsum-132.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-111.json": {
-      "score": "Good",
-      "score_mod": "Good"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-48.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-163.json": {
       "score": "Unacceptable",
@@ -847,12 +851,12 @@
       "score_mod": "Poor"
     },
     "xsum-39.json": {
-      "score": "Poor",
-      "score_mod": "Poor"
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
     },
     "xsum-144.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "cnndm-59.json": {
       "score": "Poor",
@@ -860,103 +864,103 @@
     },
     "cnndm-198.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-122.json": {
       "score": "Poor",
       "score_mod": "Poor"
     },
     "xsum-134.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "xsum-185.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "xsum-229.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "xsum-102.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "cnndm-159.json": {
       "score": "Fair",
-      "score_mod": "Good"
+      "score_mod": "Poor"
     },
     "xsum-150.json": {
       "score": "Excellent",
       "score_mod": "Excellent"
     },
     "cnndm-57.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-100.json": {
       "score": "Good",
-      "score_mod": "Good"
+      "score_mod": "Fair"
     },
     "cnndm-80.json": {
       "score": "Poor",
       "score_mod": "Poor"
     },
     "xsum-145.json": {
-      "score": "Poor",
+      "score": "Fair",
       "score_mod": "Poor"
     },
     "xsum-104.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "cnndm-120.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-99.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "xsum-223.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "xsum-20.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-65.json": {
       "score": "Excellent",
       "score_mod": "Excellent"
     },
     "cnndm-228.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Fair"
     },
     "cnndm-195.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "cnndm-97.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "xsum-153.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "xsum-217.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-37.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-166.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "xsum-140.json": {
       "score": "Unacceptable",
@@ -967,24 +971,24 @@
       "score_mod": "Excellent"
     },
     "cnndm-74.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Fair"
     },
     "xsum-218.json": {
       "score": "Poor",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "xsum-169.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-192.json": {
       "score": "Unacceptable",
       "score_mod": "Unacceptable"
     },
     "xsum-211.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-149.json": {
       "score": "Excellent",
@@ -992,19 +996,19 @@
     },
     "xsum-67.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "xsum-109.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "cnndm-154.json": {
       "score": "Unacceptable",
       "score_mod": "Unacceptable"
     },
     "cnndm-232.json": {
-      "score": "Poor",
-      "score_mod": "Fair"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-233.json": {
       "score": "Poor",
@@ -1012,147 +1016,147 @@
     },
     "xsum-49.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "xsum-70.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "cnndm-199.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "xsum-203.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-178.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
-    },
-    "xsum-58.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
-    },
-    "cnndm-68.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
-    },
-    "cnndm-103.json": {
-      "score": "Good",
-      "score_mod": "Good"
-    },
-    "cnndm-54.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
-    },
-    "xsum-167.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
-    },
-    "cnndm-64.json": {
-      "score": "Good",
-      "score_mod": "Good"
-    },
-    "xsum-17.json": {
       "score": "Poor",
       "score_mod": "Poor"
     },
+    "xsum-58.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-68.json": {
+      "score": "Fair",
+      "score_mod": "Poor"
+    },
+    "cnndm-103.json": {
+      "score": "Fair",
+      "score_mod": "Poor"
+    },
+    "cnndm-54.json": {
+      "score": "Fair",
+      "score_mod": "Poor"
+    },
+    "xsum-167.json": {
+      "score": "Fair",
+      "score_mod": "Poor"
+    },
+    "cnndm-64.json": {
+      "score": "Fair",
+      "score_mod": "Poor"
+    },
+    "xsum-17.json": {
+      "score": "Poor",
+      "score_mod": "Unacceptable"
+    },
     "cnndm-77.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "xsum-83.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "xsum-117.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "cnndm-140.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-87.json": {
       "score": "Excellent",
       "score_mod": "Excellent"
     },
     "cnndm-187.json": {
-      "score": "Unacceptable",
-      "score_mod": "Poor"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "xsum-181.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "xsum-110.json": {
       "score": "Poor",
       "score_mod": "Poor"
     },
     "cnndm-214.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-173.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
     },
     "cnndm-161.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "xsum-221.json": {
-      "score": "Poor",
-      "score_mod": "Poor"
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
     },
     "cnndm-48.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
-    },
-    "xsum-238.json": {
-      "score": "Poor",
+      "score": "Fair",
       "score_mod": "Poor"
     },
+    "xsum-238.json": {
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
+    },
     "cnndm-93.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-152.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "cnndm-71.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-124.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "cnndm-185.json": {
       "score": "Excellent",
       "score_mod": "Excellent"
     },
     "xsum-15.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "cnndm-72.json": {
       "score": "Poor",
       "score_mod": "Poor"
     },
     "xsum-219.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-8.json": {
       "score": "Poor",
       "score_mod": "Poor"
     },
     "cnndm-55.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "cnndm-41.json": {
       "score": "Unacceptable",
@@ -1164,35 +1168,35 @@
     },
     "cnndm-81.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "xsum-10.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-225.json": {
-      "score": "Good",
-      "score_mod": "Good"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-188.json": {
       "score": "Poor",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-190.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-170.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-19.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "xsum-44.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "cnndm-107.json": {
       "score": "Poor",
@@ -1203,8 +1207,8 @@
       "score_mod": "Excellent"
     },
     "cnndm-233.json": {
-      "score": "Good",
-      "score_mod": "Good"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-35.json": {
       "score": "Excellent",
@@ -1220,15 +1224,15 @@
     },
     "cnndm-105.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "xsum-89.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "cnndm-162.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "xsum-234.json": {
       "score": "Excellent",
@@ -1236,31 +1240,31 @@
     },
     "cnndm-98.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "xsum-125.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Unacceptable"
     },
     "xsum-161.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-29.json": {
-      "score": "Unacceptable",
-      "score_mod": "Poor"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "cnndm-50.json": {
       "score": "Fair",
-      "score_mod": "Fair"
-    },
-    "xsum-116.json": {
-      "score": "Poor",
       "score_mod": "Poor"
     },
+    "xsum-116.json": {
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
+    },
     "xsum-225.json": {
-      "score": "Good",
-      "score_mod": "Good"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-174.json": {
       "score": "Excellent",
@@ -1268,35 +1272,35 @@
     },
     "cnndm-104.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "xsum-56.json": {
       "score": "Excellent",
       "score_mod": "Excellent"
     },
     "cnndm-207.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
-    },
-    "cnndm-183.json": {
       "score": "Fair",
       "score_mod": "Fair"
     },
-    "cnndm-101.json": {
-      "score": "Unacceptable",
+    "cnndm-183.json": {
+      "score": "Fair",
       "score_mod": "Poor"
     },
+    "cnndm-101.json": {
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
+    },
     "xsum-3.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-220.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "cnndm-23.json": {
-      "score": "Good",
-      "score_mod": "Good"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-38.json": {
       "score": "Poor",
@@ -1308,19 +1312,19 @@
     },
     "cnndm-37.json": {
       "score": "Poor",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "xsum-195.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-95.json": {
-      "score": "Unacceptable",
+      "score": "Poor",
       "score_mod": "Unacceptable"
     },
     "cnndm-83.json": {
-      "score": "Unacceptable",
-      "score_mod": "Poor"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "xsum-200.json": {
       "score": "Excellent",
@@ -1328,23 +1332,27 @@
     },
     "cnndm-219.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Unacceptable"
+    },
+    "xsum-147.json": {
+      "score": "Fair",
+      "score_mod": "Unacceptable"
     },
     "xsum-146.json": {
       "score": "Poor",
       "score_mod": "Poor"
     },
     "cnndm-69.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "cnndm-128.json": {
       "score": "Poor",
-      "score_mod": "Fair"
+      "score_mod": "Unacceptable"
     },
     "cnndm-143.json": {
-      "score": "Poor",
-      "score_mod": "Fair"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-160.json": {
       "score": "Poor",
@@ -1359,12 +1367,12 @@
       "score_mod": "Excellent"
     },
     "xsum-114.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "cnndm-32.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "cnndm-191.json": {
       "score": "Excellent",
@@ -1375,136 +1383,136 @@
       "score_mod": "Unacceptable"
     },
     "cnndm-11.json": {
-      "score": "Good",
-      "score_mod": "Good"
+      "score": "Fair",
+      "score_mod": "Fair"
     },
     "xsum-165.json": {
       "score": "Excellent",
       "score_mod": "Excellent"
     },
     "cnndm-209.json": {
-      "score": "Good",
-      "score_mod": "Good"
-    },
-    "cnndm-31.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
-    },
-    "xsum-123.json": {
       "score": "Fair",
       "score_mod": "Fair"
+    },
+    "cnndm-31.json": {
+      "score": "Fair",
+      "score_mod": "Poor"
+    },
+    "xsum-123.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "xsum-2.json": {
       "score": "Unacceptable",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "xsum-128.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Unacceptable"
     },
     "xsum-98.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "cnndm-229.json": {
       "score": "Poor",
-      "score_mod": "Fair"
+      "score_mod": "Unacceptable"
     },
     "xsum-42.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "xsum-16.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-57.json": {
       "score": "Unacceptable",
       "score_mod": "Unacceptable"
     },
     "cnndm-217.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Fair"
     },
     "cnndm-5.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-79.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-184.json": {
       "score": "Excellent",
       "score_mod": "Excellent"
     },
     "cnndm-91.json": {
-      "score": "Unacceptable",
+      "score": "Poor",
       "score_mod": "Unacceptable"
     },
     "cnndm-63.json": {
       "score": "Fair",
-      "score_mod": "Good"
+      "score_mod": "Poor"
     },
     "cnndm-196.json": {
-      "score": "Unacceptable",
+      "score": "Poor",
       "score_mod": "Poor"
     },
     "cnndm-52.json": {
-      "score": "Good",
-      "score_mod": "Good"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-210.json": {
-      "score": "Good",
-      "score_mod": "Good"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-215.json": {
       "score": "Poor",
       "score_mod": "Poor"
     },
     "cnndm-44.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-212.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-20.json": {
       "score": "Unacceptable",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "xsum-138.json": {
       "score": "Unacceptable",
       "score_mod": "Unacceptable"
     },
     "cnndm-62.json": {
-      "score": "Unacceptable",
-      "score_mod": "Poor"
-    },
-    "xsum-179.json": {
       "score": "Poor",
       "score_mod": "Poor"
     },
+    "xsum-179.json": {
+      "score": "Fair",
+      "score_mod": "Poor"
+    },
     "cnndm-137.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-24.json": {
       "score": "Excellent",
       "score_mod": "Excellent"
     },
     "cnndm-116.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-206.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Unacceptable"
     },
     "xsum-232.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Unacceptable"
     },
     "xsum-176.json": {
       "score": "Excellent",
@@ -1519,127 +1527,127 @@
       "score_mod": "Excellent"
     },
     "cnndm-73.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-166.json": {
       "score": "Poor",
       "score_mod": "Poor"
     },
     "cnndm-179.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-133.json": {
-      "score": "Good",
-      "score_mod": "Good"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-64.json": {
       "score": "Unacceptable",
       "score_mod": "Unacceptable"
     },
     "cnndm-173.json": {
-      "score": "Good",
-      "score_mod": "Good"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-30.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-218.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-122.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Unacceptable"
     },
     "xsum-143.json": {
-      "score": "Good",
-      "score_mod": "Good"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-59.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-151.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-207.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "cnndm-194.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Fair"
     },
     "cnndm-160.json": {
       "score": "Unacceptable",
       "score_mod": "Unacceptable"
     },
     "xsum-75.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "xsum-192.json": {
       "score": "Unacceptable",
       "score_mod": "Unacceptable"
     },
     "cnndm-112.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "xsum-121.json": {
       "score": "Unacceptable",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "cnndm-35.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "cnndm-22.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "cnndm-136.json": {
       "score": "Poor",
       "score_mod": "Poor"
     },
     "xsum-28.json": {
-      "score": "Poor",
-      "score_mod": "Poor"
+      "score": "Fair",
+      "score_mod": "Unacceptable"
     },
     "xsum-74.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-115.json": {
-      "score": "Poor",
-      "score_mod": "Fair"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-129.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "xsum-25.json": {
       "score": "Poor",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "xsum-152.json": {
       "score": "Excellent",
       "score_mod": "Excellent"
     },
     "xsum-129.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-39.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Good",
+      "score_mod": "Fair"
     },
     "cnndm-25.json": {
-      "score": "Unacceptable",
+      "score": "Poor",
       "score_mod": "Unacceptable"
     },
     "xsum-112.json": {
@@ -1647,12 +1655,12 @@
       "score_mod": "Poor"
     },
     "cnndm-14.json": {
-      "score": "Unacceptable",
-      "score_mod": "Poor"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "cnndm-10.json": {
-      "score": "Poor",
-      "score_mod": "Fair"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-50.json": {
       "score": "Excellent",
@@ -1660,51 +1668,51 @@
     },
     "xsum-26.json": {
       "score": "Fair",
-      "score_mod": "Good"
+      "score_mod": "Poor"
     },
     "xsum-33.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-134.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "xsum-158.json": {
-      "score": "Good",
-      "score_mod": "Good"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-196.json": {
       "score": "Excellent",
       "score_mod": "Excellent"
     },
     "cnndm-70.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "xsum-205.json": {
-      "score": "Poor",
-      "score_mod": "Poor"
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
     },
     "cnndm-158.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "xsum-164.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "xsum-187.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Unacceptable"
     },
     "cnndm-16.json": {
       "score": "Poor",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-234.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-9.json": {
       "score": "Excellent",
@@ -1712,47 +1720,47 @@
     },
     "cnndm-200.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-123.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-145.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-67.json": {
       "score": "Poor",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "xsum-62.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-31.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "xsum-111.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "xsum-142.json": {
       "score": "Excellent",
       "score_mod": "Excellent"
     },
     "cnndm-33.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-108.json": {
-      "score": "Unacceptable",
-      "score_mod": "Poor"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "cnndm-106.json": {
       "score": "Poor",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-3.json": {
       "score": "Poor",
@@ -1763,16 +1771,16 @@
       "score_mod": "Poor"
     },
     "xsum-204.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "cnndm-213.json": {
-      "score": "Good",
-      "score_mod": "Good"
+      "score": "Fair",
+      "score_mod": "Unacceptable"
     },
     "cnndm-94.json": {
       "score": "Poor",
-      "score_mod": "Poor"
+      "score_mod": "Unacceptable"
     },
     "xsum-13.json": {
       "score": "Excellent",
@@ -1780,15 +1788,15 @@
     },
     "cnndm-181.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "xsum-61.json": {
       "score": "Poor",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-7.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "cnndm-172.json": {
       "score": "Poor",
@@ -1796,31 +1804,31 @@
     },
     "xsum-231.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-82.json": {
       "score": "Poor",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "cnndm-211.json": {
       "score": "Poor",
       "score_mod": "Poor"
     },
     "cnndm-89.json": {
-      "score": "Unacceptable",
-      "score_mod": "Poor"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "xsum-7.json": {
       "score": "Poor",
-      "score_mod": "Fair"
+      "score_mod": "Unacceptable"
     },
     "xsum-186.json": {
       "score": "Poor",
       "score_mod": "Poor"
     },
     "cnndm-175.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Fair"
     },
     "xsum-107.json": {
       "score": "Poor",
@@ -1828,71 +1836,71 @@
     },
     "cnndm-58.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     },
     "xsum-76.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-47.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Poor"
     },
     "cnndm-84.json": {
       "score": "Fair",
-      "score_mod": "Good"
+      "score_mod": "Poor"
     },
     "cnndm-17.json": {
       "score": "Excellent",
       "score_mod": "Excellent"
     },
     "cnndm-180.json": {
-      "score": "Poor",
-      "score_mod": "Poor"
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
     },
     "xsum-172.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Fair"
     },
     "xsum-182.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
     },
     "cnndm-131.json": {
-      "score": "Good",
-      "score_mod": "Good"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-118.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-135.json": {
-      "score": "Fair",
-      "score_mod": "Fair"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "cnndm-130.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "xsum-34.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Unacceptable"
     },
     "cnndm-156.json": {
-      "score": "Unacceptable",
-      "score_mod": "Poor"
+      "score": "Poor",
+      "score_mod": "Unacceptable"
     },
     "cnndm-201.json": {
       "score": "Poor",
       "score_mod": "Poor"
     },
     "xsum-55.json": {
-      "score": "Excellent",
-      "score_mod": "Excellent"
+      "score": "Fair",
+      "score_mod": "Poor"
     },
     "cnndm-220.json": {
       "score": "Fair",
-      "score_mod": "Fair"
+      "score_mod": "Poor"
     }
   }
 }
