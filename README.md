@@ -61,8 +61,6 @@ uv run python src/calculate_error.py --results-dir results/eval_mod_results/qags
 
 The result will be saved to a file `scores_summary.json` in your result path (visible in the github repo).
 
-Optionally add `--use-scores-summary` to use previously calculated summary file, if you just want to recalculate and see the metrics of previously parsed results.
-
 ## Inspect a specific generation & modification
 
 To pretty print a specific data point from evaluation results, use `show_result.py`. Use example:

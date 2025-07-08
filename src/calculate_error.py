@@ -8,50 +8,43 @@ from loguru import logger
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--results-dir", "-r", required=True)
-# TODO set below argument as flag
-parser.add_argument("--use-scores-summary", "-s", action='store_true',
-					help='Use previously parsed summary (scores_summary.json) of score changes')
 args = parser.parse_args()
 
 logger.info(f"Loading eval: {args.results_dir}")
 fnames = os.listdir(args.results_dir)
 summary_fname = "scores_summary.json"
 
-if args.use_scores_summary and summary_fname in fnames:
-	summary_path = f"{args.results_dir}/{summary_fname}"
-	with open(summary_path, "r") as f:
-		scores = json.load(f)
-else:
-	if summary_fname in fnames:
-		fnames.remove(summary_fname)
 
-	scores = {"scores": {}, "summary": {}}
-	for fname in fnames:
-		try:
-			with open(f"{args.results_dir}/{fname}", 'r') as f:
-				data = json.load(f)
-			res, res_mod = data['result'], data['result_modified']
-			# print(f"{fname} loaded") # TODO
-		except Exception as e:
-			logger.warning(f"Couldnt load results from {fname}, skipping")
-			continue
+if summary_fname in fnames:
+	fnames.remove(summary_fname)
 
-		sc, sc_mod = None, None
-		for line in res.split('\n'):
-			if line.startswith('Overall score'):
-				sc = line.split(':')[1].strip()
-		for line in res_mod.split('\n'):
-			if line.startswith('Overall score'):
-				sc_mod = line.split(':')[1].strip()
+scores = {"scores": {}, "summary": {}}
+for fname in fnames:
+	try:
+		with open(f"{args.results_dir}/{fname}", 'r') as f:
+			data = json.load(f)
+		res, res_mod = data['result'], data['result_modified']
+		# print(f"{fname} loaded") # TODO
+	except Exception as e:
+		logger.warning(f"Couldnt load results from {fname}, skipping")
+		continue
 
-		# if sc is None or sc_mod is None:
-		# 	logger.debug(f"A score is None, probably from a N/A evaluation: {sc} {sc_mod}")
+	sc, sc_mod = None, None
+	for line in res.split('\n'):
+		if line.startswith('Overall score'):
+			sc = line.split(':')[1].strip()
+	for line in res_mod.split('\n'):
+		if line.startswith('Overall score'):
+			sc_mod = line.split(':')[1].strip()
 
-		if sc or sc_mod:
-			scores["scores"][fname] = {
-				"score": sc,
-				"score_mod": sc_mod
-			}
+	# if sc is None or sc_mod is None:
+	# 	logger.debug(f"A score is None, probably from a N/A evaluation: {sc} {sc_mod}")
+
+	if sc or sc_mod:
+		scores["scores"][fname] = {
+			"score": sc,
+			"score_mod": sc_mod
+		}
 
 is_modified_map = [
 	sc_pair["score"].lower() != sc_pair["score_mod"].lower()
