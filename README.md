@@ -6,13 +6,16 @@ Install dependencies using [uv package manager](https://docs.astral.sh/uv/gettin
 uv sync
 ```
 
-To reproduce the results with Ollama, install the package following the instructions in the [Ollama repository](https://github.com/ollama/ollama). After installation, you can pull the required model using the following command:
+Model config files can be found under `src/configs/models`, datasets in `data/meta_eval`, and specific aspects for each dataset in `src/configs/eval_aspects`
+
+To reproduce the using with Ollama, install the package following the instructions in the [Ollama repository](https://github.com/ollama/ollama). After installation, you can pull the required model using the following command:
+
 ```sh
 ollama pull nemotron:70b-instruct-q8_0
 ```
 Then create the model from the modelfile. Example for nemotron:
 ```sh
-ollama create eval_nemo -f src/configs/modelfile_nemo
+ollama create eval_nemo -f src/configs/models/modelfile_nemo
 ```
 
 # Run evaluation with modificaiton
@@ -31,15 +34,7 @@ To test a specific modification (int or text) outside the whole loop, you can us
 
 ## Use previously generated evaluation content
 
-To speed up the evaluation of different modification scenarios, once the OpenNLG results are created you can copy the evaluation a file based on a previous evaluation and reuse it for different modifications runs using the following script:
-
-```bash
-uv run python src/copy_results_to_pregen.py \
---results-dir results/eval_mod_results/eval_nemo_severity1 \
---pregen-dest-dir results/pregen_results/qags \
---pregen-tag eval_nemo \
---exclude-premodified-result
-```
+To speed up the evaluation of different modification scenarios once a modification was run, the OpenNLG evaluation results can be copied to a "pregen" file based on the already generated evaluation, to be reused for further modifications. The script `src/copy_results_to_pregen.py` can be used for that, of which example of usage can be found in the `run_eval_all_severities.sh` script.
 
 The pregen file will by default include the result of the modification (under the key `result_modified`) so that another modification can be added on top of it. It can be excluded out of the file generation using the flag `--exclude-premodified-result`.
 
@@ -57,14 +52,16 @@ Note that this script only measures the int severity increment, defined in a dif
 
 # Evaluate results
 
-## Calculate statistics
+## Calculate metrics
 
 To count and print use `calculate_error.py`. Use example:
 ```sh
-uv run python calculate_error.py --results-path results/eval_mod_results/eval_nemo_textsev1
+uv run python src/calculate_error.py --results-dir results/eval_mod_results/qags/factual_consistency/eval_nemo_textsev1
 ```
 
-Optionally add `--use-scores-summary` to use previously parsed summary (scores_summary.json) of score changes, if you just want to see the results previously calculated results.
+The result will be saved to a file `scores_summary.json` in your result path (visible in the github repo).
+
+Optionally add `--use-scores-summary` to use previously calculated summary file, if you just want to recalculate and see the metrics of previously parsed results.
 
 ## Inspect a specific generation & modification
 

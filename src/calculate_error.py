@@ -4,22 +4,23 @@ import argparse
 import pandas as pd
 from scipy.stats import spearmanr
 
+from loguru import logger
+
 parser = argparse.ArgumentParser()
-parser.add_argument("--results-path", "-r",
-                    required=True)
+parser.add_argument("--results-dir", "-r", required=True)
 # TODO set below argument as flag
-parser.add_argument("--use-scores-summary", "-r",
-                    default=False, required=False)
+parser.add_argument("--use-scores-summary", "-s", action='store_true',
+					help='Use previously parsed summary (scores_summary.json) of score changes')
 args = parser.parse_args()
 
-print(f"Loading eval: {args.results_path}")
-fnames = os.listdir(args.results_path)
+logger.info(f"Loading eval: {args.results_dir}")
+fnames = os.listdir(args.results_dir)
 summary_fname = "scores_summary.json"
 
 if args.use_scores_summary and summary_fname in fnames:
-	summary_path = f"{args.results_path}/scores_summary.json"
+	summary_path = f"{args.results_dir}/{summary_fname}"
 	with open(summary_path, "r") as f:
-		data = json.load(f)
+		scores = json.load(f)
 else:
 	if summary_fname in fnames:
 		fnames.remove(summary_fname)
@@ -27,12 +28,12 @@ else:
 	scores = {"scores": {}, "summary": {}}
 	for fname in fnames:
 		try:
-			with open(f"{args.results_path}/{fname}", 'r') as f:
+			with open(f"{args.results_dir}/{fname}", 'r') as f:
 				data = json.load(f)
 			res, res_mod = data['result'], data['result_modified']
 			# print(f"{fname} loaded") # TODO
 		except Exception as e:
-			print(f"Couldnt load results from {fname}, skipping")
+			logger.warning(f"Couldnt load results from {fname}, skipping")
 			continue
 
 		sc, sc_mod = None, None
@@ -43,8 +44,8 @@ else:
 			if line.startswith('Overall score'):
 				sc_mod = line.split(':')[1].strip()
 
-		if sc is None or sc_mod is None:
-			print(f"Some are None! {sc} {sc_mod}")
+		# if sc is None or sc_mod is None:
+		# 	logger.debug(f"A score is None, probably from a N/A evaluation: {sc} {sc_mod}")
 
 		if sc or sc_mod:
 			scores["scores"][fname] = {
@@ -60,18 +61,9 @@ is_modified_map = [
 mod_sum = sum(is_modified_map)
 scores_sum = len(scores["scores"])
 
-scores["summary"] = {
-	"analyzed_examples": len(scores),
-	"scores_changed": mod_sum
-	}
+logger.info(f"Modified {mod_sum} in {scores_sum} examples")
 
-if not args.use_scores_summary:
-	with open(f"{args.results_path}/{summary_fname}", "w") as f:
-		json.dump(scores, f)
-
-print(f"Modified {mod_sum} in {scores_sum} examples")
-
-df = pd.DataFrame(data["scores"]).T
+df = pd.DataFrame(scores["scores"]).T
 
 mapping = {
     "Unacceptable": 1,
@@ -90,5 +82,13 @@ df["score_mod_num"] = df["score_mod"].map(mapping)
 
 
 correlation, p_value = spearmanr(df["score_num"], df["score_mod_num"])
-print("Spearman correlation:", correlation)
-print("P-value:", p_value)
+logger.info(f"Spearman correlation: {correlation:.4f}")
+
+scores["summary"] = {
+	"analyzed_examples": scores_sum,
+	"scores_changed": mod_sum,
+	"correlation": correlation,
+	}
+
+with open(f"{args.results_dir}/{summary_fname}", "w") as f:
+	json.dump(scores, f)
