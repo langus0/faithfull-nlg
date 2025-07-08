@@ -18,8 +18,9 @@ fnames = os.listdir(args.results_dir)
 summary_fname = "scores_summary.json"
 if summary_fname in fnames: fnames.remove(summary_fname)
 
-
 pregen_fname = f"pregen_{args.pregen_tag}.json"
+os.makedirs(args.pregen_dest_dir, exist_ok=True)
+
 
 pregen = []
 for fname in fnames:
