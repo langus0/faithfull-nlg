@@ -1,0 +1,1906 @@
+{
+  "summary": {
+    "analyzed_examples": 474,
+    "scores_changed": 199,
+    "changed_percent": 41.98,
+    "correlation": 0.9637
+  },
+  "scores": {
+    "xsum-71.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-79.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-43.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "cnndm-65.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-144.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-133.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-45.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "cnndm-114.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "cnndm-18.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-212.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-209.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-230.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-202.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-91.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-1.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-26.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "cnndm-47.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-101.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-163.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-56.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-68.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-198.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-174.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "cnndm-121.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-157.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-135.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-66.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-9.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-15.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "xsum-168.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-205.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-51.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-60.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-170.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-235.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-27.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-131.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-189.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-90.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-28.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-165.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-11.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-88.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-14.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-84.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-19.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-164.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "xsum-156.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-208.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-80.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-124.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-231.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-45.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-92.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-223.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-0.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-23.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-46.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-96.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-155.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-87.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-78.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-168.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-177.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-221.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-108.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-93.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-224.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "cnndm-110.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-43.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-206.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "cnndm-157.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-97.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "xsum-130.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "cnndm-86.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-132.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-141.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-190.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-202.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-4.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-72.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "xsum-159.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-69.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "xsum-193.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-94.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-184.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "cnndm-176.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "cnndm-197.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-21.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-27.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-216.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "xsum-38.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-236.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "xsum-126.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-226.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-214.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-82.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-210.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-60.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "xsum-36.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-75.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-99.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-191.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-102.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-46.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "cnndm-6.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-61.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-137.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-169.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-224.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-1.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-24.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "xsum-105.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-95.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-227.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-201.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-6.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-21.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-222.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-222.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-142.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-78.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-92.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-171.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-178.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-115.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-146.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-188.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "cnndm-148.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "cnndm-76.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-118.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "xsum-139.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-171.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-125.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-8.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-148.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-213.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-237.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "xsum-63.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-182.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-151.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-53.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-103.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "xsum-215.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-226.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-183.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-153.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "cnndm-2.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-52.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-147.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-42.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-139.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "cnndm-141.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-77.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-36.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-193.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-204.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-119.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-208.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "cnndm-113.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-228.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-5.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-41.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-177.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-90.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-186.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-167.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-127.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "xsum-197.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-189.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-175.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-40.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-12.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-40.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-85.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "xsum-4.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-113.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-81.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-106.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-53.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "cnndm-30.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-66.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-216.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-136.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-86.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-22.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-150.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-117.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-34.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-18.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-0.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "xsum-100.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-126.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-149.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-203.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-230.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-85.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-154.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-73.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-32.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "cnndm-13.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-138.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "xsum-194.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "cnndm-109.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-49.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-12.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-132.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-111.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-48.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-163.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "xsum-180.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-39.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "xsum-144.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-59.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-198.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-122.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-134.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-185.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "xsum-229.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "xsum-102.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-159.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "xsum-150.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-57.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "cnndm-100.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "cnndm-80.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-145.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-104.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-120.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-99.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-223.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-20.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-65.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-228.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-195.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-97.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-153.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-217.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-37.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-166.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-140.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "xsum-162.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-74.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-218.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-169.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-192.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-211.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-149.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-67.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-109.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-154.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-232.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-233.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "xsum-49.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-70.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-199.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-203.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-178.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-58.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "cnndm-68.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-103.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-54.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-167.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-64.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-17.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-77.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "xsum-83.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-117.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "cnndm-140.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-87.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-187.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-181.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-110.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-214.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-173.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-161.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-221.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "cnndm-48.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-238.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "cnndm-93.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-152.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-71.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "xsum-124.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-185.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-15.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-72.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-219.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-8.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-55.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "cnndm-41.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "xsum-96.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-81.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-10.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-225.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-188.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-190.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "xsum-170.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-19.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-44.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-107.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-54.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-233.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-35.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-120.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-29.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-105.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-89.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-162.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-234.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-98.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-125.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "xsum-161.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-29.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-50.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "xsum-116.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-225.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-174.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-104.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "xsum-56.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-207.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-183.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "cnndm-101.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "xsum-3.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-220.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "cnndm-23.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-38.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "xsum-119.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-37.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "xsum-195.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-95.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-83.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-200.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-219.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-147.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-146.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "cnndm-69.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-128.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-143.json": {
+      "score": "Poor",
+      "score_mod": "Good"
+    },
+    "xsum-160.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "cnndm-155.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-227.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-114.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-32.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-191.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-127.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "cnndm-11.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-165.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-209.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-31.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-123.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-2.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "xsum-128.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-98.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-229.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-42.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-16.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-57.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "cnndm-217.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-5.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-79.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-184.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-91.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-63.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-196.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-52.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-210.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-215.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-44.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-212.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-20.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-138.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "cnndm-62.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-179.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-137.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-24.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-116.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-206.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "xsum-232.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-176.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-199.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-88.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-73.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-166.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-179.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-133.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-64.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "cnndm-173.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "xsum-30.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-218.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-122.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-143.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-59.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-151.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-207.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-194.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-160.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "xsum-75.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-192.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "cnndm-112.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "xsum-121.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-35.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-22.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "cnndm-136.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-28.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-74.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-115.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-129.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-25.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "xsum-152.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-129.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-39.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-25.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-112.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-14.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "cnndm-10.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-50.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-26.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-33.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-134.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-158.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-196.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-70.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "xsum-205.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-158.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-164.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-187.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-16.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-234.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-9.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-200.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-123.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "cnndm-145.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-67.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-62.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-31.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-111.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-142.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-33.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-108.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-106.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-3.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-51.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-204.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-213.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "cnndm-94.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "xsum-13.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-181.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-61.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-7.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-172.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-231.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-82.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-211.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-89.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-7.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-186.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "cnndm-175.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-107.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-58.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-76.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-47.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-84.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "cnndm-17.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-180.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "xsum-172.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-182.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "cnndm-131.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "xsum-118.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-135.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-130.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "xsum-34.json": {
+      "score": "Excellent",
+      "score_mod": "Excellent"
+    },
+    "cnndm-156.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "cnndm-201.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "xsum-55.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "cnndm-220.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    }
+  }
+}
