@@ -16,6 +16,7 @@ severity_modification_forces=(1 2 -1 -2)
 
 TEMPLATE_PATH=src/templates/zero_shot/${DATASET}.jinja
 ASPECT_PATH=src/configs/eval_aspects/${DATASET}-${ASPECT}.json
+DATASET_PATH=data/meta_eval/${DATASET}.json
 RESULTS_DIR=results/eval_mod_results/${DATASET}/${ASPECT}
 PREGEN_DIR=results/pregen_results/${DATASET}/${ASPECT}
 
@@ -25,7 +26,7 @@ uv run python src/eval_mod.py \
 	--model ${MODEL} \
 	--template ${TEMPLATE_PATH} \
 	--aspect-config  ${ASPECT_PATH}\
-	--data data/meta_eval/qags.json \
+	--data ${DATASET_PATH} \
 	--output-dir ${RESULTS_DIR}/${MODEL}_severity1 \
 	--eval-mod severity \
 	--mod-force 1
