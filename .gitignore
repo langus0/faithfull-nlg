@@ -12,3 +12,5 @@ wheels/
 # Results
 cnndm*.json
 xsum*.json
+
+.vscode
