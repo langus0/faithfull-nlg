@@ -9,7 +9,13 @@ from typing import Callable
 from ollama import chat
 from loguru import logger
 
-from mods import modify_results_per_error
+from mods import modify_impact_per_error, modify_delete_per_error
+
+EVAL_MODS = {
+    "impact": modify_impact_per_error,
+    "delete": modify_delete_per_error,
+    "none": lambda x, y, z: None
+}
 
 def run_evaluation(
         template: Template,
@@ -19,6 +25,7 @@ def run_evaluation(
         output_dir: str,
         skip: int,
         limit: int,
+        per_error_mod: str,
         mod_direction: int,
     ):
 
@@ -46,7 +53,7 @@ def run_evaluation(
             'error_mod_impacts': []
         }
 
-        error_mod_impacts = modify_results_per_error(prompt, result, model, mod_direction)
+        error_mod_impacts = EVAL_MODS[per_error_mod](prompt, result, model, mod_direction)
         if error_mod_impacts:
             eval_output['error_mod_impacts'] = error_mod_impacts
         else:
@@ -69,6 +76,7 @@ if __name__ == "__main__":
     parser.add_argument('--output-dir', type=str, help='Output directory')
     parser.add_argument('--skip', type=int, default=0, help='Slice of examples to evaluate if there should be less than all')
     parser.add_argument('--limit', type=int, default=None, help='Slice of examples to evaluate if there should be less than all')
+    parser.add_argument('--per_error_mod', type=str, default='none', help='Modification to apply per error severity')
     parser.add_argument('--mod-direction', type=int, help='Force of the severity modification, either +1 or -1 for increasing or decreasing severity')
     args = parser.parse_args()
 
@@ -97,6 +105,7 @@ if __name__ == "__main__":
             args.output_dir,
             args.skip,
             args.limit,
+            args.per_error_mod,
             args.mod_direction,
         )
     except Exception as e:

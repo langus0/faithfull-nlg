@@ -191,7 +191,7 @@ def modify_severity_parser(
     return '\n'.join(modified_result)
 
 
-def modify_results_per_error(
+def modify_impact_per_error(
             prompt: str,
             result: str,
             model: str,
@@ -260,6 +260,82 @@ def modify_results_per_error(
                                         
             except Exception as e:
                 logger.warning(f"Failed to parse severity from line: {line}")
+        elif line.startswith("Overall score:"):
+            return error_mods
+        elif line.startswith("No Error"):
+            return None # No modification or further generation needed
+        else:
+            continue
+    
+    logger.warning("Out of loop, something went wrong.")
+    return None
+
+
+def modify_delete_per_error(
+            prompt: str,
+            result: str,
+            model: str,
+            mod_direction: int # placeholder
+        ) -> list:
+    """
+    Parse the result from the model based on the evaluation modification.
+    This function can use different functions for error modification.
+    """
+
+    error_mods = []
+    
+    lines = result.strip().split('\n')
+    
+    overall_score = None
+    i_of_overall_score = None
+    for i, line in enumerate(lines):
+        if line.startswith("Overall score:"):
+            i_of_overall_score = i
+            overall_score = line.split(':')[1].strip()
+            break
+    if not i_of_overall_score:
+        logger.warning("No Overall score found in the result.")
+        return None
+    elif not overall_score:
+        logger.warning("Overall score is empty, cannot modify.")
+        return None
+    
+    for i, line in enumerate(lines):
+        if line.startswith("Error "):
+            try:
+                
+                removed_error = line.split(':')[0]
+                
+                modified_result = lines[:i]
+                # delete the lines: error x: (current), location:, explanation: and severity:
+                modified_result.extend(lines[i+4:i_of_overall_score])
+                modified_result.append("Overall score:")
+                modified_result = list(filter(lambda x: x != '', modified_result))
+                modified_result = '\n'.join(modified_result)
+                
+                if "Error" in modified_result:
+                    logger.debug(f"Generating score with removed {removed_error}.")
+                    response = chat(
+                        model=model,
+                        messages=[
+                            {'role': 'user', 'content': prompt},
+                            {'role': 'assistant', 'content': modified_result}
+                        ]
+                    )
+                    
+                    new_overall_score = response['message']['content'].split('\n')[0]
+                    error_mods.append({
+                        'removed_error': removed_error,
+                        'overall_score': overall_score,
+                        'new_overall_score': new_overall_score
+                    })
+                else:
+                    logger.debug(f"No errors left after removing {removed_error}, skipping generation.")
+                    return None # No modification or further generation needed
+                                        
+            except Exception as e:
+                logger.warning(f"Failed on line: {line}")
+                # raise e
         elif line.startswith("Overall score:"):
             return error_mods
         elif line.startswith("No Error"):
