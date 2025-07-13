@@ -13,7 +13,8 @@ from mods import modify_text_severity, modify_severity
 
 EVAL_MODS = {
     "severity": modify_severity,
-    "text_severity": modify_text_severity
+    "text_severity": modify_text_severity,
+    "none": lambda x, y, z: None
 }
 
 def modify_result(
@@ -104,7 +105,7 @@ if __name__ == "__main__":
     parser.add_argument('--template', type=str, help='Path to the prompt template file')
     parser.add_argument('--aspect-config', type=str, help='Path to the aspect configuration file')
     parser.add_argument('--data', type=str, help='Path to the dataset JSON inputs and outputs to evaluate, or a pregen JSON with pregenerated model results')
-    parser.add_argument('--model', type=str, default='eval_nemo', help='Ollama model name')
+    parser.add_argument('--model', type=str, default='none', help='Ollama model name')
     parser.add_argument('--output-dir', type=str, help='Output directory')
     parser.add_argument('--skip', type=int, default=0, help='Slice of examples to evaluate if there should be less than all')
     parser.add_argument('--limit', type=int, default=None, help='Slice of examples to evaluate if there should be less than all')
@@ -144,5 +145,6 @@ if __name__ == "__main__":
         )
     except Exception as e:
         logger.error(f"An error occurred during evaluation: {e}")
+        # raise e
 
     logger.info(f"Evaluation completed in {time.time() - start:.2f} seconds.")
