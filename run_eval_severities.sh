@@ -3,14 +3,19 @@ MODEL=eval_gemma
 # MODEL=eval_qwen
 # MODEL=eval_mistral
 
-DATASET=qags
-# DATASET=hanna
+# DATASET=qags
+DATASET=hanna
 # DATASET=summeval
 
-ASPECT=factual_consistency
+# ASPECT=factual_consistency
 # ASPECT=coherence
 # ASPECT=relevance
 # ASPECT=complexity
+
+# models=(eval_nemo eval_gemma)
+aspects=(coherence complexity relevance)
+
+severity_modification_forces=(1 2 -1 -2)
 
 TEMPLATE_PATH=src/templates/zero_shot/${DATASET}.jinja
 ASPECT_PATH=src/configs/eval_aspects/${DATASET}-${ASPECT}.json
@@ -35,11 +40,6 @@ uv run python src/copy_results_to_pregen.py \
 	--pregen-dest-dir ${PREGEN_DIR} \
 	--pregen-tag ${MODEL} \
 	--exclude-premodified-result
-
-# models=(eval_nemo eval_gemma)
-aspects=(coherence complexity relevance)
-
-severity_modification_forces=(1 2 -1 -2)
 
 for ASPECT in "${aspects[@]}"
 do
