@@ -24,6 +24,7 @@ do
 	DATASET_PATH=data/meta_eval/${DATASET}.json
 	RESULTS_DIR=results/eval_mod_results/${DATASET}/${ASPECT}
 	PREGEN_DIR=results/pregen_results/${DATASET}/${ASPECT}
+	ASPECT_PATH=src/configs/eval_aspects/${DATASET}-${ASPECT}.json
 
 	# if it is the first run for this set of OpeNLG parameters (model, aspect, template)
 	# then run the first evaluation to generate the initial pregen (for example with severity modification 1)
@@ -32,13 +33,14 @@ do
 		--template ${TEMPLATE_PATH} \
 		--aspect-config  ${ASPECT_PATH}\
 		--data ${DATASET_PATH} \
-		--output-dir ${RESULTS_DIR}/${MODEL} \
-		--eval-mod none
+		--output-dir ${RESULTS_DIR}/${MODEL}_severity1 \
+		--eval-mod severity \
+		--mod-force 1
 
 	# save the OpeNLG evaluation in a pregen file (without the severity modification)
 	# it will be then used by following scripts to avoid generating OpeNLG evaluation again
 	uv run python src/copy_results_to_pregen.py \
-		--results-dir ${RESULTS_DIR}/${MODEL} \
+		--results-dir ${RESULTS_DIR}/${MODEL}_severity1 \
 		--pregen-dest-dir ${PREGEN_DIR} \
 		--pregen-tag ${MODEL} \
 		--exclude-premodified-result
