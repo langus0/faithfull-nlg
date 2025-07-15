@@ -9,6 +9,16 @@ def get_severity_bounds(mod_force: int):
         severity_increment_bounds = (1, 5 - mod_force)
     return severity_increment_bounds
 
+def strip_forbidden_symbols(text: str) -> str:
+    """
+    Strip forbidden symbols from the line.
+    """
+    forbidden_symbols = ['**']
+    
+    for symbol in forbidden_symbols:
+        text = text.replace(symbol, '')
+    return text
+
 def modify_text_severity(
         result: str,
         model: str,
@@ -83,6 +93,8 @@ Critical (5): severe error that causes confusion or miscommunication. Example cr
     modified_result = []
     explanation, severity = None, None
     for line in lines:
+        line = strip_forbidden_symbols(line)
+        
         if line.startswith("Explanation:"):
             explanation = line
         elif line.startswith("Severity:") and explanation is not None:
@@ -161,6 +173,8 @@ def modify_severity_parser(
     
     lines = result.strip().split('\n')
     for line in lines:
+        line = strip_forbidden_symbols(line)
+        
         if line.startswith("Severity:"):
             try:
                 severity_parts = line.split(':')[1].split()
@@ -212,6 +226,8 @@ def modify_impact_per_error(
     overall_score = None
     i_of_overall_score = None
     for i, line in enumerate(lines):
+        line = strip_forbidden_symbols(line)
+        
         if line.startswith("Overall score:"):
             i_of_overall_score = i
             overall_score = line.split(':')[1].strip()
@@ -224,6 +240,8 @@ def modify_impact_per_error(
         return None
     
     for i, line in enumerate(lines):
+        line = strip_forbidden_symbols(line)
+        
         if line.startswith("Severity:"):
             try:
                 severity_parts = line.split(':')[1].split()
@@ -289,6 +307,8 @@ def modify_delete_per_error(
     overall_score = None
     i_of_overall_score = None
     for i, line in enumerate(lines):
+        line = strip_forbidden_symbols(line)
+
         if line.startswith("Overall score:"):
             i_of_overall_score = i
             overall_score = line.split(':')[1].strip()
@@ -301,6 +321,8 @@ def modify_delete_per_error(
         return None
     
     for i, line in enumerate(lines):
+        line = strip_forbidden_symbols(line)
+        
         if line.startswith("Error "):
             try:
                 
