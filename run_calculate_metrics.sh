@@ -1,11 +1,11 @@
-# MODEL=eval_nemo
-MODEL=eval_gemma
+MODEL=eval_nemo
+# MODEL=eval_gemma
 # MODEL=eval_qwen
 # MODEL=eval_mistral
 
-DATASET=qags
+# DATASET=qags
 # DATASET=hanna
-# DATASET=summeval
+DATASET=summeval
 
 ASPECT=factual_consistency
 # ASPECT=coherence
