@@ -33,14 +33,13 @@ do
 		--template ${TEMPLATE_PATH} \
 		--aspect-config  ${ASPECT_PATH}\
 		--data ${DATASET_PATH} \
-		--output-dir ${RESULTS_DIR}/${MODEL}_severity1 \
-		--eval-mod severity \
-		--mod-force 1
+		--output-dir ${RESULTS_DIR}/${MODEL} \
+		--eval-mod none
 
 	# save the OpeNLG evaluation in a pregen file (without the severity modification)
 	# it will be then used by following scripts to avoid generating OpeNLG evaluation again
 	uv run python src/copy_results_to_pregen.py \
-		--results-dir ${RESULTS_DIR}/${MODEL}_severity1 \
+		--results-dir ${RESULTS_DIR}/${MODEL} \
 		--pregen-dest-dir ${PREGEN_DIR} \
 		--pregen-tag ${MODEL} \
 		--exclude-premodified-result
