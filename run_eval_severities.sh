@@ -1,11 +1,11 @@
-# MODEL=eval_nemo
-MODEL=eval_gemma
+MODEL=eval_nemo
+#MODEL=eval_gemma
 # MODEL=eval_qwen
 # MODEL=eval_mistral
 
 # DATASET=qags
-DATASET=hanna
-# DATASET=summeval
+#DATASET=hanna
+DATASET=summeval
 
 # ASPECT=factual_consistency
 # ASPECT=coherence
@@ -13,8 +13,8 @@ DATASET=hanna
 # ASPECT=complexity
 
 # models=(eval_nemo eval_gemma)
-aspects=(coherence complexity relevance)
-
+#aspects=(coherence complexity relevance)
+aspects=(factual_consistency)
 severity_modification_forces=(1 2 -1 -2)
 
 for ASPECT in "${aspects[@]}"
