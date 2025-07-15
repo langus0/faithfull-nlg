@@ -9,7 +9,7 @@ from typing import Callable
 from ollama import chat
 from loguru import logger
 
-from mods import modify_text_severity, modify_severity
+from mods import modify_text_severity, modify_severity, strip_forbidden_symbols
 
 EVAL_MODS = {
     "severity": modify_severity,
@@ -73,6 +73,7 @@ def run_evaluation(
             logger.info(f"Example {example['id']} has no result, generating.")
             response = chat(model=model, messages=[{'role': 'user', 'content': prompt}])
             result = response['message']['content']
+            result = strip_forbidden_symbols(result)
 
         output_path = Path(output_dir) / f'{example["id"]}.json'
         eval_output = {
