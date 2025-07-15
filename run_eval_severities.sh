@@ -7,8 +7,8 @@ MODEL=eval_nemo
 #DATASET=hanna
 DATASET=summeval
 
-ASPECT=factual_consistency
-# ASPECT=coherence
+# ASPECT=factual_consistency
+ASPECT=coherence
 # ASPECT=relevance
 # ASPECT=complexity
 
