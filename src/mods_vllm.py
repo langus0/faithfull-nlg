@@ -307,7 +307,7 @@ async def modify_impact_per_error(
                         ]
                     )
                     
-                    new_overall_score = response['message']['content'].split('\n')[0]
+                    new_overall_score = strip_forbidden_symbols(response['message']['content'].split('\n')[0]).strip()
                     error_mods.append({
                         'severity': severity,
                         'new_severity': new_severity,
