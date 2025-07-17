@@ -23,6 +23,8 @@ class VLLMLM():
             model_name = "mbley/google-gemma-2-27b-it-AWQ"
         elif model_name == "eval_nemo":
             model_name = "joshmiller656/Llama-3.1-Nemotron-70B-Instruct-AWQ-INT4"
+        elif model_name == "eval_qwen":
+            model_name = "Qwen/Qwen2.5-72B-Instruct-AWQ"
         self.llm = LLM(model=model_name,  max_model_len=4000,
                        gpu_memory_utilization=0.80, max_num_seqs=100, tensor_parallel_size=2,enable_prefix_caching=True) 
 
