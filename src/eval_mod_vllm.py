@@ -17,6 +17,11 @@ class VLLMLM():
     def __init__(self, model_name="mbley/google-gemma-2-27b-it-AWQ"):
         self.pending_chats = []
         
+    def init_model(self, model_name="mbley/google-gemma-2-27b-it-AWQ"):
+        if model_name == "eval_gemma":
+            model_name = "mbley/google-gemma-2-27b-it-AWQ"
+        elif model_name == "eval_nemo":
+            model_name = "joshmiller656/Llama-3.1-Nemotron-70B-Instruct-AWQ-INT4"
         self.llm = LLM(model=model_name,  max_model_len=4000,
                        gpu_memory_utilization=0.80, max_num_seqs=100, tensor_parallel_size=2,enable_prefix_caching=True) 
 
@@ -35,7 +40,7 @@ class VLLMLM():
         print("Executing LLM...")
         print(len(self.pending_chats), "pending chats")
         prompts = [text for text, future in self.pending_chats]
-        outputs = self.llm.chat(prompts, sampling_params)
+        outputs = self.llm.chat(prompts, sampling_params, add_generation_prompt=False, continue_final_message= True)
         outputs = [output.outputs[0].text for output in outputs]
         for (text, future), output in zip(self.pending_chats, outputs):
             response = {}
@@ -150,7 +155,7 @@ async def process_example(template, aspect_config, model, output_dir, eval_mod, 
     result = example.get('result', None)
     if result is None:
         logger.info(f"Example {example['id']} has no result, generating.")
-        response = await lm.chat(model=model, messages=[{'role': 'user', 'content': prompt}])
+        response = await lm.chat(model=model, messages=[{'role': 'user', 'content': prompt}, {'role': 'assistant', 'content': ""}])
         result = response['message']['content']
         result = strip_forbidden_symbols(result)
 
@@ -211,6 +216,8 @@ if __name__ == "__main__":
 
     os.makedirs(args.output_dir, exist_ok=True)
     start = time.time()
+    
+    lm.init_model(args.model)
     
     try:
         asyncio.run(run_evaluation(

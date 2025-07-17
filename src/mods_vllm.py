@@ -126,7 +126,7 @@ Critical (5): severe error that causes confusion or miscommunication. Example cr
                 response = await lm.chat(
                     model=model,
                     messages=[
-                        {'role': 'user', 'content': error_text_modification_prompt + specific_modification + "\nExplanation: " + explanation},
+                        {'role': 'user', 'content': error_text_modification_prompt + specific_modification + "\n" + explanation},
                         {'role': 'assistant', 'content': "Modified Explanation:"}
                     ]
                 )
