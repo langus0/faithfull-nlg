@@ -244,15 +244,15 @@ async def modify_add_critical_error(
     return '\n'.join(modified_result)
 
 
-def modify_impact_per_error(
+async def modify_impact_per_error(
             prompt: str,
             result: str,
             model: str,
+            lm,
             mod_direction: int
         ) -> list:
     """
-    Parse the result from the model based on the evaluation modification.
-    This function can use different functions for error modification.
+    Modify the impact of errors in the result based on the specified parameters.
     """
 
     error_mods = []
@@ -299,7 +299,7 @@ def modify_impact_per_error(
                     modified_result = '\n'.join(modified_result)
                     
                     logger.debug(f"Modified severity {severity} to {new_severity}.")
-                    response = chat(
+                    response = await lm.chat(
                         model=model,
                         messages=[
                             {'role': 'user', 'content': prompt},
@@ -317,6 +317,7 @@ def modify_impact_per_error(
                                         
             except Exception as e:
                 logger.warning(f"Failed to parse severity from line: {line}")
+                raise e
         elif line.startswith("Overall score:"):
             return error_mods
         elif line.startswith("No Error"):
@@ -328,11 +329,12 @@ def modify_impact_per_error(
     return None
 
 
-def modify_delete_per_error(
+async def modify_delete_per_error(
             prompt: str,
             result: str,
             model: str,
-            mod_direction: int = 0
+            lm,
+            cascade_direction: int = 0
         ) -> list:
     """
     Parse the result from the model based on the evaluation modification.
@@ -385,7 +387,7 @@ def modify_delete_per_error(
                 
                 if "Error" in modified_result:
                     logger.debug(f"Generating score with removed {removed_error}.")
-                    response = chat(
+                    response = await lm.chat(
                         model=model,
                         messages=[
                             {'role': 'user', 'content': prompt},
