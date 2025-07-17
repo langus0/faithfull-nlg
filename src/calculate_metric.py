@@ -3,7 +3,8 @@ import os
 import argparse
 import pandas as pd
 from scipy.stats import spearmanr
-
+from sklearn.metrics import confusion_matrix
+from mods_vllm import strip_forbidden_symbols
 from loguru import logger
 
 parser = argparse.ArgumentParser()
@@ -33,9 +34,12 @@ for fname in fnames:
 	for line in res.split('\n'):
 		if line.startswith('Overall score'):
 			sc = line.split(':')[1].strip()
+			sc = strip_forbidden_symbols(sc)
+	# if sc i
 	for line in res_mod.split('\n'):
 		if line.startswith('Overall score'):
 			sc_mod = line.split(':')[1].strip()
+			sc_mod = strip_forbidden_symbols(sc_mod)
 
 	# if sc is None or sc_mod is None:
 	# 	logger.debug(f"A score is None, probably from a N/A evaluation: {sc} {sc_mod}")
@@ -45,6 +49,7 @@ for fname in fnames:
 			"score": sc,
 			"score_mod": sc_mod
 		}
+
 
 is_modified_map = [
 	sc_pair["score"].lower() != sc_pair["score_mod"].lower()
@@ -79,6 +84,8 @@ correlation, p_value = spearmanr(df["score_num"], df["score_mod_num"])
 correlation = round(correlation, 4)
 logger.info(f"Spearman correlation: {correlation}")
 
+matrix = confusion_matrix(df["score_num"], df["score_mod_num"], labels=list(mapping.values()))
+logger.info(f"Confusion matrix: \n{matrix}")
 
 scores_summary = {
     "summary": {
@@ -86,6 +93,7 @@ scores_summary = {
 		"scores_changed": mod_sum,
 		"changed_percent": changed_percent,
 		"correlation": correlation,
+		"confusion_matrix": matrix.tolist()
    },
     "scores": scores,
 }
