@@ -19,7 +19,7 @@ ASPECT_PATH=src/configs/eval_aspects/${DATASET}-${ASPECT}.json
 PREGEN_DIR=results/pregen_results/${DATASET}/${ASPECT}
 RESULTS_DIR=results/eval_mod_results/${DATASET}/${ASPECT}
 
-models=(eval_qwen eval_mistral)
+models=(eval_gemma eval_nemo)
 for MODEL in "${models[@]}"
 do
 	for sev_dir in "${severity_modification_directions[@]}"

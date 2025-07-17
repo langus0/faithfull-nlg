@@ -228,7 +228,7 @@ def modify_add_critical_error(
             error_count += 1
         elif line.startswith("Overall score:"):
             modified_result = lines[:i]
-            modified_result.append(f"Error {error_count}:\nLocation: {example["outputs"]}\nExplanation: This error completely compromises the quality of this text on the selected aspect.\nSeverity: 5")
+            modified_result.append(f"Error {error_count}:\nLocation: {example['outputs']}\nExplanation: This error completely compromises the quality of this text on the selected aspect.\nSeverity: 5")
             modified_result.append("Overall score:")
             return '\n'.join(modified_result)
         elif line.startswith("No Error"):
