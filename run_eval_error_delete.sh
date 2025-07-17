@@ -11,6 +11,12 @@ ASPECT=factual_consistency
 # ASPECT=coherence
 # ASPECT=relevance
 # ASPECT=complexity
+ 
+
+# set to -1 for deletion of current error and all previous ones
+# set to 1 for deletion of current error and all further ones
+# set to 0 for no deletion cascade and only deletion of current error
+DELETION_CASCADE=1
 
 TEMPLATE_PATH=src/templates/zero_shot/${DATASET}.jinja
 ASPECT_PATH=src/configs/eval_aspects/${DATASET}-${ASPECT}.json
@@ -24,7 +30,7 @@ uv run python src/eval_mod_per_error.py \
 	--template ${TEMPLATE_PATH} \
 	--aspect-config ${ASPECT_PATH} \
 	--data ${PREGEN_DIR}/pregen_${MODEL}.json \
-	--output-dir ${RESULTS_DIR}/${MODEL}_delete \
-	--per_error_mod delete
-	--mod-direction ${sev_dir}
+	--output-dir ${RESULTS_DIR}/${MODEL}_delete${DELETION_CASCADE} \
+	--per_error_mod delete \
+	--mod-direction ${DELETION_CASCADE}
 

@@ -296,7 +296,7 @@ def modify_delete_per_error(
             prompt: str,
             result: str,
             model: str,
-            mod_direction: int # placeholder
+            mod_direction: int = 0
         ) -> list:
     """
     Parse the result from the model based on the evaluation modification.
@@ -331,9 +331,18 @@ def modify_delete_per_error(
                 
                 removed_error = line.split(':')[0]
                 
-                modified_result = lines[:i]
-                # delete the lines: error x: (current), location:, explanation: and severity:
-                modified_result.extend(lines[i+4:i_of_overall_score])
+                if cascade_direction < 0:
+                    # delete the all errors before the current one and the current one
+                    modified_result = lines[i+4:i_of_overall_score]
+                elif cascade_direction > 0:
+                    # delete the current error as well as all errors after it
+                    modified_result = lines[:i]
+                else: # default cascade 0
+                    # delete only the current error lines: error x: (current), location:, explanation: and severity:
+                    modified_result = lines[:i] + lines[i+4:i_of_overall_score]
+                
+                if modified_result == []: continue # no errors left, nothing to evaluate
+                
                 modified_result.append("Overall score:")
                 modified_result = list(filter(lambda x: x != '', modified_result))
                 modified_result = '\n'.join(modified_result)

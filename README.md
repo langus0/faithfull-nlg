@@ -48,7 +48,9 @@ Use the script `run_eval_impact.sh` to perform incremental severity modification
 sh run_eval_impact.sh
 ``
 
-Note that this script only measures the int severity increment, defined in a different method than the original modification (all of them can be found in `mods.py`)
+Note that this script only measures the int severity increment, defined in a different method than the original modification (all of them can be found in `mods.py`).
+
+In the impact script, by setting the `--mod_direction` a cascade of error deletion can be performed, where  
 
 # Evaluate results
 
