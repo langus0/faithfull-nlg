@@ -77,7 +77,7 @@ class FakeVLLMLM():
 
 lm = VLLMLM()  # Initialize the LLM instance
 
-async def empty_modify(result: str, model: str, mod_force: int, lm: VLLMLM) -> str:
+async def empty_modify(result: str, model: str, mod_force: int, example:dict, lm: VLLMLM) -> str:
     """
     A dummy modification function that does nothing.
     """
@@ -95,14 +95,15 @@ async def modify_result(
         result: str,
         model: str,
         eval_mod: str,
-        mod_force: int
+        mod_force: int,
+        example: dict
     ) -> str:
     """
     Parse the result from the model based on the evaluation modification.
     This function can use different functions for error modification.
     """
     
-    modified_result = await EVAL_MODS[eval_mod](result, model, mod_force, lm)
+    modified_result = await EVAL_MODS[eval_mod](result, model, mod_force, example, lm)
     if modified_result:
         response = await lm.chat(
             model=model,
@@ -171,7 +172,7 @@ async def process_example(template, aspect_config, model, output_dir, eval_mod, 
     result_to_modify = example.get('result_premodified', result) if use_premodified_result else result
 
     if eval_mod:
-        modified_result = await modify_result(prompt, result_to_modify, model, eval_mod, mod_force)
+        modified_result = await modify_result(prompt, result_to_modify, model, eval_mod, mod_force, example)
         if modified_result:
             eval_output['result_modified'] = modified_result
         else:

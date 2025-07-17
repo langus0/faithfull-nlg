@@ -23,6 +23,7 @@ async def modify_text_severity(
         result: str,
         model: str,
         mod_force: int,
+        example: dict,
         lm
     ):
     
@@ -38,6 +39,7 @@ async def modify_severity(
         result: str,
         model: str,
         mod_force: int,
+        example: dict,
         lm
     ):
     
@@ -208,11 +210,12 @@ async def modify_severity_parser(
     return '\n'.join(modified_result)
 
 
-def modify_add_critical_error(
+async def modify_add_critical_error(
         result: str,
         model: str, # placeholder
         mod_force: int, # placeholder
-        lm:
+        example: dict,
+        lm
     ) -> str:
     """
     Parse the result from the model and add a critical error to it.
@@ -229,7 +232,7 @@ def modify_add_critical_error(
             error_count += 1
         elif line.startswith("Overall score:"):
             modified_result = lines[:i]
-            modified_result.append(f"Error {error_count}:\nLocation: The whole text\nExplanation: This error completely compromises the quality of this text on the selected aspect.\nSeverity: 5")
+            modified_result.append(f"Error {error_count}:\nLocation: {example["outputs"]}\nExplanation: This error completely compromises the quality of this text on the selected aspect.\nSeverity: 5")
             modified_result.append("Overall score:")
             return '\n'.join(modified_result)
         elif line.startswith("No Error"):

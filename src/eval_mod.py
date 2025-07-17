@@ -15,7 +15,7 @@ EVAL_MODS = {
     "severity": modify_severity,
     "text_severity": modify_text_severity,
     "add_critical_error": modify_add_critical_error,
-    "none": lambda x, y, z: None
+    "none": lambda x, y, z, k: None
 }
 
 def modify_result(
@@ -23,14 +23,15 @@ def modify_result(
         result: str,
         model: str,
         eval_mod: str,
-        mod_force: int
+        mod_force: int,
+        example: dict
     ) -> str:
     """
     Parse the result from the model based on the evaluation modification.
     This function can use different functions for error modification.
     """
     
-    modified_result = EVAL_MODS[eval_mod](result, model, mod_force)
+    modified_result = EVAL_MODS[eval_mod](result, model, mod_force, example)
 
     if modified_result:
         response = chat(
@@ -88,7 +89,7 @@ def run_evaluation(
         result_to_modify = example.get('result_premodified', result) if use_premodified_result else result
 
         if eval_mod:
-            modified_result = modify_result(prompt, result_to_modify, model, eval_mod, mod_force)
+            modified_result = modify_result(prompt, result_to_modify, model, eval_mod, mod_force, example)
             if modified_result:
                 eval_output['result_modified'] = modified_result
             else:
