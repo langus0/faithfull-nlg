@@ -9,7 +9,7 @@ from typing import Callable
 
 from loguru import logger
 
-from mods_vllm import modify_text_severity, modify_severity, strip_forbidden_symbols
+from mods_vllm import modify_text_severity, modify_severity, strip_forbidden_symbols, modify_add_critical_error
 from vllm import LLM, SamplingParams
 
 class VLLMLM():
@@ -81,6 +81,7 @@ async def empty_modify(result: str, model: str, mod_force: int, lm: VLLMLM) -> s
 EVAL_MODS = {
     "severity": modify_severity,
     "text_severity": modify_text_severity,
+    "add_critical_error": modify_add_critical_error,
     "none": empty_modify
 }
 

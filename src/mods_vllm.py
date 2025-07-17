@@ -208,6 +208,39 @@ async def modify_severity_parser(
     return '\n'.join(modified_result)
 
 
+def modify_add_critical_error(
+        result: str,
+        model: str, # placeholder
+        mod_force: int, # placeholder
+        lm:
+    ) -> str:
+    """
+    Parse the result from the model and add a critical error to it.
+    Returns the modified result with added critical error.
+    """
+        
+    modified_result = []
+    
+    lines = result.strip().split('\n')
+    for i, line in enumerate(lines):
+        line = strip_forbidden_symbols(line)
+        error_count = 1
+        if line.startswith("Error:"):
+            error_count += 1
+        elif line.startswith("Overall score:"):
+            modified_result = lines[:i]
+            modified_result.append(f"Error {error_count}:\nLocation: The whole text\nExplanation: This error completely compromises the quality of this text on the selected aspect.\nSeverity: 5")
+            modified_result.append("Overall score:")
+            return '\n'.join(modified_result)
+        elif line.startswith("No Error"):
+            return None # No modification or further generation needed
+        else:
+            modified_result.append(line)
+    
+    logger.warning("No Overall score found, continuing with generation.")
+    return '\n'.join(modified_result)
+
+
 def modify_impact_per_error(
             prompt: str,
             result: str,

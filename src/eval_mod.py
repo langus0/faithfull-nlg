@@ -9,11 +9,12 @@ from typing import Callable
 from ollama import chat
 from loguru import logger
 
-from mods import modify_text_severity, modify_severity, strip_forbidden_symbols
+from mods import modify_text_severity, modify_severity, strip_forbidden_symbols, modify_add_critical_error
 
 EVAL_MODS = {
     "severity": modify_severity,
     "text_severity": modify_text_severity,
+    "add_critical_error": modify_add_critical_error
     "none": lambda x, y, z: None
 }
 
