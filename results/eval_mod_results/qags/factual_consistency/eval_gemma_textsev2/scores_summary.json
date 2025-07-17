@@ -3,7 +3,44 @@
     "analyzed_examples": 474,
     "scores_changed": 108,
     "changed_percent": 22.78,
-    "correlation": 0.8234
+    "correlation": 0.8234,
+    "confusion_matrix": [
+      [
+        46,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        165,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        98,
+        108,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        47
+      ]
+    ]
   },
   "scores": {
     "xsum-71.json": {
