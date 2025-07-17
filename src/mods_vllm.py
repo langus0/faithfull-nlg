@@ -317,7 +317,7 @@ async def modify_impact_per_error(
                                         
             except Exception as e:
                 logger.warning(f"Failed to parse severity from line: {line}")
-                raise e
+                # raise e
         elif line.startswith("Overall score:"):
             return error_mods
         elif line.startswith("No Error"):
@@ -399,7 +399,8 @@ async def modify_delete_per_error(
                     error_mods.append({
                         'removed_error': removed_error,
                         'overall_score': overall_score,
-                        'new_overall_score': new_overall_score
+                        'new_overall_score': new_overall_score,
+                        'cascade_direction': cascade_direction
                     })
                 else:
                     logger.debug(f"No errors left after removing {removed_error}, skipping generation.")
