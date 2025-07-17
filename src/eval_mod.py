@@ -14,7 +14,7 @@ from mods import modify_text_severity, modify_severity, strip_forbidden_symbols,
 EVAL_MODS = {
     "severity": modify_severity,
     "text_severity": modify_text_severity,
-    "add_critical_error": modify_add_critical_error
+    "add_critical_error": modify_add_critical_error,
     "none": lambda x, y, z: None
 }
 
