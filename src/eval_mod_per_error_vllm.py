@@ -7,7 +7,7 @@ from pathlib import Path
 from jinja2 import Template
 from typing import Callable
 
-from ollama import chat
+#from ollama import chat
 from loguru import logger
 
 from mods_vllm import modify_impact_per_error, modify_delete_per_error, strip_forbidden_symbols
@@ -128,7 +128,7 @@ async def process_example(
     result = example.get('result', None)
     if result is None:
         logger.info(f"Example {example['id']} has no result, generating.")
-        response = chat(model=model, messages=[{'role': 'user', 'content': prompt}])
+        response = await lm.chat(model=model, messages=[{'role': 'user', 'content': prompt}])
         result = response['message']['content']
         result = strip_forbidden_symbols(result)
 
