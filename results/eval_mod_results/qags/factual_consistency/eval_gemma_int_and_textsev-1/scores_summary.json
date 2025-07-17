@@ -2,8 +2,8 @@
   "summary": {
     "analyzed_examples": 474,
     "scores_changed": 172,
-    "changed_percent": 36.2869,
-    "correlation": 0.8149945660577272
+    "changed_percent": 36.29,
+    "correlation": 0.815
   },
   "scores": {
     "xsum-71.json": {

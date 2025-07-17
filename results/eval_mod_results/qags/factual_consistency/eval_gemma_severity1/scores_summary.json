@@ -1,9 +1,9 @@
 {
   "summary": {
     "analyzed_examples": 474,
-    "scores_changed": 165,
-    "changed_percent": 34.81,
-    "correlation": 0.8169
+    "scores_changed": 163,
+    "changed_percent": 34.39,
+    "correlation": 0.8174
   },
   "scores": {
     "xsum-71.json": {
@@ -12,7 +12,7 @@
     },
     "cnndm-79.json": {
       "score": "Poor",
-      "score_mod": "Unacceptable"
+      "score_mod": "Poor"
     },
     "cnndm-43.json": {
       "score": "Fair",
@@ -448,7 +448,7 @@
     },
     "cnndm-1.json": {
       "score": "Fair",
-      "score_mod": "Poor"
+      "score_mod": "Fair"
     },
     "cnndm-24.json": {
       "score": "Fair",

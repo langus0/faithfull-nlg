@@ -1,9 +1,9 @@
 {
   "summary": {
     "analyzed_examples": 474,
-    "scores_changed": 287,
-    "changed_percent": 60.55,
-    "correlation": 0.8119
+    "scores_changed": 286,
+    "changed_percent": 60.34,
+    "correlation": 0.8106
   },
   "scores": {
     "xsum-71.json": {
@@ -12,7 +12,7 @@
     },
     "cnndm-79.json": {
       "score": "Poor",
-      "score_mod": "Unacceptable"
+      "score_mod": "Poor"
     },
     "cnndm-43.json": {
       "score": "Fair",
