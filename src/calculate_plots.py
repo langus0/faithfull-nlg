@@ -7,7 +7,7 @@ from sklearn.metrics import confusion_matrix
 from mods_vllm import strip_forbidden_symbols
 from loguru import logger
 import matplotlib.pyplot as plt
-
+from textwrap import fill
 # Assuming df is your DataFrame
 def classify_row(row, mod_type, direction=1):
     main = row['score_num']
@@ -44,7 +44,8 @@ MODS = ["severity","textsev", "int_and_textsev"]
 SEVFORCE = [-1, 1,-2,2]
 
 scores = {}
-
+import matplotlib
+matplotlib.rcParams.update({'font.size': 15})
 for mod_type in MODS:
     for sev_force in SEVFORCE:
         res_dir = f"{args.results_dir}_{mod_type}{sev_force}"
@@ -174,7 +175,10 @@ for mod_type in MODS:
     # df_combined = df_combined.groupby('sev')['change'].mean()
     # df_combined = df_combined.reset_index(name=f'change{mod_type}')
     # df_combined.columns = ['sev', f'change{mod_type}']
-    grouped = df_combined.groupby('sev')['change']
+    grouped = df_combined.groupby('sev').filter(lambda x: len(x) >= 2)
+    grouped = grouped.groupby('sev')['change']
+    #print(grouped)
+    
     df_combined = grouped.mean().reset_index(name='mean_change')
     df_combined['sem_change'] = grouped.sem().values  # Standard Error of the Mean
     df_combined.columns = ['sev', f'change{mod_type}', f'std{mod_type}']
@@ -251,14 +255,17 @@ for i, mod_type in enumerate(MODS):
             'higher_neg2_only': 'Higher after decreasing severity -2',
             
         }
+        
+        #Apply fill(l, 20) for each nice_label value
+        nice_labels = {k: fill(v, 22) for k, v in nice_labels.items()}
 
         # Rename columns to nice labels
         grouped = grouped.rename(columns=nice_labels)
 
         # Plot
         grouped.plot(kind='bar', stacked=True,  colormap='viridis',  width=0.95, ax=axes[j,i], legend=False )
-
-        axes[j,i].set_ylabel('Percentage of Examples')
+        if i == 0:
+            axes[j,i].set_ylabel('Percentage of Examples')
         axes[j,i].set_xlabel('Overall Score')
         axes[j,i].set_title(MODS_NAMES[mod_type]+DIR_NAME[direction])
         axes[j,i].set_xticklabels(grouped.index, rotation=0)
