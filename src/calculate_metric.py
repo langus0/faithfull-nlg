@@ -9,6 +9,8 @@ from loguru import logger
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--results-dir", "-r", required=True)
+parser.add_argument("--exclude-correlation", action='store_true', help="Calculate Spearman correlation")
+parser.add_argument("--exclude-confusion-matrix", action='store_true', help="Calculate confusion matrix")
 args = parser.parse_args()
 
 logger.info(f"Loading eval: {args.results_dir}")
@@ -80,12 +82,19 @@ df["score_num"] = df["score"].map(mapping)
 df["score_mod_num"] = df["score_mod"].map(mapping)
 
 
-correlation, p_value = spearmanr(df["score_num"], df["score_mod_num"])
-correlation = round(correlation, 4)
-logger.info(f"Spearman correlation: {correlation}")
+if not args.exclude_correlation:
+	correlation, p_value = spearmanr(df["score_num"], df["score_mod_num"])
+	correlation = round(correlation, 4)
+	logger.info(f"Spearman correlation: {correlation}")
+else:
+    correlation = None
 
-matrix = confusion_matrix(df["score_num"], df["score_mod_num"], labels=list(mapping.values()))
-logger.info(f"Confusion matrix: \n{matrix}")
+if not args.exclude_confusion_matrix:
+	matrix = confusion_matrix(df["score_num"], df["score_mod_num"], labels=list(mapping.values()))
+	logger.info(f"Confusion matrix: \n{matrix}")
+	matrix = matrix.tolist()
+else:
+    matrix = None
 
 scores_summary = {
     "summary": {
@@ -93,7 +102,7 @@ scores_summary = {
 		"scores_changed": mod_sum,
 		"changed_percent": changed_percent,
 		"correlation": correlation,
-		"confusion_matrix": matrix.tolist()
+		"confusion_matrix": matrix
    },
     "scores": scores,
 }
