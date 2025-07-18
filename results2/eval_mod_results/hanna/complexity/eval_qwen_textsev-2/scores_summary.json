@@ -1,0 +1,4267 @@
+{
+  "summary": {
+    "analyzed_examples": 1055,
+    "scores_changed": 667,
+    "changed_percent": 63.22,
+    "correlation": 0.6639,
+    "confusion_matrix": [
+      [
+        10,
+        36,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        282,
+        502,
+        17,
+        0
+      ],
+      [
+        0,
+        0,
+        59,
+        112,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        37,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "scores": {
+    "922.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "775.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "981.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "513.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "1033.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "133.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "465.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "139.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "339.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "424.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "197.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "781.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "433.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "550.json": {
+      "score": "Poor",
+      "score_mod": "Good"
+    },
+    "351.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "38.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "293.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "340.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "395.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "722.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "373.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "866.json": {
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
+    },
+    "307.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "853.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "319.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "368.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1008.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "136.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "327.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "209.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "864.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "740.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "695.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "201.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "494.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "473.json": {
+      "score": "Poor",
+      "score_mod": "Good"
+    },
+    "47.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "235.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "796.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "581.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "824.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "1011.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "799.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "969.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "312.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "371.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "68.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "73.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "292.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "756.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "765.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "247.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "844.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "975.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "125.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "154.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "774.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "919.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "146.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "625.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "41.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "838.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "190.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "672.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "1006.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "169.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "1027.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "237.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "451.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "553.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "1032.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "23.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "837.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "878.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "322.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "469.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "298.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "274.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "375.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "457.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "459.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "686.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "1020.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1010.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "857.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "143.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "218.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "517.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "19.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "897.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "676.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "287.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "0.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "590.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "545.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "640.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "472.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "22.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "348.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "124.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "984.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "702.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "392.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "507.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "846.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "446.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "82.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "147.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "450.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "195.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "250.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "305.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "639.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "949.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "257.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "388.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "30.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "13.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "173.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "917.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "332.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "334.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "113.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "242.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "521.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "558.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "825.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "443.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "896.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "223.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "629.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1013.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "282.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "74.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "491.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "515.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "880.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "747.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "854.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "855.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "621.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "678.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "752.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "529.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "436.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "691.json": {
+      "score": "Poor",
+      "score_mod": "Good"
+    },
+    "941.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "705.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "512.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "94.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "423.json": {
+      "score": "Poor",
+      "score_mod": "Good"
+    },
+    "599.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "845.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "360.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "93.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "818.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "150.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "463.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "234.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "934.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "321.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "958.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "225.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "60.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "909.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "745.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "481.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "142.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "410.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "869.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "771.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "533.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "991.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "417.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "104.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "144.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "795.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "7.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "635.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "652.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "308.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "161.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "141.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "206.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "336.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "591.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "414.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "511.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "489.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "479.json": {
+      "score": "Poor",
+      "score_mod": "Good"
+    },
+    "617.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "478.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "100.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "454.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "598.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "1022.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "498.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "789.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "425.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "656.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "732.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "426.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "787.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "858.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "253.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "959.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "118.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "544.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "602.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "564.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "416.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "742.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "265.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "323.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "557.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "435.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "979.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1003.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "614.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "636.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "797.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "916.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "767.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1036.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "102.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "12.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "196.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "65.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "361.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "757.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "607.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "270.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "811.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "710.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1037.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "374.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "808.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "835.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "66.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "21.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "534.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "179.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "501.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "829.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "427.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "800.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "111.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "898.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "69.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "228.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "391.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "461.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "946.json": {
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
+    },
+    "750.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "615.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "95.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "316.json": {
+      "score": "Poor",
+      "score_mod": "Good"
+    },
+    "684.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "162.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "275.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "911.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "470.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "814.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "526.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "281.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "496.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "448.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "950.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "301.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "249.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "183.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "439.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "131.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "29.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "807.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "379.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "698.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "711.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "877.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "631.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "674.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "421.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "166.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "760.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "20.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "331.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "216.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "397.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "77.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "821.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "791.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "5.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "622.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "582.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "108.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "54.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "413.json": {
+      "score": "Poor",
+      "score_mod": "Good"
+    },
+    "683.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "317.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1002.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "441.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "665.json": {
+      "score": "Poor",
+      "score_mod": "Good"
+    },
+    "42.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "712.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "283.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "962.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "865.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "906.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "548.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "9.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "88.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "893.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "964.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "860.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "354.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "106.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "359.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "540.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "783.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "851.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "418.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "830.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "277.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "313.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "649.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1016.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "79.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "516.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "903.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "36.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "685.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "770.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "759.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "482.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "518.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "826.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "156.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "596.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "167.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "302.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "306.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "577.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "801.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "977.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "890.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "509.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "266.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "539.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "246.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "145.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "576.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "554.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "437.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "778.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "153.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "894.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1030.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "168.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "45.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "406.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "356.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "816.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "208.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1034.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "626.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "647.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1054.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "870.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "408.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "170.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "46.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "961.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "384.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "887.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "666.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "706.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "735.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "948.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "849.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "738.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "32.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "98.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "692.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "165.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "697.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "337.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "743.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "843.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "135.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "328.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "926.json": {
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
+    },
+    "236.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "726.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "299.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "524.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "761.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "55.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "813.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "184.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "943.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "912.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "432.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "177.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "699.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "399.json": {
+      "score": "Poor",
+      "score_mod": "Good"
+    },
+    "715.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "245.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "862.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "749.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "802.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "847.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "942.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "641.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "999.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "551.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "642.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "39.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "731.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "620.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "734.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "490.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "160.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "989.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "744.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "138.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "956.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "220.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "707.json": {
+      "score": "Poor",
+      "score_mod": "Good"
+    },
+    "330.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "14.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "468.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "899.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "662.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "428.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "149.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "269.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "523.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "996.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "905.json": {
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
+    },
+    "1041.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "189.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "623.json": {
+      "score": "Poor",
+      "score_mod": "Good"
+    },
+    "994.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "254.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "61.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "129.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1039.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "904.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "261.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1044.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "556.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "188.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "78.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "794.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "112.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "536.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "930.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "879.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "117.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "753.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1007.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "680.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "255.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "285.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "987.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "211.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "514.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "272.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "777.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "59.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "151.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "908.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "924.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "606.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "876.json": {
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
+    },
+    "163.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "132.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "362.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "782.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "918.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "998.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "993.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "17.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "687.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "901.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "657.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "2.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "737.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "224.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "260.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "365.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "199.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "458.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "842.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "834.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "24.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "618.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "664.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "655.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "97.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "938.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "1055.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "910.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "831.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "346.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "182.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "852.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "510.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "836.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "175.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "105.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "83.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "730.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "929.json": {
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
+    },
+    "96.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "231.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "207.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "63.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "583.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "70.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "114.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "279.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "499.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "232.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "805.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "420.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "714.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "387.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "504.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "284.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "404.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1015.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "203.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "1026.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "51.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "736.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "407.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "861.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "333.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "128.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "383.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "409.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "52.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "833.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "570.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "152.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "300.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "968.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1019.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "508.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "120.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "806.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "567.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "44.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "945.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "324.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "486.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "422.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "792.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "768.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "952.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "605.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "659.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "1.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "34.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "56.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "369.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "259.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "194.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "543.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "724.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "401.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "258.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "358.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "91.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "780.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "329.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "1023.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "456.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "525.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "263.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "487.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "827.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "863.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "398.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "728.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "75.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "335.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "584.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "967.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "603.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "585.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "115.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1035.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "291.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "474.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "304.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "15.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "363.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "973.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "290.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "815.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "240.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "453.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "26.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "198.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "241.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "227.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "888.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "739.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1005.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "542.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "202.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "549.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "785.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "595.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "353.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "320.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1001.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "506.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "204.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "343.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "688.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "116.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "187.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "210.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "547.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "230.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "43.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "773.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "296.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "927.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "693.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1004.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "840.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "668.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "256.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "723.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "856.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "181.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "252.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "939.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "326.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "951.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "471.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "310.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "992.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "90.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "628.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "262.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "386.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "720.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "393.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "213.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "953.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "537.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "81.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "624.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "784.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "709.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "238.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "976.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "381.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "920.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "176.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "380.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "947.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "960.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "729.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "746.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "675.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "663.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "86.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "28.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "883.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "297.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "717.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "575.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "467.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "671.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "552.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "828.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "11.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "396.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "867.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "325.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "140.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "402.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "483.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "755.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "788.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "565.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "1043.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "681.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "982.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "913.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "779.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "654.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "677.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "658.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "769.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "669.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "110.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "772.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "673.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "445.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "33.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "355.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "394.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "271.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "119.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1048.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "985.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "248.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "793.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "619.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "589.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1029.json": {
+      "score": "Poor",
+      "score_mod": "Good"
+    },
+    "566.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "868.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "679.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "872.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "76.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "645.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "412.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "925.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "350.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "109.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "367.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "616.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "294.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "217.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "89.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "1050.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "803.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "651.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "268.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "560.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "819.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "411.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "970.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "704.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "449.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "762.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "264.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "900.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "997.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1040.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1042.json": {
+      "score": "Poor",
+      "score_mod": "Good"
+    },
+    "748.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1028.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "875.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "84.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "822.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "338.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "733.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "634.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "341.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "966.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "267.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "57.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "497.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "955.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "280.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "475.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "528.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "571.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "372.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "438.json": {
+      "score": "Poor",
+      "score_mod": "Good"
+    },
+    "895.json": {
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
+    },
+    "660.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "62.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "531.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "40.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "495.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "809.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "884.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "974.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "27.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "415.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "345.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "1038.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "541.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "873.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "786.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "31.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "520.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "646.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "764.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "103.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "376.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "121.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "812.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "67.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "447.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "485.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "983.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "923.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "555.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "611.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "185.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "638.json": {
+      "score": "Poor",
+      "score_mod": "Good"
+    },
+    "186.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "390.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "58.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "957.json": {
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
+    },
+    "580.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "727.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "352.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "1051.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "700.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "315.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "251.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "561.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "205.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "16.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "933.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "53.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "314.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "586.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "766.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "754.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "632.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "158.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "936.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "798.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "134.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "670.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "460.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "633.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "477.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "848.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "696.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "64.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "403.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "126.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "4.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "440.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "311.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "484.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "288.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "609.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "579.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "701.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "915.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "462.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "442.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "137.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "841.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "972.json": {
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
+    },
+    "690.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "219.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "519.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "174.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "522.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "530.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "148.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "377.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "937.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "716.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "342.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "882.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "212.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "349.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "886.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "480.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "965.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "191.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "400.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "578.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "1009.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "295.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "431.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "597.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "650.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "155.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "978.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "130.json": {
+      "score": "Poor",
+      "score_mod": "Good"
+    },
+    "309.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "703.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1047.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "430.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "278.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "713.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "357.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "902.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "980.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "289.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "49.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "751.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "667.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "546.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "592.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "48.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "405.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "18.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "538.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "50.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "233.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "653.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "493.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "87.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "1024.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "708.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "226.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "1012.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "741.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "3.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "127.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "214.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1046.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "721.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "123.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "1017.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "931.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "859.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "885.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "273.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "344.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "810.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "347.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "464.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "892.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "648.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "366.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "613.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "661.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "1025.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "935.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "229.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "488.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "171.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "600.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "559.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "318.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "776.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "689.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1014.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "378.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "221.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "8.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "1000.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "608.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "455.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "719.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "889.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "382.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "790.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "500.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "193.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "107.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "503.json": {
+      "score": "Poor",
+      "score_mod": "Good"
+    },
+    "172.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "243.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "434.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "10.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "239.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "995.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "444.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "563.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "569.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "881.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "164.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "804.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "466.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "944.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "385.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "587.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "215.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "92.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "593.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "874.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "1018.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "871.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "573.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "192.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "476.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "159.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "1021.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "610.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "850.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "178.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "758.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "594.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "637.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "535.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "572.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "630.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "914.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "492.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "988.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "682.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "532.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "157.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "429.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "85.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "954.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "568.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "986.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "25.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "6.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "604.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "588.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1049.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "823.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "1052.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "718.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "990.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "891.json": {
+      "score": "Unacceptable",
+      "score_mod": "Unacceptable"
+    },
+    "419.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "389.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "286.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "1031.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "180.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "694.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "817.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "505.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "370.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "644.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "527.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "940.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "200.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "276.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "502.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "452.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "303.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "820.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "99.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "1053.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "101.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "562.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "244.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "364.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "832.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "601.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "907.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "839.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "122.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "928.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "725.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "35.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "1045.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "627.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "763.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "222.json": {
+      "score": "Unacceptable",
+      "score_mod": "Poor"
+    },
+    "71.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "612.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "963.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "574.json": {
+      "score": "Fair",
+      "score_mod": "Fair"
+    },
+    "971.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "643.json": {
+      "score": "Poor",
+      "score_mod": "Fair"
+    },
+    "80.json": {
+      "score": "Good",
+      "score_mod": "Good"
+    },
+    "921.json": {
+      "score": "Poor",
+      "score_mod": "Poor"
+    },
+    "37.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    },
+    "72.json": {
+      "score": "Fair",
+      "score_mod": "Good"
+    }
+  }
+}
