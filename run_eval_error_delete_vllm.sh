@@ -17,7 +17,7 @@ aspects=(coherence complexity relevance)
 # set to 1 for deletion of current error and all further ones
 # set to 0 for no deletion cascade and only deletion of current error
 # DELETION_CASCADE=-1
-deletion_cascades=(1 -1)
+deletion_cascades=(0 1 -1)
 
 for DELETION_CASCADE in "${deletion_cascades[@]}"
 do
