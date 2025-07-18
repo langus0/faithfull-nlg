@@ -366,7 +366,6 @@ async def modify_delete_per_error(
         
         if line.startswith("Error "):
             try:
-                
                 removed_error = line.split(':')[0]
                 
                 if cascade_direction < 0:
@@ -404,7 +403,7 @@ async def modify_delete_per_error(
                     })
                 else:
                     logger.debug(f"No errors left after removing {removed_error}, skipping generation.")
-                    return None # No modification or further generation needed
+                    continue
                                         
             except Exception as e:
                 logger.warning(f"Failed on line: {line}")
