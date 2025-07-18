@@ -228,11 +228,13 @@ async def modify_add_critical_error(
     for i, line in enumerate(lines):
         line = strip_forbidden_symbols(line)
         error_count = 1
-        if line.startswith("Error:"):
+        if line.startswith("Error"):
             error_count += 1
         elif line.startswith("Overall score:"):
+            text_span = list(example['outputs'].values())[0]
+            
             modified_result = lines[:i]
-            modified_result.append(f"Error {error_count}:\nLocation: {example['outputs']}\nExplanation: This error completely compromises the quality of this text on the selected aspect.\nSeverity: 5")
+            modified_result.append(f"Error {error_count}:\nLocation: {text_span}\nExplanation: This error completely compromises the quality of this text on the selected aspect.\nSeverity: 5")
             modified_result.append("Overall score:")
             return '\n'.join(modified_result)
         elif line.startswith("No Error"):
