@@ -218,7 +218,7 @@ plt.legend()#["Severity Score", "_", "Explanation", "_", "Both"], title='Modific
 #plt.xticks(df_all['sev'])
 #plt.grid()
 plt.savefig(f"{args.results_dir}average_change_by_severity.png", dpi=300, bbox_inches='tight')
-        
+plt.show()
         
         
 DIR_NAME = {1: " (increasing severity)", -1: " (decreasing severity)"}
@@ -269,8 +269,9 @@ for i, mod_type in enumerate(MODS):
     handles, labels = axes[0,0].get_legend_handles_labels()
     fig.legend(handles, labels, title="Category", loc='center right')
     
-    plt.tight_layout(rect=[0, 0, 0.82, 1])
-    plt.savefig(f"{args.results_dir}score_distribution{mod_type}.png", dpi=300, bbox_inches='tight')  # or use .pdf, .svg, etc.
+plt.tight_layout(rect=[0, 0, 0.82, 1])
+plt.savefig(f"{args.results_dir}score_distribution.png", dpi=300, bbox_inches='tight')  # or use .pdf, .svg, etc.
+plt.show()
 exit()
 
 correlation, p_value = spearmanr(df["score_num"], df["score_mod_num"])

@@ -12,14 +12,15 @@ ASPECT=factual_consistency
 # ASPECT=relevance
 # ASPECT=complexity
 
-RESULTS_DIR=results3/eval_mod_results/${DATASET}/${ASPECT}
+
 
 severity_modification_types=(severity textsev int_and_textsev)
 
 severity_modification_forces=(1 2 -1 -2)
 
-for MODEL in eval_nemo; do
-    for ASPECT in relevance; do
+for MODEL in eval_nemo eval_gemma; do
+    for ASPECT in relevance coherence factual_consistency; do
+        RESULTS_DIR=results3/eval_mod_results/${DATASET}/${ASPECT}
         printf "\nRunning modifications for model ${MODEL} on aspect ${ASPECT}\n"
 # for mod_type in "${severity_modification_types[@]}"
 # do
