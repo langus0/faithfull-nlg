@@ -28,7 +28,7 @@ python src/eval_mod_vllm.py \
 	--aspect-config  ${ASPECT_PATH}\
 	--data ${DATASET_PATH} \
 	--output-dir ${RESULTS_DIR}/${MODEL} \
-	--eval-mod none --limit 10
+	--eval-mod none
 
 # save the OpeNLG evaluation in a pregen file (without the severity modification)
 # it will be then used by following scripts to avoid generating OpeNLG evaluation again
