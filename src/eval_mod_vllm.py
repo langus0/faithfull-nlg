@@ -9,7 +9,13 @@ from typing import Callable
 
 from loguru import logger
 
-from mods_vllm import modify_text_severity, modify_severity, strip_forbidden_symbols, modify_add_critical_error
+from mods_vllm import (
+    modify_text_severity,
+    modify_severity, 
+    strip_forbidden_symbols,
+    modify_add_critical_error,
+    modify_add_random_error
+)
 from vllm import LLM, SamplingParams
 
 class VLLMLM():
@@ -89,6 +95,7 @@ EVAL_MODS = {
     "severity": modify_severity,
     "text_severity": modify_text_severity,
     "add_critical_error": modify_add_critical_error,
+    "add_random_error": modify_add_random_error,
     "none": empty_modify
 }
 
@@ -105,6 +112,9 @@ async def modify_result(
     This function can use different functions for error modification.
     """
     
+    if eval_mod in ["add_random_error"]:
+        example['prompt'] = prompt
+    
     modified_result = await EVAL_MODS[eval_mod](result, model, mod_force, example, lm)
     if modified_result:
         response = await lm.chat(
@@ -114,7 +124,7 @@ async def modify_result(
                 {'role': 'assistant', 'content': modified_result}
             ]
         )
-        return modified_result + response['message']['content']
+        return modified_result + strip_forbidden_symbols(response['message']['content'])
     else:
         return None
     
