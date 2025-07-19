@@ -1,3 +1,5 @@
+import random
+import numpy as np
 
 #from ollama import chat
 from loguru import logger
@@ -109,10 +111,7 @@ Critical (5): severe error that causes confusion or miscommunication. Example cr
                 severity = int(severity_parts[0].strip())
             except Exception as e:
                 logger.warning(f"Failed to parse severity from line: {line}. Error: {e}")
-                final_error_lines = [
-                                    explanation,
-                                    line
-                                    ]
+                final_error_lines = [explanation, line]
                 modified_result.extend(final_error_lines)
                 explanation, severity = None, None
                 continue
@@ -224,17 +223,113 @@ async def modify_add_critical_error(
         
     modified_result = []
     
+    error_count = 0
+
     lines = result.strip().split('\n')
     for i, line in enumerate(lines):
         line = strip_forbidden_symbols(line)
-        error_count = 1
         if line.startswith("Error"):
             error_count += 1
         elif line.startswith("Overall score:"):
             text_span = list(example['outputs'].values())[0]
             
             modified_result = lines[:i]
-            modified_result.append(f"Error {error_count}:\nLocation: {text_span}\nExplanation: This error completely compromises the quality of this text on the selected aspect.\nSeverity: 5")
+            modified_result.append(f"Error {error_count + 1}:\nLocation: {text_span}\nExplanation: This error completely compromises the quality of this text on the selected aspect.\nSeverity: 5")
+            modified_result.append("Overall score:")
+            return '\n'.join(modified_result)
+        elif line.startswith("No Error"):
+            return None # No modification or further generation needed
+        else:
+            modified_result.append(line)
+    
+    logger.warning("No Overall score found, continuing with generation.")
+    return '\n'.join(modified_result)
+
+async def sample_span(text: str) -> str:
+    sentence_end = '.' # this should also include '!', '?'    
+    sentences = text.split(sentence_end)
+
+    if len(sentences) > 2: # then divide by sentences
+        return random.choice(sentences)
+    
+    else: # then chose a random phrase
+        words = text.strip().split()
+        l = len(words)
+        if l < 5:
+            return text  # Not enough words for a phrase
+        span_length = np.random.geometric(p=0.5) + 5
+        span_length = min(span_length, l-1)
+        start = np.random.randint(0, l - span_length)
+        end = start + span_length
+        return ' '.join(words[start:end])
+
+async def modify_add_random_error(
+        result: str,
+        model: str, # placeholder
+        number_of_errors: int, # placeholder
+        example: dict,
+        lm
+    ) -> str:
+    """
+    Parse the result from the model and add a critical error to it.
+    Returns the modified result with added critical error.
+    """
+    
+    explanation_generation_prompt = \
+f"""
+{example['prompt']}
+
+There are five error severity levels:
+Suggestion (1): optional improvement, not necessarily wrong. Example suggestion explanation:
+'Explanation: This statement is out of context in the summary. The original article mentions the follower count as additional information about their online presence, but in the summary, it appears as a standalone fact without explaining its relevance to the main topic (their travels). However, this is more of a contextual issue, but since the numbers are accurate, the severity for factual consistency is relatively low.'
+Minor (2): small error that doesn't hinder understanding. Example minor error explanation:
+'Explanation: While not entirely inaccurate, this sentence lacks crucial contextual information present in the article (e.g., overcoming her father's death). However, since it doesn't introduce new inconsistent facts but rather omits them, its severity is lower. The primary issue here is more about completeness in conveying the article's intent rather than factual inconsistency.'
+Moderate (3): noticeable error that may affect readability. Example moderate error explanation:
+'Explanation: While this phrase is present in both the article and the summary, in the context of the summary, it lacks the preceding explanatory content that sets up the injustice being questioned. This omission makes the summary factually inconsistent by not providing the necessary background for the question's relevance.'
+Major (4): serious error affecting meaning or clarity. Example major error explanation:
+'Explanation: There is no information in the provided article that supports the claim about Indonesia's economic growth being its slowest pace since 2009. This additional, unsupported fact introduces a factual inconsistency.'
+Critical (5): severe error that causes confusion or miscommunication. Example critical error explanation:
+'Explanation: The summary introduces unrelated information not present in the article. There is no mention of children being involved in the accident or anyone suffering a broken wrist. This addition compromises factual consistency.'
+
+Now, you will be given a text span from the article which includes an error in the aspect of interest.
+The span with the error has been selected by an expert human annotator, and assigned a definite severity level.
+Your task is to generate an error explanation for this text span, which should be of the same severity level as the one assigned to it.
+
+Do not add any additional text, comments, or severity mark. Provide only the explanation line.
+"""
+
+    modified_result = []
+    
+    error_count = 0
+    
+    lines = result.strip().split('\n')
+    for i, line in enumerate(lines):
+        line = strip_forbidden_symbols(line)
+        if line.startswith("Error"):
+            error_count += 1
+        elif line.startswith("Overall score:"):
+
+            modified_result = lines[:i]
+            for n in range(1, number_of_errors + 1):
+                full_text = list(example['inputs'].values())[0]
+                text_span = await sample_span(full_text)
+                severity = random.randint(1, 5)
+                content = explanation_generation_prompt
+                content += f"Location: {text_span}\n" + f"Severity: {severity}\n"
+                generated_explanation = await lm.chat(
+                    model=model,
+                    messages=[
+                        {'role': 'user', 'content': content},
+                        {'role': 'assistant', 'content': "Explanation:"}
+                    ]
+                )
+                generated_explanation = strip_forbidden_symbols(generated_explanation['message']['content'].strip())
+                generated_explanation = generated_explanation.split('\n')[0]  # take only the first line if any more were generated
+
+                modified_result.append(f"Error {error_count + n}:\n")
+                modified_result.append(f"Location: {text_span}\n")
+                modified_result.append(f"Explanation: {generated_explanation}\n")
+                modified_result.append(f"Severity: {severity}\n")
             modified_result.append("Overall score:")
             return '\n'.join(modified_result)
         elif line.startswith("No Error"):
