@@ -13,7 +13,7 @@ def strip_forbidden_symbols(text: str) -> str:
     """
     Strip forbidden symbols from the line.
     """
-    forbidden_symbols = ['**']
+    forbidden_symbols = ['**',"'"]
     
     for symbol in forbidden_symbols:
         text = text.replace(symbol, '')
