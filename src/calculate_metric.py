@@ -48,21 +48,25 @@ for fname in fnames:
 
 	if sc or sc_mod:
 		scores[fname] = {
-			"score": sc,
-			"score_mod": sc_mod
+			"score": sc.lower() if sc else None,
+			"score_mod": sc_mod.lower() if sc_mod else None
 		}
 
+# # count nones
+# nones_count = sum(1 for sc_pair in scores.values() if sc_pair["score"] is None or sc_pair["score_mod"] is None)
+# logger.info(f"Found {nones_count} examples with None scores")
 
 is_modified_map = [
-	sc_pair["score"].lower() != sc_pair["score_mod"].lower()
+	sc_pair["score"] != sc_pair["score_mod"]
 	for sc_pair in scores.values()
 	]
 
 mod_sum = sum(is_modified_map)
 scores_sum = len(scores)
-changed_percent = round(mod_sum / scores_sum * 100, 2)
+changed_percent = round(mod_sum / scores_sum, 6)
+# changed_percent = round(changed_percent * 100, 2)
 
-logger.info(f"Modified {mod_sum} in {scores_sum} examples ({changed_percent}%)")
+logger.info(f"Modified {mod_sum} in {scores_sum} examples (percent: {changed_percent})")
 
 df = pd.DataFrame(scores).T
 
