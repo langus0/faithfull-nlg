@@ -1,0 +1,4235 @@
+{
+  "summary": {
+    "analyzed_examples": 1056,
+    "scores_changed": 58,
+    "changed_percent": 0.054924,
+    "correlation": null,
+    "confusion_matrix": null
+  },
+  "scores": {
+    "922.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "775.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "981.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "513.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1033.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "133.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "465.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "139.json": {
+      "score": "unacceptable",
+      "score_mod": "poor"
+    },
+    "339.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "424.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "197.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "781.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "433.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "550.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "351.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "38.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "293.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "340.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "395.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "722.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "373.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "866.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "307.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "853.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "319.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "368.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1008.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "136.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "327.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "209.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "864.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "740.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "695.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "201.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "494.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "473.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "47.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "235.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "796.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "581.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "824.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1011.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "799.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "969.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "312.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "371.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "68.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "73.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "292.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "756.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "765.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "247.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "844.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "975.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "125.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "154.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "774.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "919.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "146.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "625.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "41.json": {
+      "score": "fair",
+      "score_mod": "poor"
+    },
+    "838.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "190.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "672.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1006.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "169.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1027.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "237.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "451.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "553.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "1032.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "23.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "837.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "878.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "322.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "469.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "298.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "274.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "375.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "457.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "459.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "686.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1020.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1010.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "857.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "143.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "218.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "517.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "19.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "897.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "676.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "287.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "0.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "590.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "545.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "640.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "472.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "22.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "348.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "124.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "984.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "702.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "392.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "507.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "846.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "446.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "82.json": {
+      "score": "excellent",
+      "score_mod": "excellent"
+    },
+    "147.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "450.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "195.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "250.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "305.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "639.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "949.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "257.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "388.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "30.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "13.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "173.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "917.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "332.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "334.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "113.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "242.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "521.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "558.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "825.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "443.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "896.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "223.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "629.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1013.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "282.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "74.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "491.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "515.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "880.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "747.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "854.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "855.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "621.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "678.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "752.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "529.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "436.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "691.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "941.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "705.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "512.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "94.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "423.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "599.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "845.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "360.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "93.json": {
+      "score": "excellent",
+      "score_mod": "excellent"
+    },
+    "818.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "150.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "463.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "234.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "934.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "321.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "958.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "225.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "60.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "909.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "745.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "481.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "142.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "410.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "869.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "771.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "533.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "991.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "417.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "104.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "144.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "795.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "7.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "635.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "652.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "308.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "161.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "141.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "206.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "336.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "591.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "414.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "511.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "489.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "479.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "617.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "478.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "100.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "454.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "598.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "1022.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "498.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "789.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "425.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "656.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "732.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "426.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "787.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "858.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "253.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "959.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "118.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "544.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "602.json": {
+      "score": "unacceptable",
+      "score_mod": "poor"
+    },
+    "564.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "416.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "742.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "265.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "323.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "557.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "435.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "979.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1003.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "614.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "636.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "797.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "916.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "767.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1036.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "102.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "12.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "196.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "65.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "361.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "757.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "607.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "270.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "811.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "710.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1037.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "374.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "808.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "835.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "66.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "21.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "534.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "179.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "501.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "829.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "427.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "800.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "111.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "898.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "69.json": {
+      "score": "fair",
+      "score_mod": "good"
+    },
+    "228.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "391.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "461.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "946.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "750.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "615.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "95.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "316.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "684.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "162.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "275.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "911.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "470.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "814.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "526.json": {
+      "score": "unacceptable",
+      "score_mod": "poor"
+    },
+    "281.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "496.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "448.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "950.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "301.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "249.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "183.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "439.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "131.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "29.json": {
+      "score": "excellent",
+      "score_mod": "excellent"
+    },
+    "807.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "379.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "698.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "711.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "877.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "631.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "674.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "421.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "166.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "760.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "20.json": {
+      "score": "fair",
+      "score_mod": "poor"
+    },
+    "331.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "216.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "397.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "77.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "821.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "791.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "5.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "622.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "582.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "108.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "54.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "413.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "683.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "317.json": {
+      "score": "unacceptable",
+      "score_mod": "poor"
+    },
+    "1002.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "441.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "665.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "42.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "712.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "283.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "962.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "865.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "906.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "548.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "9.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "88.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "893.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "964.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "860.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "354.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "106.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "359.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "540.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "783.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "851.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "418.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "830.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "277.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "313.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "649.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1016.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "79.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "516.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "903.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "36.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "685.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "770.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "759.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "482.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "518.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "826.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "156.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "596.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "167.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "302.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "306.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "577.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "801.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "977.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "890.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "509.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "266.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "539.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "246.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "145.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "576.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "554.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "437.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "778.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "153.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "894.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1030.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "168.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "45.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "406.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "356.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "816.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "208.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1034.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "626.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "647.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1054.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "870.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "932.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "408.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "170.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "46.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "961.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "384.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "887.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "666.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "706.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "735.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "948.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "849.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "738.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "32.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "98.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "692.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "165.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "697.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "337.json": {
+      "score": "poor",
+      "score_mod": "fair"
+    },
+    "743.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "843.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "135.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "328.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "926.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "236.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "726.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "299.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "524.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "761.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "55.json": {
+      "score": "poor",
+      "score_mod": "fair"
+    },
+    "813.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "184.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "943.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "912.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "432.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "177.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "699.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "399.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "715.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "245.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "862.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "749.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "802.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "847.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "942.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "641.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "999.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "551.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "642.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "39.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "731.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "620.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "734.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "490.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "160.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "989.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "744.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "138.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "956.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "220.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "707.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "330.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "14.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "468.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "899.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "662.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "428.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "149.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "269.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "523.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "996.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "905.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1041.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "189.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "623.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "994.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "254.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "61.json": {
+      "score": "fair",
+      "score_mod": "unacceptable"
+    },
+    "129.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1039.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "904.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "261.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1044.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "556.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "188.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "78.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "794.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "112.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "536.json": {
+      "score": "unacceptable",
+      "score_mod": "poor"
+    },
+    "930.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "879.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "117.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "753.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1007.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "680.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "255.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "285.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "987.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "211.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "514.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "272.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "777.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "59.json": {
+      "score": "fair",
+      "score_mod": "poor"
+    },
+    "151.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "908.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "924.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "606.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "876.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "163.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "132.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "362.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "782.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "918.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "998.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "993.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "17.json": {
+      "score": "good",
+      "score_mod": "good"
+    },
+    "687.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "901.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "657.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "2.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "737.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "224.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "260.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "365.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "199.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "458.json": {
+      "score": "unacceptable",
+      "score_mod": "poor"
+    },
+    "842.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "834.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "24.json": {
+      "score": "fair",
+      "score_mod": "poor"
+    },
+    "618.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "664.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "655.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "97.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "938.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1055.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "910.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "831.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "346.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "182.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "852.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "510.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "836.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "175.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "105.json": {
+      "score": "unacceptable",
+      "score_mod": "poor"
+    },
+    "83.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "730.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "929.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "96.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "231.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "207.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "63.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "583.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "70.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "114.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "279.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "499.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "232.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "805.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "420.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "714.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "387.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "504.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "284.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "404.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1015.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "203.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1026.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "51.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "736.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "407.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "861.json": {
+      "score": "unacceptable",
+      "score_mod": "poor"
+    },
+    "333.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "128.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "383.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "409.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "52.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "833.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "570.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "152.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "300.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "968.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "1019.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "508.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "120.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "806.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "567.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "44.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "945.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "324.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "486.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "422.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "792.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "768.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "952.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "605.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "659.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1.json": {
+      "score": "fair",
+      "score_mod": "poor"
+    },
+    "34.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "56.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "369.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "259.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "194.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "543.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "724.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "401.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "258.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "358.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "91.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "780.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "329.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1023.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "456.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "525.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "263.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "487.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "827.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "863.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "398.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "728.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "75.json": {
+      "score": "excellent",
+      "score_mod": "excellent"
+    },
+    "335.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "584.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "967.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "603.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "585.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "115.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1035.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "291.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "474.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "304.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "15.json": {
+      "score": "fair",
+      "score_mod": "poor"
+    },
+    "363.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "973.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "290.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "815.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "240.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "453.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "26.json": {
+      "score": "fair",
+      "score_mod": "poor"
+    },
+    "198.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "241.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "227.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "888.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "739.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1005.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "542.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "202.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "549.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "785.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "595.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "353.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "320.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1001.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "506.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "204.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "343.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "688.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "116.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "187.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "210.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "547.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "230.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "43.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "773.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "296.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "927.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "693.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1004.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "840.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "668.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "256.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "723.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "856.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "181.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "252.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "939.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "326.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "951.json": {
+      "score": "fair",
+      "score_mod": "poor"
+    },
+    "471.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "310.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "992.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "90.json": {
+      "score": "good",
+      "score_mod": "good"
+    },
+    "628.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "262.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "386.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "720.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "393.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "213.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "953.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "537.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "81.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "624.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "784.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "709.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "238.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "976.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "381.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "920.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "176.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "380.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "947.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "960.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "729.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "746.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "675.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "663.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "86.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "28.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "883.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "297.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "717.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "575.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "467.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "671.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "552.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "828.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "11.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "396.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "867.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "325.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "140.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "402.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "483.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "755.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "788.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "565.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "1043.json": {
+      "score": "unacceptable",
+      "score_mod": "poor"
+    },
+    "681.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "982.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "913.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "779.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "654.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "677.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "658.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "769.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "669.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "110.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "772.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "673.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "445.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "33.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "355.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "394.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "271.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "119.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1048.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "985.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "248.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "793.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "619.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "589.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1029.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "566.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "868.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "679.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "872.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "76.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "645.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "412.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "925.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "350.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "109.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "367.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "616.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "294.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "217.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "89.json": {
+      "score": "excellent",
+      "score_mod": "excellent"
+    },
+    "1050.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "803.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "651.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "268.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "560.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "819.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "411.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "970.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "704.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "449.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "762.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "264.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "900.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "997.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1040.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1042.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "748.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1028.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "875.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "84.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "822.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "338.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "733.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "634.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "341.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "966.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "267.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "57.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "497.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "955.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "280.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "475.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "528.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "571.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "372.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "438.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "895.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "660.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "62.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "531.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "40.json": {
+      "score": "fair",
+      "score_mod": "poor"
+    },
+    "495.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "809.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "884.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "974.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "27.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "415.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "345.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1038.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "541.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "873.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "786.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "31.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "520.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "646.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "764.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "103.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "376.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "121.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "812.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "67.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "447.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "485.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "983.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "923.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "555.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "611.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "185.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "638.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "186.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "390.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "58.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "957.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "580.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "727.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "352.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1051.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "700.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "315.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "251.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "561.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "205.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "16.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "933.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "53.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "314.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "586.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "766.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "754.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "632.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "158.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "936.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "798.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "134.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "670.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "460.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "633.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "477.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "848.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "696.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "64.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "403.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "126.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "4.json": {
+      "score": "excellent",
+      "score_mod": "excellent"
+    },
+    "440.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "311.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "484.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "288.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "609.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "579.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "701.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "915.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "462.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "442.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "137.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "841.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "972.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "690.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "219.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "519.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "174.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "522.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "530.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "148.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "377.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "937.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "716.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "342.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "882.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "212.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "349.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "886.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "480.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "965.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "191.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "400.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "578.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1009.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "295.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "431.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "597.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "650.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "155.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "978.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "130.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "309.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "703.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1047.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "430.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "278.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "713.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "357.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "902.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "980.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "289.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "49.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "751.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "667.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "546.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "592.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "48.json": {
+      "score": "fair",
+      "score_mod": "poor"
+    },
+    "405.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "18.json": {
+      "score": "fair",
+      "score_mod": "poor"
+    },
+    "538.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "50.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "233.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "653.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "493.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "87.json": {
+      "score": "excellent",
+      "score_mod": "excellent"
+    },
+    "1024.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "708.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "226.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1012.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "741.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "3.json": {
+      "score": "good",
+      "score_mod": "good"
+    },
+    "127.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "214.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1046.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "721.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "123.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1017.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "931.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "859.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "885.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "273.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "344.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "810.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "347.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "464.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "892.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "648.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "366.json": {
+      "score": "unacceptable",
+      "score_mod": "poor"
+    },
+    "613.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "661.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1025.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "935.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "229.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "488.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "171.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "600.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "559.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "318.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "776.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "689.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1014.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "378.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "221.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "8.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "1000.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "608.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "455.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "719.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "889.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "382.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "790.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "500.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "193.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "107.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "503.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "172.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "243.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "434.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "10.json": {
+      "score": "excellent",
+      "score_mod": "excellent"
+    },
+    "239.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "995.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "444.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "563.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "569.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "881.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "164.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "804.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "466.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "944.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "385.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "587.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "215.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "92.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "593.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "874.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1018.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "871.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "573.json": {
+      "score": "unacceptable",
+      "score_mod": "poor"
+    },
+    "192.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "476.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "159.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1021.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "610.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "850.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "178.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "758.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "594.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "637.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "535.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "572.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "630.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "914.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "492.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "988.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "682.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "532.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "157.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "429.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "85.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "954.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "568.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "986.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "25.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "6.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "604.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "588.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1049.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "823.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1052.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "718.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "990.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "891.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "419.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "389.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "286.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "1031.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "180.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "694.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "817.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "505.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "370.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "644.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "527.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "940.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "200.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "276.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "502.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "452.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "303.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "820.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "99.json": {
+      "score": "poor",
+      "score_mod": "poor"
+    },
+    "1053.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "101.json": {
+      "score": "unacceptable",
+      "score_mod": "poor"
+    },
+    "562.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "244.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "364.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "832.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "601.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "907.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "839.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "122.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "928.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "725.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "35.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "1045.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "627.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "763.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "222.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "71.json": {
+      "score": "fair",
+      "score_mod": "fair"
+    },
+    "612.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "963.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "574.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "971.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "643.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "80.json": {
+      "score": "good",
+      "score_mod": "fair"
+    },
+    "921.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    },
+    "37.json": {
+      "score": "poor",
+      "score_mod": "unacceptable"
+    },
+    "72.json": {
+      "score": "unacceptable",
+      "score_mod": "unacceptable"
+    }
+  }
+}
