@@ -7,7 +7,7 @@ DATASET=qags
 # DATASET=hanna
 # DATASET=summeval
 
-aspects=(factual_consistencyy)
+aspects=(factual_consistency)
 # aspects=(coherence complexity relevance)
 # aspects=(coherence factual_consistency relevance)
 
