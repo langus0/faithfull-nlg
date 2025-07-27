@@ -202,46 +202,33 @@ def evaluate_outs(category2program, metrics, dataset_const=WebNLG):
     return preds_multi, refs_multi
 
 
-#data = WebNLG()
-#data.load(['train'])
 
 metrics = []
-#metrics.extend(get_basic_metrics())
-#metrics.append(BERTScore())
-#metrics.append(BLEURT())
+metrics.extend(get_basic_metrics())
+metrics.append(BERTScore())
+metrics.append(BLEURT())
 
-#preds, ref = evaluate_outs(category2program, metrics, dataset_const = OpenDialKGR)
-#exit()
+preds, ref = evaluate_outs(category2program, metrics, dataset_const = OpenDialKGR)
+
 lm = VLanguageModel() #LanguageModel(log_file=None, ip=f"{sys.argv[3]}:8889")
 #lm = EmptyLM()
 #lm.use_num_ctx = True
 #metrics.extend([LLMJudgeGrammaticality(lm, binary=True), LLMJudgeOmmisions(lm, binary=True), LLMJudgeAdditions(lm, binary=True), LLMJudgeFluency(lm, binary=True)])
-#metrics.append(LLMJudgeFaithfulness(lm))
-#metrics.extend([ LLMJudgeAdditions(lm, binary=True)])
-#metrics.append(LLMJudgeFaithfulness(lm, binary=True))
 
 prefix = base_prefix + "STD"
 metrics= []
 
 metrics.extend([LLMJudgeGrammaticality(lm, binary=True), LLMJudgeOmmisions(lm, binary=True), LLMJudgeAdditions(lm, binary=True)])
-#metrics.append(LLMJudgeFaithfulness(lm))
-#metrics.extend([ LLMJudgeAdditions(lm, binary=True)])
-#metrics.append(LLMJudgeFaithfulness(lm, binary=True))
 
-#metrics.extend([ ThemisExtractor(gram, prefix+"-themis-gramar.txt"), ThemisExtractor(add, prefix+"-themis-add.txt"), ThemisExtractor(omm, prefix+"-themis-omm.txt")])
 
 print("WEBNLG")
 preds, ref = evaluate_outs(category2program, metrics, dataset_const = OpenDialKGR)
-exit()
+
 prefix = base_prefix + "CFA"
 metrics= []
 
 metrics.extend([LLMJudgeGrammaticality(lm, binary=True), LLMJudgeOmmisions(lm, binary=True), LLMJudgeAdditions(lm, binary=True)])
-#metrics.append(LLMJudgeFaithfulness(lm))
-#metrics.extend([ LLMJudgeAdditions(lm, binary=True)])
-#metrics.append(LLMJudgeFaithfulness(lm, binary=True))
 
-metrics.extend([ ThemisExtractor(gram, prefix+"-themis-gramar.txt"), ThemisExtractor(add, prefix+"-themis-add.txt"), ThemisExtractor(omm, prefix+"-themis-omm.txt")])
 
 print("WEBNLG==CFA")
 preds, ref = evaluate_outs(category2program, metrics, dataset_const = WebNLGgemCFA)
@@ -250,11 +237,7 @@ prefix = base_prefix + "FI"
 metrics= []
 
 metrics.extend([LLMJudgeGrammaticality(lm, binary=True), LLMJudgeOmmisions(lm, binary=True), LLMJudgeAdditions(lm, binary=True)])
-#metrics.append(LLMJudgeFaithfulness(lm))
-#metrics.extend([ LLMJudgeAdditions(lm, binary=True)])
-#metrics.append(LLMJudgeFaithfulness(lm, binary=True))
 
-metrics.extend([ ThemisExtractor(gram, prefix+"-themis-gramar.txt"), ThemisExtractor(add, prefix+"-themis-add.txt"), ThemisExtractor(omm, prefix+"-themis-omm.txt")])
 
 print("WEBNLG==FI")
 preds, ref = evaluate_outs(category2program, metrics, dataset_const = WebNLGgemFI)
@@ -263,23 +246,8 @@ prefix = base_prefix + "FA"
 metrics= []
 
 metrics.extend([LLMJudgeGrammaticality(lm, binary=True), LLMJudgeOmmisions(lm, binary=True), LLMJudgeAdditions(lm, binary=True)])
-#metrics.append(LLMJudgeFaithfulness(lm))
-#metrics.extend([ LLMJudgeAdditions(lm, binary=True)])
-#metrics.append(LLMJudgeFaithfulness(lm, binary=True))
 
-metrics.extend([ ThemisExtractor(gram, prefix+"-themis-gramar.txt"), ThemisExtractor(add, prefix+"-themis-add.txt"), ThemisExtractor(omm, prefix+"-themis-omm.txt")])
 
 print("WEBNLG==FA")
 preds, ref = evaluate_outs(category2program, metrics, dataset_const = WebNLGgemFA)
-# for category in category2program:
-#     size = sum([1 for dataEntry in data.data if dataEntry.category == category])
-#     sizePred = len(set([i.predicate for dataEntry in data.data for i in dataEntry.data if dataEntry.category == category ]))
-#     print(f"Evaluating {category} with {size} examples and {sizePred} preds...")
-#     c2p = {}
-#     c2p[category] = category2program[category]
-#     _, _ = evaluate_outs(c2p, metrics)
-    # preds, ref = evaluate_outs(category2c2pprogram[category], metrics)
-    # for metric in metrics:
-    #     print(f"{metric.name}: {metric.get_score()}")
-
 
