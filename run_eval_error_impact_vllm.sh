@@ -1,27 +1,35 @@
+### STEP 1: Choose model
+
 # MODEL=eval_nemo
-# MODEL=eval_gemma
+MODEL=eval_gemma
 # MODEL=eval_qwen
 # MODEL=eval_mistral
 
-# DATASET=qags
-DATASET=hanna
-# DATASET=summeval
 
-# ASPECT=factual_consistency
-ASPECT=coherence
-# ASPECT=relevance
-# ASPECT=complexity
+### STEP 2: Choose dataset & set of aspects
+
+# DATASET=qags
+# aspects=(factual_consistency)
+
+DATASET=hanna
+aspects=(coherence complexity relevance)
+
+# DATASET=summeval
+# aspects=(coherence factual_consistency relevance)
+
+
+### STEP 3: Modification-specific parameters
 
 severity_modification_directions=(1 -1)
 
-TEMPLATE_PATH=src/templates/zero_shot/${DATASET}.jinja
-ASPECT_PATH=src/configs/eval_aspects/${DATASET}-${ASPECT}.json
-PREGEN_DIR=results2/pregen_results/${DATASET}/${ASPECT}
-RESULTS_DIR=results2/eval_mod_results/${DATASET}/${ASPECT}
-
-models=(eval_nemo eval_gemma)
-for MODEL in "${models[@]}"
+for ASPECT in "${aspects[@]}"
 do
+
+	TEMPLATE_PATH=src/templates/zero_shot/${DATASET}.jinja
+	ASPECT_PATH=src/configs/eval_aspects/${DATASET}-${ASPECT}.json
+	PREGEN_DIR=results2/pregen_results/${DATASET}/${ASPECT}
+	RESULTS_DIR=results2/eval_mod_results/${DATASET}/${ASPECT}
+
 	for sev_dir in "${severity_modification_directions[@]}"
 	do
 		echo "Running modifications impacts using model $MODEL with severity direction: $sev_dir"

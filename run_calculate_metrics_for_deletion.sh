@@ -1,31 +1,34 @@
+### STEP 1: Choose model
+
 # MODEL=eval_nemo
-# MODEL=eval_gemma
+MODEL=eval_gemma
 # MODEL=eval_qwen
-models=(eval_nemo eval_gemma eval_qwen)
+# MODEL=eval_mistral
+
+
+### STEP 2: Choose dataset & set of aspects
 
 # DATASET=qags
+# aspects=(factual_consistency)
+
 DATASET=hanna
+aspects=(coherence complexity relevance)
+
 # DATASET=summeval
+# aspects=(coherence factual_consistency relevance)
 
-# ASPECT=factual_consistency
-ASPECT=coherence
-# ASPECT=relevance
-# ASPECT=complexity
-# ASPECT=relevance
 
-RESULTS_DIR=results2/eval_mod_results/${DATASET}/${ASPECT}
+### STEP 3: Modification-specific parameters
 
 cascade_types=(0 -1 1)
 
-severity_modification_types=(add_critical_error)
-# severity_modification_forces=()
 
-for MODEL in "${models[@]}"
+for ASPECT in "${aspects[@]}"
 do
+    RESULTS_DIR=results2/eval_mod_results/${DATASET}/${ASPECT}
+
     for cascade_type in "${cascade_types[@]}"
     do
-        # for sev_force in "${severity_modification_forces[@]}"
-        # do
         printf "\nMetrics for modification ${mod_type}${sev_force}\n"
         uv run python src/calculate_error_deletion.py \
             --results-dir ${RESULTS_DIR}/${MODEL}_delete${cascade_type}

@@ -1,85 +1,96 @@
-#MODEL=eval_nemo
+### STEP 1: Choose model
+
+# MODEL=eval_nemo
 MODEL=eval_gemma
 # MODEL=eval_qwen
 # MODEL=eval_mistral
 
-# DATASET=qags
-#DATASET=hanna
-DATASET=summeval
 
-ASPECT=factual_consistency
-#ASPECT=coherence
-#ASPECT=relevance
-# ASPECT=complexity
+### STEP 2: Choose dataset & set of aspects
+
+# DATASET=qags
+# aspects=(factual_consistency)
+
+DATASET=hanna
+aspects=(coherence complexity relevance)
+
+# DATASET=summeval
+# aspects=(coherence factual_consistency relevance)
+
+
+### STEP 3: Modification-specific parameters
 
 severity_modification_forces=(1 2 -1 -2)
 
-TEMPLATE_PATH=src/templates/zero_shot/${DATASET}.jinja
-DATASET_PATH=data/meta_eval/${DATASET}.json
-RESULTS_DIR=results2/eval_mod_results/${DATASET}/${ASPECT}
-PREGEN_DIR=results2/pregen_results/${DATASET}/${ASPECT}
-ASPECT_PATH=src/configs/eval_aspects/${DATASET}-${ASPECT}.json
-
-# if it is the first run for this set of OpeNLG parameters (model, aspect, template)
-# then run the first evaluation to generate the initial pregen (for example with severity modification 1)
-python src/eval_mod_vllm.py \
-	--model ${MODEL} \
-	--template ${TEMPLATE_PATH} \
-	--aspect-config  ${ASPECT_PATH}\
-	--data ${DATASET_PATH} \
-	--output-dir ${RESULTS_DIR}/${MODEL} \
-	--eval-mod none
-
-# save the OpeNLG evaluation in a pregen file (without the severity modification)
-# it will be then used by following scripts to avoid generating OpeNLG evaluation again
-python src/copy_results_to_pregen.py \
-	--results-dir ${RESULTS_DIR}/${MODEL} \
-	--pregen-dest-dir ${PREGEN_DIR} \
-	--pregen-tag ${MODEL} \
-	--exclude-premodified-result
-
-for sev_force in "${severity_modification_forces[@]}"
+for ASPECT in "${aspects[@]}"
 do
-	echo "Running modifications with severity: $sev_force"
+	TEMPLATE_PATH=src/templates/zero_shot/${DATASET}.jinja
+	DATASET_PATH=data/meta_eval/${DATASET}.json
+	RESULTS_DIR=results2/eval_mod_results/${DATASET}/${ASPECT}
+	PREGEN_DIR=results2/pregen_results/${DATASET}/${ASPECT}
+	ASPECT_PATH=src/configs/eval_aspects/${DATASET}-${ASPECT}.json
 
-	# int severity (using a previously pregenerated evaluation)
-	python src/eval_mod_vllm.py \
+	# if it is the first run for this set of OpeNLG parameters (model, aspect, template)
+	# then run the first evaluation to generate the initial pregen (for example with severity modification 1)
+	uv run python src/eval_mod_vllm.py \
 		--model ${MODEL} \
 		--template ${TEMPLATE_PATH} \
 		--aspect-config  ${ASPECT_PATH}\
-		--data ${PREGEN_DIR}/pregen_${MODEL}.json \
-		--output-dir ${RESULTS_DIR}/${MODEL}_severity${sev_force} \
-		--eval-mod severity \
-		--mod-force ${sev_force}
+		--data ${DATASET_PATH} \
+		--output-dir ${RESULTS_DIR}/${MODEL} \
+		--eval-mod none
 
-
-	# text severity (using a previously pregenerated evaluation)
-	python src/eval_mod_vllm.py \
-		--model ${MODEL} \
-		--template ${TEMPLATE_PATH} \
-		--aspect-config  ${ASPECT_PATH}\
-		--data ${PREGEN_DIR}/pregen_${MODEL}.json \
-		--output-dir ${RESULTS_DIR}/${MODEL}_textsev${sev_force} \
-		--eval-mod text_severity \
-		--mod-force ${sev_force} 
-
-
-	# now create a pregen file based on the text modification, which will be used in the next joined modification
-	python src/copy_results_to_pregen.py \
-		--results-dir ${RESULTS_DIR}/${MODEL}_textsev${sev_force} \
+	# save the OpeNLG evaluation in a pregen file (without the severity modification)
+	# it will be then used by following scripts to avoid generating OpeNLG evaluation again
+	uv run python src/copy_results_to_pregen.py \
+		--results-dir ${RESULTS_DIR}/${MODEL} \
 		--pregen-dest-dir ${PREGEN_DIR} \
-		--pregen-tag ${MODEL}_textsev${sev_force}
+		--pregen-tag ${MODEL} \
+		--exclude-premodified-result
 
-	# int and text severity -1
-	# (using the newly pregenerated modification and its modified text of the results)
-	python src/eval_mod_vllm.py \
-		--model ${MODEL} \
-		--template ${TEMPLATE_PATH} \
-		--aspect-config  ${ASPECT_PATH}\
-		--data ${PREGEN_DIR}/pregen_${MODEL}_textsev${sev_force}.json \
-		--output-dir ${RESULTS_DIR}/${MODEL}_int_and_textsev${sev_force} \
-		--eval-mod severity \
-		--mod-force ${sev_force} \
-		--use-premodified-result 
+	for sev_force in "${severity_modification_forces[@]}"
+	do
+		echo "Running modifications with severity: $sev_force"
 
+		# int severity (using a previously pregenerated evaluation)
+		uv run python src/eval_mod_vllm.py \
+			--model ${MODEL} \
+			--template ${TEMPLATE_PATH} \
+			--aspect-config  ${ASPECT_PATH}\
+			--data ${PREGEN_DIR}/pregen_${MODEL}.json \
+			--output-dir ${RESULTS_DIR}/${MODEL}_severity${sev_force} \
+			--eval-mod severity \
+			--mod-force ${sev_force}
+
+
+		# text severity (using a previously pregenerated evaluation)
+		uv run python src/eval_mod_vllm.py \
+			--model ${MODEL} \
+			--template ${TEMPLATE_PATH} \
+			--aspect-config  ${ASPECT_PATH}\
+			--data ${PREGEN_DIR}/pregen_${MODEL}.json \
+			--output-dir ${RESULTS_DIR}/${MODEL}_textsev${sev_force} \
+			--eval-mod text_severity \
+			--mod-force ${sev_force} 
+
+
+		# now create a pregen file based on the text modification, which will be used in the next joined modification
+		uv run python src/copy_results_to_pregen.py \
+			--results-dir ${RESULTS_DIR}/${MODEL}_textsev${sev_force} \
+			--pregen-dest-dir ${PREGEN_DIR} \
+			--pregen-tag ${MODEL}_textsev${sev_force}
+
+		# int and text severity -1
+		# (using the newly pregenerated modification and its modified text of the results)
+		uv run python src/eval_mod_vllm.py \
+			--model ${MODEL} \
+			--template ${TEMPLATE_PATH} \
+			--aspect-config  ${ASPECT_PATH}\
+			--data ${PREGEN_DIR}/pregen_${MODEL}_textsev${sev_force}.json \
+			--output-dir ${RESULTS_DIR}/${MODEL}_int_and_textsev${sev_force} \
+			--eval-mod severity \
+			--mod-force ${sev_force} \
+			--use-premodified-result 
+
+	done
 done
