@@ -35,7 +35,7 @@ do
 	do
 		echo "Adding $NUMBER_OF_ERRORS errors on $DATASET-$ASPECT for model: $MODEL"
 
-		uv run python src/eval_mod_vllm.py \
+		uv run python src/eval_mod.py \
 			--model ${MODEL} \
 			--template ${TEMPLATE_PATH} \
 			--aspect-config  ${ASPECT_PATH}\

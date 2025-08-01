@@ -9,7 +9,7 @@ from typing import Callable
 
 from loguru import logger
 
-from mods_vllm import (
+from mods import (
     modify_text_severity,
     modify_severity, 
     strip_forbidden_symbols,

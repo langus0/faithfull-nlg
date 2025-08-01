@@ -33,7 +33,7 @@ do
 
 	echo "Running error addition tests $DATASET-$ASPECT for model: $MODEL"
 
-	uv run python src/eval_mod_vllm.py \
+	uv run python src/eval_mod.py \
 		--model ${MODEL} \
 		--template ${TEMPLATE_PATH} \
 		--aspect-config  ${ASPECT_PATH}\

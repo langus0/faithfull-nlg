@@ -32,7 +32,7 @@ do
 
 	# if it is the first run for this set of OpeNLG parameters (model, aspect, template)
 	# then run the first evaluation to generate the initial pregen (for example with severity modification 1)
-	uv run python src/eval_mod_vllm.py \
+	uv run python src/eval_mod.py \
 		--model ${MODEL} \
 		--template ${TEMPLATE_PATH} \
 		--aspect-config  ${ASPECT_PATH}\
@@ -53,7 +53,7 @@ do
 		echo "Running modifications with severity: $sev_force"
 
 		# int severity (using a previously pregenerated evaluation)
-		uv run python src/eval_mod_vllm.py \
+		uv run python src/eval_mod.py \
 			--model ${MODEL} \
 			--template ${TEMPLATE_PATH} \
 			--aspect-config  ${ASPECT_PATH}\
@@ -64,7 +64,7 @@ do
 
 
 		# text severity (using a previously pregenerated evaluation)
-		uv run python src/eval_mod_vllm.py \
+		uv run python src/eval_mod.py \
 			--model ${MODEL} \
 			--template ${TEMPLATE_PATH} \
 			--aspect-config  ${ASPECT_PATH}\
@@ -82,7 +82,7 @@ do
 
 		# int and text severity -1
 		# (using the newly pregenerated modification and its modified text of the results)
-		uv run python src/eval_mod_vllm.py \
+		uv run python src/eval_mod.py \
 			--model ${MODEL} \
 			--template ${TEMPLATE_PATH} \
 			--aspect-config  ${ASPECT_PATH}\

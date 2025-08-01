@@ -10,7 +10,7 @@ from typing import Callable
 #from ollama import chat
 from loguru import logger
 
-from mods_vllm import modify_impact_per_error, modify_delete_per_error, strip_forbidden_symbols
+from mods import modify_impact_per_error, modify_delete_per_error, strip_forbidden_symbols
 from vllm import LLM, SamplingParams
 
 class VLLMLM():

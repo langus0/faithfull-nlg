@@ -37,7 +37,7 @@ do
 
 		echo "Running error deletion ${DELETION_CASCADE} for $DATASET-$ASPECT using model $MODEL"
 
-		uv run python src/eval_mod_per_error_vllm.py \
+		uv run python src/eval_mod_per_error.py \
 			--model ${MODEL} \
 			--template ${TEMPLATE_PATH} \
 			--aspect-config ${ASPECT_PATH} \

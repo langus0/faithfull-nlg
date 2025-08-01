@@ -4,7 +4,7 @@ import argparse
 import pandas as pd
 from scipy.stats import spearmanr
 from sklearn.metrics import confusion_matrix
-from mods_vllm import strip_forbidden_symbols
+from mods import strip_forbidden_symbols
 from loguru import logger
 
 parser = argparse.ArgumentParser()
