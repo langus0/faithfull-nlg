@@ -18,7 +18,7 @@ aspects=(coherence complexity relevance)
 
 for ASPECT in "${aspects[@]}"; do
     for MODEL in "${models[@]}"; do
-        RESULTS_DIR=results3/eval_mod_results/${DATASET}/${ASPECT}
+        RESULTS_DIR=results/eval_mod_results/${DATASET}/${ASPECT}
         printf "\n\n\nPlotting results of model ${MODEL} on ${DATASET}-${ASPECT}\n"
         uv run python src/calculate_plots.py \
             --results-dir ${RESULTS_DIR}/${MODEL}
