@@ -30,7 +30,7 @@ severity_modification_types=(add_random_error2)
 
 for ASPECT in "${aspects[@]}"
 do
-    RESULTS_DIR=results2/eval_mod_results/${DATASET}/${ASPECT}
+    RESULTS_DIR=results/eval_mod_results/${DATASET}/${ASPECT}
     for mod_type in "${severity_modification_types[@]}"
     do
         printf "\n\n\nMetrics for ${MODEL} modification ${mod_type}\n\n"

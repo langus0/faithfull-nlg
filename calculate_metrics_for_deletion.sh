@@ -25,7 +25,7 @@ cascade_types=(0 -1 1)
 
 for ASPECT in "${aspects[@]}"
 do
-    RESULTS_DIR=results2/eval_mod_results/${DATASET}/${ASPECT}
+    RESULTS_DIR=results/eval_mod_results/${DATASET}/${ASPECT}
 
     for cascade_type in "${cascade_types[@]}"
     do

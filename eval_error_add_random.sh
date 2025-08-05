@@ -27,8 +27,8 @@ for ASPECT in "${aspects[@]}"
 do
 	TEMPLATE_PATH=src/templates/zero_shot/${DATASET}.jinja
 	DATASET_PATH=data/meta_eval/${DATASET}.json
-	RESULTS_DIR=results2/eval_mod_results/${DATASET}/${ASPECT}
-	PREGEN_DIR=results2/pregen_results/${DATASET}/${ASPECT}
+	RESULTS_DIR=results/eval_mod_results/${DATASET}/${ASPECT}
+	PREGEN_DIR=results/pregen_results/${DATASET}/${ASPECT}
 	ASPECT_PATH=src/configs/eval_aspects/${DATASET}-${ASPECT}.json
 
 	for NUMBER_OF_ERRORS in "${numbers_of_errors[@]}"

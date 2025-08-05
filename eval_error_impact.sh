@@ -27,8 +27,8 @@ do
 
 	TEMPLATE_PATH=src/templates/zero_shot/${DATASET}.jinja
 	ASPECT_PATH=src/configs/eval_aspects/${DATASET}-${ASPECT}.json
-	PREGEN_DIR=results2/pregen_results/${DATASET}/${ASPECT}
-	RESULTS_DIR=results2/eval_mod_results/${DATASET}/${ASPECT}
+	PREGEN_DIR=results/pregen_results/${DATASET}/${ASPECT}
+	RESULTS_DIR=results/eval_mod_results/${DATASET}/${ASPECT}
 
 	for sev_dir in "${severity_modification_directions[@]}"
 	do
