@@ -1,7 +1,7 @@
 ### STEP 1: Choose model
 
 # All models
-models=(eval_nemo eval_gemma eval_qwen eval_mistral)
+models=(eval_nemo eval_gemma eval_qwen)
 
 
 ### STEP 2: Choose dataset & set of aspects

@@ -3,7 +3,6 @@
 # MODEL=eval_nemo
 MODEL=eval_gemma
 # MODEL=eval_qwen
-# MODEL=eval_mistral
 
 
 ### STEP 2: Choose dataset & set of aspects
