@@ -8,51 +8,72 @@ uv sync
 
 Model config files can be found under `src/configs/models`, datasets in `data/meta_eval`, and specific aspects for each dataset in `src/configs/eval_aspects`
 
-To reproduce the using with Ollama, install the package following the instructions in the [Ollama repository](https://github.com/ollama/ollama). After installation, you can pull the required model using the following command:
+# Run evaluation with modification
 
-```sh
-ollama pull nemotron:70b-instruct-q8_0
-```
-Then create the model from the modelfile. Example for nemotron:
-```sh
-ollama create eval_nemo -f src/configs/models/modelfile_nemo
-```
-
-# Run evaluation with modificaiton
-
-## Run evaluation and modify the results
-
-Open the script `run_eval_all_severities.sh` and adjust the parameters to your needs. The script will run the evaluation using the OpenNLG model and then apply the error severity modifications.
-
-```bash
-sh run_eval_all_severities.sh
-```
-
-The specific modifications are defined in `src/mods.py` and are applied in `src/eval_mod.py`. 
-
-To test a specific modification (int or text) outside the whole loop, you can use the `run_eval_severity.sh` script.
+In each of the bash scripts mentioned below, you can open the script and adjust the parameters to your needs, such as the model to use, the dataset, and the specific evaluation aspects.
 
 ## Use previously generated evaluation content
 
-To speed up the evaluation of different modification scenarios once a modification was run, the OpenNLG evaluation results can be copied to a "pregen" file based on the already generated evaluation, to be reused for further modifications. The script `src/copy_results_to_pregen.py` can be used for that, of which example of usage can be found in the `run_eval_all_severities.sh` script.
+Once the evaluation in a specific (model, dataset, aspect) setup is ran, its results can be reused to speed up further evaluations in different scenarios of modifying the results. The OpenNLG evaluation results can be copied to a "pregen" file based on one already generated evaluation. The script `src/copy_results_to_pregen.py` is used for that, of which example can be found in the `eval_severities.sh` script.
 
 The pregen file will by default include the result of the modification (under the key `result_modified`) so that another modification can be added on top of it. It can be excluded out of the file generation using the flag `--exclude-premodified-result`.
 
-Once the pregen json file is created, you can link it in the `--data` parameter of the eval .py scripts instead of the original dataset json file, and the evaluation will use the pre-generated content instead of running the OpenNLG model again. In eval scripts, the flag `--use-premodified-result` can be used to indicate that also the result of the previous modification (described in the paragraph above) should be used (so that you can stack this mod on top of the previous mod).
+Once the pregen json file is created, you can link it in the `--data` parameter of the eval .py scripts instead of the original dataset json file, and the evaluation will use the pre-generated content instead of running the whole OpenNLG evaluation again. In eval scripts, the flag `--use-premodified-result` can be used to indicate that also the result of the previous modification (described in the paragraph above) should be used as source before modifying it, so that you can stack this mod on top of the previous mod - like in the case of running int severity on top of text severity in the `eval_severities.sh` loop.
 
-## Measure impact of error severity modifications on the OpenNLG results
+
+## Run evaluation and modify the results
+
+The script below will first run the evaluation using the OpenNLG framework on the defined (model, dataset, aspect) set and save it to a "pregen" file. It will then modify the evaluation results in several ways in order to test possible scenarios of errors that can happen during evaluation. The specific error introductions (or "modifications") in this script are done in regards to the severity of errors found by OpeNLG in the NLG task. The severity is increased and decreased in the integer value of severity, the the textual explaination of severity, and in both of them at once. On each modification, the final OpeNLG score is generated again to test the impact of the modifications on the overall evaluation verdict.
+
+```bash
+sh run_eval_severities.sh
+```
+
+The specific modifications are defined in `src/mods.py` and are applied in `src/eval_mod.py`.
+
+To test a specific modification (int or text) outside the loop provided in the script, you can copy the command from the .sh and run it independently. A previously generated pregen file for the specific (model, dataset, aspect) set can be used if it is passed in `--data`, or the original dataset json file can be used.
+
+## Impact on the overall score of changing severity in a single error   
 
 Use the script `run_eval_impact.sh` to perform incremental severity modification on each one error of the evaluation, by which you can measure the error's impact on the evaluation's overall score.
 
-``bash
-sh run_eval_impact.sh
-``
+```bash
+sh eval_error_impact.sh
+```
 
 Note that this script only measures the int severity increment, defined in a different method than the original modification (all of them can be found in `mods.py`).
 
-In the impact script, by setting the `--mod_direction` a cascade of error deletion can be performed, where  
+Inside the script, by setting the `--mod_direction` to either -1 or 1 it can be chosen to decrease or increase the severity of each error, respectively.
+
+## Deleting errors from OpeNLG evaluation
+
+TODO describe
+
+```bash
+sh eval_error_delete.sh
+```
+
+## Addidng false errors to OpeNLG evaluation
+
+### Adding randomly generated false errors
+
+TODO describe
+
+```bash
+sh eval_error_add_random.sh
+```
+
+### Adding a general critical error
+
+TODO describe
+
+```bash
+sh eval_error_add_critical.sh
+```
 
 # Evaluate results
+
+TODO update
 
 ## Calculate metrics
 
@@ -67,6 +88,10 @@ Single use example:
 ```sh
 uv run python src/calculate_error.py --results-dir results/eval_mod_results/qags/factual_consistency/eval_nemo_textsev1
 ```
+
+## Plot results
+
+TODO describe
 
 ## Inspect a specific generation & modification
 
