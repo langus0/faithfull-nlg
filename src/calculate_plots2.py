@@ -44,6 +44,7 @@ def aggregate_results(results):
     return agg 
 parser = argparse.ArgumentParser()
 parser.add_argument("--results-dir", "-r", required=True)
+parser.add_argument("--show_plots", action='store_true')
 args = parser.parse_args()
  
 MODS = ["delete"]
@@ -193,7 +194,8 @@ for mod_type in MODS:
             plt.grid(True)
             plt.tight_layout()
             plt.savefig(f"{args.results_dir}n_err_{mod_type}{sev_force}_{title}.png", dpi=300, bbox_inches='tight')
-            plt.show()
+            if args.show_plots:
+                plt.show()
         
         
         
@@ -254,7 +256,8 @@ for mod_type in MODS:
         fig.tight_layout()
         plt.savefig(f"{args.results_dir}n_err2_{mod_type}{sev_force}.png", dpi=300, bbox_inches='tight')
         plt.grid(True)
-        plt.show()
+        if args.show_plots:
+            plt.show()
 exit()
       
 
@@ -274,7 +277,8 @@ plt.ylabel('Frequency')
 
 # Save to file (optional)
 plt.savefig(f"{args.results_dir}histogram_{column}.png", dpi=300, bbox_inches='tight')
-plt.show()
+if args.show_plots:
+    plt.show()
 
 print(df.groupby('score_num')['severities_length'].value_counts())
 
@@ -344,7 +348,8 @@ plt.legend()#["Severity Score", "_", "Explanation", "_", "Both"], title='Modific
 #plt.xticks(df_all['sev'])
 #plt.grid()
 plt.savefig(f"{args.results_dir}average_change_by_severity.png", dpi=300, bbox_inches='tight')
-plt.show()
+if args.show_plots:
+    plt.show()
         
         
 DIR_NAME = {1: " (increasing severity)", -1: " (decreasing severity)"}
@@ -400,26 +405,6 @@ for i, mod_type in enumerate(MODS):
     
 plt.tight_layout(rect=[0, 0, 0.82, 1])
 plt.savefig(f"{args.results_dir}score_distribution.png", dpi=300, bbox_inches='tight')  # or use .pdf, .svg, etc.
-plt.show()
+if args.show_plots:
+    plt.show()
 exit()
-
-correlation, p_value = spearmanr(df["score_num"], df["score_mod_num"])
-correlation = round(correlation, 4)
-logger.info(f"Spearman correlation: {correlation}")
-
-matrix = confusion_matrix(df["score_num"], df["score_mod_num"], labels=list(mapping.values()))
-logger.info(f"Confusion matrix: \n{matrix}")
-
-scores_summary = {
-    "summary": {
-        "analyzed_examples": scores_sum,
-		"scores_changed": mod_sum,
-		"changed_percent": changed_percent,
-		"correlation": correlation,
-		"confusion_matrix": matrix.tolist()
-   },
-    "scores": scores,
-}
-
-with open(f"{args.results_dir}/{summary_fname}", "w") as f:
-	json.dump(scores_summary, f, indent=2)
