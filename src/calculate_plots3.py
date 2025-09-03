@@ -147,7 +147,7 @@ plt.xlabel(column)
 plt.ylabel('Frequency')
 
 # Save to file (optional)
-plt.savefig(f"{args.results_dir}histogram_{column}.png", dpi=300, bbox_inches='tight')
+plt.savefig(f"{args.results_dir}_error_addition_histogram_{column}.png", dpi=300, bbox_inches='tight')
 if args.show_plots:
     plt.show()
 
@@ -217,62 +217,64 @@ plt.ylabel('Average Change in Overall Score')
 plt.legend()#["Severity Score", "_", "Explanation", "_", "Both"], title='Modification Type')
 #plt.xticks(df_all['sev'])
 #plt.grid()
-plt.savefig(f"{args.results_dir}average_change_by_severity.png", dpi=300, bbox_inches='tight')
+plt.savefig(f"{args.results_dir}_error_addition_average_change.png", dpi=300, bbox_inches='tight')
 if args.show_plots:
     plt.show()
 
 # logger.info(f"Dataframe:\n{df.columns}")
 # print(df.head(5))
 # exit()
-        
-fig, axes = plt.subplots(2, 3, figsize=(18, 10))  # Adjust figsize as needed
+
+# fig = plt.figure(figsize=(18, 10))  # Adjust figsize as needed
 #axes = axes.flatten()  # So we can index as a flat list
-for i, mod_type in enumerate(MODS):
-    df['category'] = df.apply(lambda x:classify_row(x,mod_type), axis=1)
-    #filter out scores with severities_length ==0
-    df_filtered = df[df['severities_length'] > 0]
-    grouped = df_filtered.groupby('score_num')['category'].value_counts(normalize=True).unstack(fill_value=0)
-    
-    nice_labels = {
-        'equal_all': 'No change after any modification',
-        'lower_cons': 'Consistently lowering when adding errors',
-        'lower_crit_only': 'Lower only after adding critical error',
-        'lower_cons_rand': 'Consistently lowering with random errors, but not critical',
-        'lower_rand2_only': 'Lower only after adding two random errors',
-        'lower_rand1_only': 'Lower after adding one random error',
-        'rest': 'Inconsistent behaviour',        
-    }
-    
-    all_categories = nice_labels.keys()[:]
-    for cat in all_categories:
-        if cat not in grouped.columns:
-            grouped[cat] = 0
+df['category'] = df.apply(lambda x:classify_row(x,MODS), axis=1)
+#filter out scores with severities_length ==0
+df_filtered = df[df['severities_length'] > 0]
+grouped = df_filtered.groupby('score_num')['category'].value_counts(normalize=True).unstack(fill_value=0)
 
-    # Sort columns for consistent color stacking
-    grouped = grouped[all_categories]
-    
-    #Apply fill(l, 20) for each nice_label value
-    nice_labels = {k: fill(v, 22) for k, v in nice_labels.items()}
+nice_labels = {
+    'equal_all': 'No change after any modification',
+    'lower_cons': 'Consistently lowering when adding errors',
+    'lower_crit_only': 'Lower only after adding critical error',
+    'lower_cons_rand': 'Consistently lowering with random errors, but not critical',
+    'lower_rand2_only': 'Lower only after adding two random errors',
+    'lower_rand1_only': 'Lower after adding one random error',
+    'rest': 'Inconsistent behaviour',        
+}
 
-    # Rename columns to nice labels
-    grouped = grouped.rename(columns=nice_labels)
+all_categories = nice_labels.keys()
+for cat in all_categories:
+    if cat not in grouped.columns:
+        grouped[cat] = 0
 
-    # Plot
-    grouped.plot(kind='bar', stacked=True,  colormap='viridis',  width=0.95, ax=axes[j,i], legend=False )
-    if i == 0:
-        axes[0,i].set_ylabel('Percentage of Examples')
-    axes[0,i].set_xlabel('Overall Score')
-    axes[0,i].set_title(MODS_NAMES[mod_type])
-    axes[0,i].set_xticklabels(grouped.index, rotation=0)
-    #plt.xticks(rotation=0)
-    #plt.title('Score Changes by score_num')
-    #plt.legend(title='Category', bbox_to_anchor=(1.05, 1), loc='upper left')
-    #plt.tight_layout()
-    handles, labels = axes[0,0].get_legend_handles_labels()
-    fig.legend(handles, labels, title="Category", loc='center right')
+# Sort columns for consistent color stacking
+grouped = grouped[all_categories]
+
+#Apply fill(l, 20) for each nice_label value
+nice_labels = {k: fill(v, 22) for k, v in nice_labels.items()}
+
+# Rename columns to nice labels
+grouped = grouped.rename(columns=nice_labels)
+
+# Plot
+# grouped.plot(kind='bar', stacked=True,  colormap='viridis',  width=0.95, ax=axes[0,i], legend=False )
+fig = grouped.plot(kind='bar', stacked=True,  colormap='viridis')
+fig.set_ylabel('Percentage of Examples')
+fig.set_xlabel('Overall Score')
+fig.set_title("Name")
+# fig.set_xticklabels(grouped.index, rotation=0)
+
+#plt.xticks(rotation=0)
+#plt.title('Score Changes by score_num')
+#plt.legend(title='Category', bbox_to_anchor=(1.05, 1), loc='upper left')
+#plt.tight_layout()
+
+# handles, labels = axes[0,0].get_legend_handles_labels()
+# fig.legend(handles, labels, title="Category", loc='center right')
+# fig.legend(title="Category", loc='center right')
     
-plt.tight_layout(rect=[0, 0, 0.82, 1])
-plt.savefig(f"{args.results_dir}score_distribution.png", dpi=300, bbox_inches='tight')  # or use .pdf, .svg, etc.
+plt.tight_layout()
+plt.savefig(f"{args.results_dir}_error_addition_score_distribution.png", dpi=300, bbox_inches='tight')  # or use .pdf, .svg, etc.
 if args.show_plots:
     plt.show()
 exit()
