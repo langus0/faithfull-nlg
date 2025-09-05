@@ -9,6 +9,7 @@ from mods import strip_forbidden_symbols
 from loguru import logger
 import matplotlib.pyplot as plt
 from textwrap import fill
+from matplotlib.ticker import PercentFormatter
 
 # Assuming df is your DataFrame
 def classify_row(row, mods):
@@ -29,7 +30,10 @@ def classify_row(row, mods):
     elif add_crit == add_rand2 < add_rand1 == main:
         return 'lower_rand2_only'
     elif add_crit == add_rand2 == add_rand1 < main:
-        return 'lower_rand2_only'
+        return 'lower_rand1_only'
+    
+    elif np.any(np.array([add_crit, add_rand1, add_rand2]) > main):
+        return 'incr'
 
     return 'rest'
     
@@ -230,16 +234,21 @@ if args.show_plots:
 df['category'] = df.apply(lambda x:classify_row(x,MODS), axis=1)
 #filter out scores with severities_length ==0
 df_filtered = df[df['severities_length'] > 0]
-grouped = df_filtered.groupby('score_num')['category'].value_counts(normalize=True).unstack(fill_value=0)
+grouped = (
+    df_filtered.groupby('score_num')['category']
+    .value_counts(normalize=True)
+    .unstack(fill_value=0)
+)
 
 nice_labels = {
     'equal_all': 'No change after any modification',
-    'lower_cons': 'Consistently lowering when adding errors',
+    'lower_cons': 'Consistently lower when adding errors',
     'lower_crit_only': 'Lower only after adding critical error',
-    'lower_cons_rand': 'Consistently lowering with random errors, but not critical',
+    'lower_cons_rand': 'Consistently lower with random errors, but not critical',
     'lower_rand2_only': 'Lower only after adding two random errors',
     'lower_rand1_only': 'Lower after adding one random error',
-    'rest': 'Inconsistent behaviour',        
+    'rest': 'Inconsistent behaviour',
+    'incr': 'Score increased after modification',
 }
 
 all_categories = nice_labels.keys()
@@ -258,23 +267,27 @@ grouped = grouped.rename(columns=nice_labels)
 
 # Plot
 # grouped.plot(kind='bar', stacked=True,  colormap='viridis',  width=0.95, ax=axes[0,i], legend=False )
-fig = grouped.plot(kind='bar', stacked=True,  colormap='viridis')
-fig.set_ylabel('Percentage of Examples')
-fig.set_xlabel('Overall Score')
-fig.set_title("Name")
-# fig.set_xticklabels(grouped.index, rotation=0)
+fig, ax = plt.subplots(figsize=(12, 6))
+grouped.plot(kind='bar', stacked=True, colormap='viridis', width=0.95, ax=ax)
 
-#plt.xticks(rotation=0)
-#plt.title('Score Changes by score_num')
-#plt.legend(title='Category', bbox_to_anchor=(1.05, 1), loc='upper left')
-#plt.tight_layout()
+ax.set_ylabel('Percentage of Examples')
+ax.set_xlabel('Overall Score')
+ax.set_title("Distribution of score changes after addition")
+ax.set_ylim(0, 1)
+ax.yaxis.set_major_formatter(PercentFormatter(1.0))
+ax.set_xticklabels(grouped.index, rotation=0)
 
-# handles, labels = axes[0,0].get_legend_handles_labels()
-# fig.legend(handles, labels, title="Category", loc='center right')
-# fig.legend(title="Category", loc='center right')
-    
-plt.tight_layout()
-plt.savefig(f"{args.results_dir}_error_addition_score_distribution.png", dpi=300, bbox_inches='tight')  # or use .pdf, .svg, etc.
+ax.legend(
+    title="Category",
+    bbox_to_anchor=(1.02, 1),
+    loc='upper left',
+    borderaxespad=0.,
+    frameon=False
+)
+
+fig.tight_layout()
+
+plt.savefig(f"{args.results_dir}_error_addition_score_distribution.png")  # or use .pdf, .svg, etc.
 if args.show_plots:
     plt.show()
 exit()
