@@ -19,19 +19,18 @@ def classify_row(row, mods):
     add_crit = row[f'score_num_{mods[2]}']
 
 
+    if add_crit < add_rand2 < add_rand1 < main:
+        return 'lower_cons'
+    elif add_crit < add_rand2 < add_rand1 == main:
+        return 'lower_after_rand2'
+    elif add_crit < add_rand2 == add_rand1 == main:
+        return 'lower_after_crit'
+    elif  add_rand2 < add_rand1 < main == add_crit:
+        return 'lower_only_rand1'
+    elif  add_rand2 < add_rand1 == main == add_crit:
+        return 'lower_only_rand2'
     if add_crit == add_rand2 == add_rand1 == main:
         return 'equal_all'
-    elif add_crit < add_rand2 < add_rand1 < main:
-        return 'lower_cons'
-    elif add_crit < add_rand2 == add_rand1 == main:
-        return 'lower_crit_only'
-    elif add_crit == add_rand2 < add_rand1 < main:
-        return 'lower_cons_rand_only'
-    elif add_crit == add_rand2 < add_rand1 == main:
-        return 'lower_rand2_only'
-    elif add_crit == add_rand2 == add_rand1 < main:
-        return 'lower_rand1_only'
-    
     elif np.any(np.array([add_crit, add_rand1, add_rand2]) > main):
         return 'incr'
 
@@ -243,12 +242,12 @@ grouped = (
 nice_labels = {
     'equal_all': 'No change after any modification',
     'lower_cons': 'Consistently lower when adding errors',
-    'lower_crit_only': 'Lower only after adding critical error',
-    'lower_cons_rand': 'Consistently lower with random errors, but not critical',
-    'lower_rand2_only': 'Lower only after adding two random errors',
-    'lower_rand1_only': 'Lower after adding one random error',
+    'lower_after_rand2': 'Lowering only after adding 2 errors or critical error',
+    'lower_after_crit': 'Consistently only after adding critical error',
+    'lower_only_rand1': 'Lowering only after adding one random error, not critical',
+    'lower_only_rand2': 'Lowering only after adding two random errors, not critical',
+    'incr': 'Inconsistency - score increased after modification',
     'rest': 'Inconsistent behaviour',
-    'incr': 'Score increased after modification',
 }
 
 all_categories = nice_labels.keys()
