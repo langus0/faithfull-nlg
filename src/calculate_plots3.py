@@ -11,31 +11,51 @@ import matplotlib.pyplot as plt
 from textwrap import fill
 from matplotlib.ticker import PercentFormatter
 
-# Assuming df is your DataFrame
-def classify_row(row, mods):
+
+label_descriptions = {
+        'equal_all': 'No change with error addition',
+        'crit_1': 'Lowest score with critical error',
+        'crit_lower': 'Lower, but not lowest with critical error',
+        'rand_consistent': 'Consistently lower when adding random errors',
+        'rand_lower_only_2': 'Lower only when adding two random errors',
+        'rand_lower_only_1': 'Lower only when adding one random error',
+        'inc-higher': 'Inconsistent - error addition raised overall score',
+        # 'inconsistent-higher': 'Inconsistent - increased after adding error',
+        'rest': 'Inconsistent behavior',
+    }
+
+def classify_row(row, mod_type):
     main = row['score_num']
-    add_rand1 = row[f'score_num_{mods[0]}']
-    add_rand2 = row[f'score_num_{mods[1]}']
-    add_crit = row[f'score_num_{mods[2]}']
 
+    if mod_type == 'add_critical_error':
+        add_crit = row[f'score_num_add_critical_error']
+        
+        if add_crit < main:
+            if add_crit == 1:
+                return 'crit_1'
+            else:
+                return 'crit_lower'
+        elif add_crit == main:
+            return 'equal_all'
+        elif add_crit > main:
+            return 'inc-higher'
+        
+    elif mod_type == 'add_random_error':
+        add_rand1 = row[f'score_num_add_random_error1']
+        add_rand2 = row[f'score_num_add_random_error2']
 
-    if add_crit < add_rand2 < add_rand1 < main:
-        return 'lower_cons'
-    elif add_crit < add_rand2 < add_rand1 == main:
-        return 'lower_after_rand2'
-    elif add_crit < add_rand2 == add_rand1 == main:
-        return 'lower_after_crit'
-    elif  add_rand2 < add_rand1 < main == add_crit:
-        return 'lower_only_rand1'
-    elif  add_rand2 < add_rand1 == main == add_crit:
-        return 'lower_only_rand2'
-    if add_crit == add_rand2 == add_rand1 == main:
-        return 'equal_all'
-    elif np.any(np.array([add_crit, add_rand1, add_rand2]) > main):
-        return 'incr'
-
+        if add_rand2 == add_rand1 == main:
+            return 'equal_all'
+        elif np.any(np.array([add_rand1, add_rand2]) > main):
+            return 'inc-higher'
+        elif add_rand2 < add_rand1 < main:
+            return 'rand_consistent'
+        elif add_rand2 < add_rand1 == main:
+            return 'rand_lower_only_2'
+        elif add_rand2 >= add_rand1 < main:
+            return 'rand_lower_only_1'
     return 'rest'
-    
+
 parser = argparse.ArgumentParser()
 parser.add_argument("--results-dir", "-r", required=True)
 parser.add_argument("--show_plots", action='store_true')
@@ -43,6 +63,18 @@ args = parser.parse_args()
 
 MODS = ["add_random_error1", "add_random_error2", "add_critical_error"]
 
+# gemma
+# hanna complexity
+# hanna coherence
+
+missing_data = [
+    "results/eval_mod_results/hanna/complexity/eval_gemma",
+    "results/eval_mod_results/hanna/coherence/eval_gemma",
+    ]
+
+# if args.results_dir in missing_data:
+#     logger.error(f"Results dir {args.results_dir} is known to have missing data, exiting")
+#     exit(1)
 
 scores = {}
 import matplotlib
@@ -129,6 +161,7 @@ mapping = {
 print(df.columns)
 # Convert scores to numerical values
 df["score"] = df["score"].str.strip()
+print(f"VALUE COUNTS: {df['score'].value_counts()}")
 df["score_num"] = df["score"].map(mapping)
 for mod_type in MODS:
     df[f"score_{mod_type}"] = df[f"score_{mod_type}"].str.strip()
@@ -230,63 +263,68 @@ if args.show_plots:
 
 # fig = plt.figure(figsize=(18, 10))  # Adjust figsize as needed
 #axes = axes.flatten()  # So we can index as a flat list
-df['category'] = df.apply(lambda x:classify_row(x,MODS), axis=1)
-#filter out scores with severities_length ==0
-df_filtered = df[df['severities_length'] > 0]
-grouped = (
-    df_filtered.groupby('score_num')['category']
-    .value_counts(normalize=True)
-    .unstack(fill_value=0)
-)
-
-nice_labels = {
-    'equal_all': 'No change after any modification',
-    'lower_cons': 'Consistently lower when adding errors',
-    'lower_after_rand2': 'Lowering only after adding 2 errors or critical error',
-    'lower_after_crit': 'Consistently only after adding critical error',
-    'lower_only_rand1': 'Lowering only after adding one random error, not critical',
-    'lower_only_rand2': 'Lowering only after adding two random errors, not critical',
-    'incr': 'Inconsistency - score increased after modification',
-    'rest': 'Inconsistent behaviour',
-}
-
-all_categories = nice_labels.keys()
-for cat in all_categories:
-    if cat not in grouped.columns:
-        grouped[cat] = 0
-
-# Sort columns for consistent color stacking
-grouped = grouped[all_categories]
-
-#Apply fill(l, 20) for each nice_label value
-nice_labels = {k: fill(v, 22) for k, v in nice_labels.items()}
-
-# Rename columns to nice labels
-grouped = grouped.rename(columns=nice_labels)
 
 # Plot
 # grouped.plot(kind='bar', stacked=True,  colormap='viridis',  width=0.95, ax=axes[0,i], legend=False )
-fig, ax = plt.subplots(figsize=(12, 6))
-grouped.plot(kind='bar', stacked=True, colormap='viridis', width=0.95, ax=ax)
+fig, ax = plt.subplots(1, 2, figsize=(16, 6))
+for i, mod_type in enumerate(['add_critical_error', 'add_random_error']):
+    df['category'] = df.apply(lambda x:classify_row(x,mod_type), axis=1)
+    #filter out scores with severities_length ==0
+    df_filtered = df[df['severities_length'] > 0]
+    grouped = (
+        df_filtered.groupby('score_num')['category']
+        .value_counts(normalize=True)
+        .unstack(fill_value=0)
+    )
 
-ax.set_ylabel('Percentage of Examples')
-ax.set_xlabel('Overall Score')
-ax.set_title("Distribution of score changes after addition")
-ax.set_ylim(0, 1)
-ax.yaxis.set_major_formatter(PercentFormatter(1.0))
-ax.set_xticklabels(grouped.index, rotation=0)
+    nice_labels = label_descriptions.copy()
 
-ax.legend(
-    title="Category",
-    bbox_to_anchor=(1.02, 1),
-    loc='upper left',
-    borderaxespad=0.,
-    frameon=False
-)
+    all_categories = nice_labels.keys()
+    for cat in all_categories:
+        if cat not in grouped.columns:
+            grouped[cat] = 0
 
-fig.tight_layout()
+    # Sort columns for consistent color stacking
+    grouped = grouped[all_categories]
+
+    #Apply fill(l, 20) for each nice_label value
+    nice_labels = {k: fill(v, 22) for k, v in nice_labels.items()}
+
+    # Rename columns to nice labels
+    grouped = grouped.rename(columns=nice_labels)
+
+
+    grouped.plot(kind='bar', stacked=True, colormap='viridis', width=0.75, ax=ax[i], legend=(i == 1))
+    if i == 0:
+        ax[i].set_ylabel('Percentage of Examples')
+    if mod_type == 'add_critical_error':
+        ax[i].set_title("Critical error")
+    elif mod_type == 'add_random_error':
+        ax[i].set_title("Random errors")
+    ax[i].set_xlabel('Overall Score')
+    ax[i].set_ylim(0, 1)
+    ax[i].yaxis.set_major_formatter(PercentFormatter(1.0))
+    ax[i].set_xticklabels(grouped.index, rotation=0)
+
+handles, labels = ax[1].get_legend_handles_labels()
+ax[1].legend_.remove()
+
+
+fig.subplots_adjust(right=0.75)
+fig.legend(handles, labels, title="Category",
+           loc='center left', bbox_to_anchor=(0.78, 0.5), frameon=False)
 
 plt.savefig(f"{args.results_dir}_error_addition_score_distribution.png")  # or use .pdf, .svg, etc.
 if args.show_plots:
     plt.show()
+  
+# print(grouped.columns)
+# # save head to csv file
+# grouped.head().to_csv(f"{args.results_dir}_error_addition_head.csv")
+
+# # find examples which are 'inc-1', 'inc-2', 'inc-3'
+# grouped_incosistencies = df[df['category'].isin(['inc-1', 'inc-2', 'inc-3'])]
+# # save their ids to a text file
+
+    
 exit()

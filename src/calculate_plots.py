@@ -130,6 +130,7 @@ mapping = {
 print(df.columns)
 # Convert scores to numerical values
 df["score"] = df["score"].str.strip()
+print(f"VALUE COUNTS: {df['score'].value_counts()}")
 df["score_num"] = df["score"].map(mapping)
 for mod_type in MODS:
     for sev_force in SEVFORCE:
