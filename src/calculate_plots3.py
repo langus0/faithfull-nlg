@@ -63,15 +63,10 @@ args = parser.parse_args()
 
 MODS = ["add_random_error1", "add_random_error2", "add_critical_error"]
 
-# gemma
-# hanna complexity
-# hanna coherence
-
-missing_data = [
-    "results/eval_mod_results/hanna/complexity/eval_gemma",
-    "results/eval_mod_results/hanna/coherence/eval_gemma",
-    ]
-
+# missing_data = [
+#     "results/eval_mod_results/hanna/complexity/eval_gemma",
+#     "results/eval_mod_results/hanna/coherence/eval_gemma",
+#     ]
 # if args.results_dir in missing_data:
 #     logger.error(f"Results dir {args.results_dir} is known to have missing data, exiting")
 #     exit(1)
@@ -161,6 +156,7 @@ mapping = {
 print(df.columns)
 # Convert scores to numerical values
 df["score"] = df["score"].str.strip()
+print(f"COUNT VALUES: {df['score'].shape[0]}")
 print(f"VALUE COUNTS: {df['score'].value_counts()}")
 df["score_num"] = df["score"].map(mapping)
 for mod_type in MODS:
