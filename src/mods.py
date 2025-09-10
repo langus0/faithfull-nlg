@@ -230,15 +230,13 @@ async def modify_add_critical_error(
         line = strip_forbidden_symbols(line)
         if line.startswith("Error"):
             error_count += 1
-        elif line.startswith("Overall score:"):
+        elif line.startswith("Overall score:") or line.startswith("No Error"):
             text_span = list(example['outputs'].values())[0]
             
             modified_result = lines[:i]
             modified_result.append(f"Error {error_count + 1}:\nLocation: {text_span}\nExplanation: This error completely compromises the quality of this text on the selected aspect.\nSeverity: 5")
             modified_result.append("Overall score:")
             return '\n'.join(modified_result)
-        elif line.startswith("No Error"):
-            return None # No modification or further generation needed
         else:
             modified_result.append(line)
     
@@ -307,7 +305,7 @@ Do not add any additional text, comments, or severity mark. Provide only the exp
         line = strip_forbidden_symbols(line)
         if line.startswith("Error"):
             error_count += 1
-        elif line.startswith("Overall score:"):
+        elif line.startswith("Overall score:") or line.startswith("No Error"):
 
             modified_result = lines[:i]
             for n in range(1, number_of_errors + 1):
@@ -332,8 +330,6 @@ Do not add any additional text, comments, or severity mark. Provide only the exp
                 modified_result.append(f"Severity: {severity}\n")
             modified_result.append("Overall score:")
             return '\n'.join(modified_result)
-        elif line.startswith("No Error"):
-            return None # No modification or further generation needed
         else:
             modified_result.append(line)
     
