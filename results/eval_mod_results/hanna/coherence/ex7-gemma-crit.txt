@@ -1,0 +1,27 @@
+"Error 1:
+Location: \"Agueda looked to the fire that the Brujeria had pointed to and saw a makeshift pot with a brew boiling.\"
+Explanation:  This sentence lacks clarity and smooth transition. It jumps abruptly from Agueda looking at the fire to focusing on a pot within the fire.
+Severity: 3
+
+Error 2:
+Location: \"It was Ayuhuasca, but it smelled different than the ones that the village shamans prepared.\"
+Explanation: This sentence feels repetitive and clunky due to the phrasing \"the ones that the village shamans prepared\". A more concise way to express this would improve flow.
+Severity: 2
+
+Error 3:
+Location: \"Was this an attempt to steal her energy?\"
+Explanation: This question appears abruptly and without sufficient build-up. The reader needs more context to understand why Agueda would think this.
+Severity: 3
+
+Error 4:
+Location: \"I am not some fiendish Brujo as they say, child, said the old woman.\"
+Explanation: The dialogue feels unnatural and overly explanatory. It tells rather than shows the character's intentions.
+Severity: 2
+
+Error 5:
+Location: *full text*
+Explanation: This error completely compromises the quality of this text on the selected aspect.
+Severity: 5
+Overall score: Poor
+
+Explanation: While the story attempts to establish a narrative, it suffers from significant issues with coherence. The lack of clear transitions, abrupt shifts in focus, and confusing dialogue disrupt the flow and make it difficult to follow the plot."

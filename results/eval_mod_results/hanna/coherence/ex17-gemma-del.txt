@@ -1,0 +1,23 @@
+
+"error_modification_impacts": [
+    {
+      "removed_errors": ["Error 1"],
+      "old_overall_score": "Poor",
+      "new_overall_score": " Poor",
+    },
+    {
+      "removed_error": ["Error 1", "Error 2"],
+      "old_overall_score": "Poor",
+      "new_overall_score": " Poor",
+    },
+    {
+      "removed_error": ["Error 1", "Error 2", "Error 3"],
+      "old_overall_score": "Poor",
+      "new_overall_score": " Fair",
+    },
+    {
+      "removed_error": ["Error 1", "Error 2", "Error 3", "Error 4"],
+      "old_overall_score": "Poor",
+      "new_overall_score": " Fair",
+    }
+  ]
