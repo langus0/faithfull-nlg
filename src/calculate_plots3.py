@@ -12,17 +12,33 @@ from textwrap import fill
 from matplotlib.ticker import PercentFormatter
 
 
+mods_names_for_tiles = {
+    'add_random_error': 'adding random errors',
+    'add_critical_error': 'adding a critical error',
+}
+
+added_error_type_map = {
+    'add_random_error': 'rand_error_addition',
+    'add_critical_error': 'crit_error_addition',
+}
+
 label_descriptions = {
+    'add_random_error': {
         'equal_all': 'No change with error addition',
-        'crit_1': 'Lowest score with critical error',
-        'crit_lower': 'Lower, but not lowest with critical error',
         'rand_consistent': 'Consistently lower when adding random errors',
         'rand_lower_only_2': 'Lower only when adding two random errors',
         'rand_lower_only_1': 'Lower only when adding one random error',
         'inc-higher': 'Inconsistent - error addition raised overall score',
-        # 'inconsistent-higher': 'Inconsistent - increased after adding error',
         'rest': 'Inconsistent behavior',
-    }
+    },
+    'add_critical_error': {
+        'equal_all': 'No change with error addition',
+        'crit_1': 'Lowest score with critical error',
+        'crit_lower': 'Lower, but not lowest with critical error',
+        'inc-higher': 'Inconsistent - error addition raised overall score',
+        'rest': 'Inconsistent behavior',
+    } 
+}
 
 def classify_row(row, mod_type):
     main = row['score_num']
@@ -100,8 +116,8 @@ for mod_type in MODS:
         severities= []
         for line in res.split('\n'):
             if line.startswith('Overall score'):
-                if sc is not None:
-                    logger.warning(f"Duplicate Overalscore in result {fname}")
+                # if sc is not None:
+                #     logger.warning(f"Duplicate Overalscore in result {fname}")
                 sc = line.split(':')[1].strip()
                 sc = strip_forbidden_symbols(sc)
             if line.startswith('Severity:'):
@@ -115,8 +131,8 @@ for mod_type in MODS:
         # if sc i
         for line in res_mod.split('\n'):
             if line.startswith('Overall score'):
-                if sc_mod is not None:
-                    logger.warning(f"Duplicate Overalscore in mod {fname}")
+                # if sc_mod is not None:
+                #     logger.warning(f"Duplicate Overalscore in mod {fname}")
                 sc_mod = line.split(':')[1].strip()
                 sc_mod = strip_forbidden_symbols(sc_mod)
 
@@ -262,18 +278,25 @@ if args.show_plots:
 
 # Plot
 # grouped.plot(kind='bar', stacked=True,  colormap='viridis',  width=0.95, ax=axes[0,i], legend=False )
-fig, ax = plt.subplots(1, 2, figsize=(16, 6))
 for i, mod_type in enumerate(['add_critical_error', 'add_random_error']):
-    df['category'] = df.apply(lambda x:classify_row(x,mod_type), axis=1)
+    
+    df['category'] = df.apply(lambda x:classify_row(x, mod_type), axis=1)
     #filter out scores with severities_length ==0
     df_filtered = df[df['severities_length'] > 0]
+    # drop the rows with 5 in score
+    if mod_type == 'add_critical_error':
+        df_filtered = df_filtered[df_filtered[f'score_num_add_critical_error'] < 5]
+    elif mod_type == 'add_random_error':
+        df_filtered = df_filtered[df_filtered[f'score_num_add_random_error1'] < 5]
+        df_filtered = df_filtered[df_filtered[f'score_num_add_random_error2'] < 5]
+
     grouped = (
         df_filtered.groupby('score_num')['category']
         .value_counts(normalize=True)
         .unstack(fill_value=0)
     )
 
-    nice_labels = label_descriptions.copy()
+    nice_labels = label_descriptions[mod_type].copy()
 
     all_categories = nice_labels.keys()
     for cat in all_categories:
@@ -289,31 +312,30 @@ for i, mod_type in enumerate(['add_critical_error', 'add_random_error']):
     # Rename columns to nice labels
     grouped = grouped.rename(columns=nice_labels)
 
+    fig, ax = plt.subplots(figsize=(12, 8))
+    grouped.plot(kind='bar', stacked=True, colormap='viridis', width=0.95, ax=ax)
 
-    grouped.plot(kind='bar', stacked=True, colormap='viridis', width=0.75, ax=ax[i], legend=(i == 1))
-    if i == 0:
-        ax[i].set_ylabel('Percentage of Examples')
-    if mod_type == 'add_critical_error':
-        ax[i].set_title("Critical error")
-    elif mod_type == 'add_random_error':
-        ax[i].set_title("Random errors")
-    ax[i].set_xlabel('Overall Score')
-    ax[i].set_ylim(0, 1)
-    ax[i].yaxis.set_major_formatter(PercentFormatter(1.0))
-    ax[i].set_xticklabels(grouped.index, rotation=0)
+    ax.set_ylabel('Percentage of Examples')
+    ax.set_xlabel('Overall Score')
+    ax.set_title(f"Distribution of score changes after {mods_names_for_tiles[mod_type]}")
+    ax.set_ylim(0, 1)
+    ax.yaxis.set_major_formatter(PercentFormatter(1.0))
+    ax.set_xticklabels(grouped.index, rotation=0)
 
-handles, labels = ax[1].get_legend_handles_labels()
-ax[1].legend_.remove()
+    ax.legend(
+        title="Category",
+        bbox_to_anchor=(1.02, 1),
+        loc='upper left',
+        borderaxespad=0.,
+        frameon=False
+    )
 
+    fig.tight_layout()
 
-fig.subplots_adjust(right=0.75)
-fig.legend(handles, labels, title="Category",
-           loc='center left', bbox_to_anchor=(0.78, 0.5), frameon=False)
+    plt.savefig(f"{args.results_dir}_{added_error_type_map[mod_type]}_score_distribution.png")  # or use .pdf, .svg, etc.
+    if args.show_plots:
+        plt.show()
 
-plt.savefig(f"{args.results_dir}_error_addition_score_distribution.png")  # or use .pdf, .svg, etc.
-if args.show_plots:
-    plt.show()
-  
 # print(grouped.columns)
 # # save head to csv file
 # grouped.head().to_csv(f"{args.results_dir}_error_addition_head.csv")
